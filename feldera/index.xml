@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/feldera/</fr:uri>
+    <fr:uri>https://coln-project.github.io/feldera/</fr:uri>
     <fr:display-uri>feldera</fr:display-uri>
     <fr:route>/feldera/</fr:route>
     <fr:title text="Feldera">Feldera</fr:title>
@@ -35,14 +35,14 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/dbsp/</fr:uri>
+            <fr:uri>https://coln-project.github.io/dbsp/</fr:uri>
             <fr:display-uri>dbsp</fr:display-uri>
             <fr:route>/dbsp/</fr:route>
             <fr:title text="DBSP">DBSP</fr:title>
             <fr:taxon>Term</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>DBSP is a language for “describing computations over data streams.” It is defined in <fr:link href="/budiu-2022-dbsp/" title="DBSP: Automatic Incremental View Maintenance for Rich Query Languages" uri="https://manual.geolog.sgai.uk/budiu-2022-dbsp/" display-uri="budiu-2022-dbsp" type="local">DBSP: Automatic Incremental View Maintenance for Rich Query Languages</fr:link>, and currently implemented in <fr:link href="/feldera/" title="Feldera" uri="https://manual.geolog.sgai.uk/feldera/" display-uri="feldera" type="local">Feldera</fr:link>.</html:p>
+            <html:p>DBSP is a language for “describing computations over data streams.” It is defined in <fr:link href="/budiu-2022-dbsp/" title="DBSP: Automatic Incremental View Maintenance for Rich Query Languages" uri="https://coln-project.github.io/budiu-2022-dbsp/" display-uri="budiu-2022-dbsp" type="local">DBSP: Automatic Incremental View Maintenance for Rich Query Languages</fr:link>, and currently implemented in <fr:link href="/feldera/" title="Feldera" uri="https://coln-project.github.io/feldera/" display-uri="feldera" type="local">Feldera</fr:link>.</html:p>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

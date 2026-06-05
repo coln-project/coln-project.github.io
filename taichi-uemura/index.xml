@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/taichi-uemura/</fr:uri>
+    <fr:uri>https://coln-project.github.io/taichi-uemura/</fr:uri>
     <fr:display-uri>taichi-uemura</fr:display-uri>
     <fr:route>/taichi-uemura/</fr:route>
     <fr:title text="Taichi Uemura">Taichi Uemura</fr:title>
@@ -50,13 +50,13 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/taichi-uemura/" title="Taichi Uemura" uri="https://manual.geolog.sgai.uk/taichi-uemura/" display-uri="taichi-uemura" type="local">Taichi Uemura</fr:link>
+                <fr:link href="/taichi-uemura/" title="Taichi Uemura" uri="https://coln-project.github.io/taichi-uemura/" display-uri="taichi-uemura" type="local">Taichi Uemura</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2021</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/uemura-2021-abstract/</fr:uri>
+            <fr:uri>https://coln-project.github.io/uemura-2021-abstract/</fr:uri>
             <fr:display-uri>uemura-2021-abstract</fr:display-uri>
             <fr:route>/uemura-2021-abstract/</fr:route>
             <fr:title text="Abstract and Concrete Type Theories">Abstract and Concrete Type Theories</fr:title>

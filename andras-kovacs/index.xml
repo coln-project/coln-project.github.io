@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/andras-kovacs/</fr:uri>
+    <fr:uri>https://coln-project.github.io/andras-kovacs/</fr:uri>
     <fr:display-uri>andras-kovacs</fr:display-uri>
     <fr:route>/andras-kovacs/</fr:route>
     <fr:title text="András Kovács">András Kovács</fr:title>
@@ -49,13 +49,13 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/andras-kovacs/" title="András Kovács" uri="https://manual.geolog.sgai.uk/andras-kovacs/" display-uri="andras-kovacs" type="local">András Kovács</fr:link>
+                <fr:link href="/andras-kovacs/" title="András Kovács" uri="https://coln-project.github.io/andras-kovacs/" display-uri="andras-kovacs" type="local">András Kovács</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2022</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/kovacs-2022-typetheoretic/</fr:uri>
+            <fr:uri>https://coln-project.github.io/kovacs-2022-typetheoretic/</fr:uri>
             <fr:display-uri>kovacs-2022-typetheoretic</fr:display-uri>
             <fr:route>/kovacs-2022-typetheoretic/</fr:route>
             <fr:title text="Type-Theoretic Signatures for Algebraic

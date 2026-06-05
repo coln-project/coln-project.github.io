@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/conjunctive-queries/</fr:uri>
+    <fr:uri>https://coln-project.github.io/conjunctive-queries/</fr:uri>
     <fr:display-uri>conjunctive-queries</fr:display-uri>
     <fr:route>/conjunctive-queries/</fr:route>
     <fr:title text="Conjunctive queries">Conjunctive queries</fr:title>
@@ -35,14 +35,14 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000E/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000E/</fr:uri>
             <fr:display-uri>000E</fr:display-uri>
             <fr:route>/000E/</fr:route>
             <fr:title text="The database engineer">The database engineer</fr:title>
             <fr:taxon>Audience</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The <html:strong>database engineer</html:strong> is a reader who does not necessarily know any type theory, but is familiar with <fr:link href="/sql/" title="SQL" uri="https://manual.geolog.sgai.uk/sql/" display-uri="sql" type="local">SQL</fr:link>, <fr:link href="/datalog/" title="Datalog" uri="https://manual.geolog.sgai.uk/datalog/" display-uri="datalog" type="local">Datalog</fr:link>, <fr:link href="/conjunctive-queries/" title="Conjunctive queries" uri="https://manual.geolog.sgai.uk/conjunctive-queries/" display-uri="conjunctive-queries" type="local">Conjunctive queries</fr:link>, <fr:link href="/egglog/" title="Egglog" uri="https://manual.geolog.sgai.uk/egglog/" display-uri="egglog" type="local">Egglog</fr:link>, <fr:link href="/automerge/" title="Automerge" uri="https://manual.geolog.sgai.uk/automerge/" display-uri="automerge" type="local">Automerge</fr:link>, and perhaps some of the methods for incrementalizing queries like <fr:link href="/dbsp/" title="DBSP" uri="https://manual.geolog.sgai.uk/dbsp/" display-uri="dbsp" type="local">DBSP</fr:link>.</html:p>
+            <html:p>The <html:strong>database engineer</html:strong> is a reader who does not necessarily know any type theory, but is familiar with <fr:link href="/sql/" title="SQL" uri="https://coln-project.github.io/sql/" display-uri="sql" type="local">SQL</fr:link>, <fr:link href="/datalog/" title="Datalog" uri="https://coln-project.github.io/datalog/" display-uri="datalog" type="local">Datalog</fr:link>, <fr:link href="/conjunctive-queries/" title="Conjunctive queries" uri="https://coln-project.github.io/conjunctive-queries/" display-uri="conjunctive-queries" type="local">Conjunctive queries</fr:link>, <fr:link href="/egglog/" title="Egglog" uri="https://coln-project.github.io/egglog/" display-uri="egglog" type="local">Egglog</fr:link>, <fr:link href="/automerge/" title="Automerge" uri="https://coln-project.github.io/automerge/" display-uri="automerge" type="local">Automerge</fr:link>, and perhaps some of the methods for incrementalizing queries like <fr:link href="/dbsp/" title="DBSP" uri="https://coln-project.github.io/dbsp/" display-uri="dbsp" type="local">DBSP</fr:link>.</html:p>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

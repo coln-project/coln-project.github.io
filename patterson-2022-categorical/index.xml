@@ -4,19 +4,19 @@
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/evan-patterson/" title="Evan Patterson" uri="https://manual.geolog.sgai.uk/evan-patterson/" display-uri="evan-patterson" type="local">Evan Patterson</fr:link>
+        <fr:link href="/evan-patterson/" title="Evan Patterson" uri="https://coln-project.github.io/evan-patterson/" display-uri="evan-patterson" type="local">Evan Patterson</fr:link>
       </fr:author>
       <fr:author>
-        <fr:link href="/owen-lynch/" title="Owen Lynch" uri="https://manual.geolog.sgai.uk/owen-lynch/" display-uri="owen-lynch" type="local">Owen Lynch</fr:link>
+        <fr:link href="/owen-lynch/" title="Owen Lynch" uri="https://coln-project.github.io/owen-lynch/" display-uri="owen-lynch" type="local">Owen Lynch</fr:link>
       </fr:author>
       <fr:author>
-        <fr:link href="/james-fairbanks/" title="James Fairbanks" uri="https://manual.geolog.sgai.uk/james-fairbanks/" display-uri="james-fairbanks" type="local">James Fairbanks</fr:link>
+        <fr:link href="/james-fairbanks/" title="James Fairbanks" uri="https://coln-project.github.io/james-fairbanks/" display-uri="james-fairbanks" type="local">James Fairbanks</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
       <fr:year>2022</fr:year>
     </fr:date>
-    <fr:uri>https://manual.geolog.sgai.uk/patterson-2022-categorical/</fr:uri>
+    <fr:uri>https://coln-project.github.io/patterson-2022-categorical/</fr:uri>
     <fr:display-uri>patterson-2022-categorical</fr:display-uri>
     <fr:route>/patterson-2022-categorical/</fr:route>
     <fr:title text="Categorical Data Structures for Technical Computing">Categorical Data Structures for Technical Computing</fr:title>
@@ -48,7 +48,7 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/acset/</fr:uri>
+            <fr:uri>https://coln-project.github.io/acset/</fr:uri>
             <fr:display-uri>acset</fr:display-uri>
             <fr:route>/acset/</fr:route>
             <fr:title text="ACSet">ACSet</fr:title>
@@ -56,8 +56,8 @@
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>ACSet stands for “attributed C-set” and is pronounced with the Hungarian “cs” which is the English “ch.”</html:p>
-            <html:ul><html:li>Paper: <fr:link href="/patterson-2022-categorical/" title="Categorical Data Structures for Technical Computing" uri="https://manual.geolog.sgai.uk/patterson-2022-categorical/" display-uri="patterson-2022-categorical" type="local">Categorical Data Structures for Technical Computing</fr:link></html:li>
-  <html:li>Implementation: <fr:link href="/acsets-jl/" title="ACSets.jl" uri="https://manual.geolog.sgai.uk/acsets-jl/" display-uri="acsets-jl" type="local">ACSets.jl</fr:link></html:li></html:ul>
+            <html:ul><html:li>Paper: <fr:link href="/patterson-2022-categorical/" title="Categorical Data Structures for Technical Computing" uri="https://coln-project.github.io/patterson-2022-categorical/" display-uri="patterson-2022-categorical" type="local">Categorical Data Structures for Technical Computing</fr:link></html:li>
+  <html:li>Implementation: <fr:link href="/acsets-jl/" title="ACSets.jl" uri="https://coln-project.github.io/acsets-jl/" display-uri="acsets-jl" type="local">ACSets.jl</fr:link></html:li></html:ul>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

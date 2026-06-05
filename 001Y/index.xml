@@ -3,23 +3,23 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/001Y/</fr:uri>
+    <fr:uri>https://coln-project.github.io/001Y/</fr:uri>
     <fr:display-uri>001Y</fr:display-uri>
     <fr:route>/001Y/</fr:route>
     <fr:title text="Lowering sets to types-with-predicates">Lowering sets to types-with-predicates</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
-    <html:p>The next step after <fr:link href="/001T/" title="Distributing records over functions" uri="https://manual.geolog.sgai.uk/001T/" display-uri="001T" type="local">Distributing records over functions</fr:link> is to transform a set into pairs of a <html:em>base type</html:em> and <html:em>validity predicate</html:em>.</html:p>
+    <html:p>The next step after <fr:link href="/001T/" title="Distributing records over functions" uri="https://coln-project.github.io/001T/" display-uri="001T" type="local">Distributing records over functions</fr:link> is to transform a set into pairs of a <html:em>base type</html:em> and <html:em>validity predicate</html:em>.</html:p>
     <fr:tree show-metadata="false">
       <fr:frontmatter>
         <fr:authors />
-        <fr:uri>https://manual.geolog.sgai.uk/001Z/</fr:uri>
+        <fr:uri>https://coln-project.github.io/001Z/</fr:uri>
         <fr:display-uri>001Z</fr:display-uri>
         <fr:route>/001Z/</fr:route>
         <fr:title text="Lowering for jealousy-triangle">Lowering for jealousy-triangle</fr:title>
       </fr:frontmatter>
       <fr:mainmatter>
-        <html:p>Recall from <fr:link href="/001H/" title="Record types as sets" uri="https://manual.geolog.sgai.uk/001H/" display-uri="001H" type="local">Record types as sets</fr:link> the query <html:code>jealousy-triangle</html:code> defined by</html:p>
+        <html:p>Recall from <fr:link href="/001H/" title="Record types as sets" uri="https://coln-project.github.io/001H/" display-uri="001H" type="local">Record types as sets</fr:link> the query <html:code>jealousy-triangle</html:code> defined by</html:p>
         <html:pre><html:strong>def</html:strong> jealousy-triangle (m : Drama) : Set := <html:strong>tuple</html:strong>
   a b c : m.person
   m.jealous-of a b
@@ -47,45 +47,45 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000M/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000M/</fr:uri>
             <fr:display-uri>000M</fr:display-uri>
             <fr:route>/000M/</fr:route>
-            <fr:title text="Geolog as a database">Geolog as a database</fr:title>
+            <fr:title text="Coln as a database">Coln as a database</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>Geolog can work as a little proof assistant which is restricted to positive types, but the real point of this restriction is to enable a translation to the database world.</html:p>
+            <html:p>Coln can work as a little proof assistant which is restricted to positive types, but the real point of this restriction is to enable a translation to the database world.</html:p>
             <html:p>One could look at this in two ways, depending on whether you think of the language or the database as “primary.”</html:p>
-            <html:p>In one sense, because the database engine can be used to reason about models defined purely in geolog, the database engine is essentially a souped-up tactic (in the sense of Rocq or Lean) for enumerating the elements of types.</html:p>
-            <html:p>But not all models of geolog theories need to be defined in geolog itself. As we have seen, the automatically-produced TypeScript functions can be used to initialize and populate a model in an imperative style. For instance, when using geolog to do an egglog-style analysis of a C-like language, one would first write a parser and type checker in a normal programming language, and then issue mutations via the API to create a model that represented the IR of the program. Then geolog queries could be run against that IR to resolve questions about the behavior of the program.</html:p>
-            <html:p>Thus, geolog is not a typical proof assistant; geolog is a tool that is meant to be integrated into a larger program that is not written in geolog.</html:p>
-            <html:p>In order to give the programmer a mental model for how they can expect these commands to work, in this section of the manual we describe the translation from a theory in the <fr:link href="/000L/" title="Geolog as a language" uri="https://manual.geolog.sgai.uk/000L/" display-uri="000L" type="local">geolog language</fr:link> to a collection of tables.</html:p>
+            <html:p>In one sense, because the database engine can be used to reason about models defined purely in Coln, the database engine is essentially a souped-up tactic (in the sense of Rocq or Lean) for enumerating the elements of types.</html:p>
+            <html:p>But not all models of Coln theories need to be defined in Coln itself. As we have seen, the automatically-produced TypeScript functions can be used to initialize and populate a model in an imperative style. For instance, when using Coln to do an egglog-style analysis of a C-like language, one would first write a parser and type checker in a normal programming language, and then issue mutations via the API to create a model that represented the IR of the program. Then Coln queries could be run against that IR to resolve questions about the behavior of the program.</html:p>
+            <html:p>Thus, Coln is not a typical proof assistant; Coln is a tool that is meant to be integrated into a larger program that is not written in Coln.</html:p>
+            <html:p>In order to give the programmer a mental model for how they can expect these commands to work, in this section of the manual we describe the translation from a theory in the <fr:link href="/000L/" title="Coln as a language" uri="https://coln-project.github.io/000L/" display-uri="000L" type="local">Coln language</fr:link> to a collection of tables.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0021/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0021/</fr:uri>
                 <fr:display-uri>0021</fr:display-uri>
                 <fr:route>/0021/</fr:route>
                 <fr:title text="Tables">Tables</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>Models of geolog theories are stored as collections of <html:em>tables</html:em>. For the reader experienced with traditional relational databases, tables should be fairly familiar, but we will go through them explicitly in order to establish our own conventions.</html:p>
+                <html:p>Models of Coln theories are stored as collections of <html:em>tables</html:em>. For the reader experienced with traditional relational databases, tables should be fairly familiar, but we will go through them explicitly in order to establish our own conventions.</html:p>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0022/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0022/</fr:uri>
                     <fr:display-uri>0022</fr:display-uri>
                     <fr:route>/0022/</fr:route>
                     <fr:title text="Table">Table</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>A <html:strong>table</html:strong> consists of a set of <fr:link href="/0023/" title="Row ID" uri="https://manual.geolog.sgai.uk/0023/" display-uri="0023" type="local">row IDs</fr:link> and a collection of <fr:link href="/0024/" title="Column" uri="https://manual.geolog.sgai.uk/0024/" display-uri="0024" type="local">columns</fr:link>. A table may come along with <fr:link href="/0025/" title="Constraint" uri="https://manual.geolog.sgai.uk/0025/" display-uri="0025" type="local">constraints</fr:link>, and in particular <fr:link href="/0026/" title="Primary key constraint" uri="https://manual.geolog.sgai.uk/0026/" display-uri="0026" type="local">primary key constraints</fr:link></html:p>
+                    <html:p>A <html:strong>table</html:strong> consists of a set of <fr:link href="/0023/" title="Row ID" uri="https://coln-project.github.io/0023/" display-uri="0023" type="local">row IDs</fr:link> and a collection of <fr:link href="/0024/" title="Column" uri="https://coln-project.github.io/0024/" display-uri="0024" type="local">columns</fr:link>. A table may come along with <fr:link href="/0025/" title="Constraint" uri="https://coln-project.github.io/0025/" display-uri="0025" type="local">constraints</fr:link>, and in particular <fr:link href="/0026/" title="Primary key constraint" uri="https://coln-project.github.io/0026/" display-uri="0026" type="local">primary key constraints</fr:link></html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0023/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0023/</fr:uri>
                     <fr:display-uri>0023</fr:display-uri>
                     <fr:route>/0023/</fr:route>
                     <fr:title text="Row ID">Row ID</fr:title>
@@ -99,7 +99,7 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0024/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0024/</fr:uri>
                     <fr:display-uri>0024</fr:display-uri>
                     <fr:route>/0024/</fr:route>
                     <fr:title text="Column">Column</fr:title>
@@ -113,7 +113,7 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0026/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0026/</fr:uri>
                     <fr:display-uri>0026</fr:display-uri>
                     <fr:route>/0026/</fr:route>
                     <fr:title text="Primary key constraint">Primary key constraint</fr:title>
@@ -129,14 +129,14 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0025/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0025/</fr:uri>
                     <fr:display-uri>0025</fr:display-uri>
                     <fr:route>/0025/</fr:route>
                     <fr:title text="Constraint">Constraint</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Tables also have associated <html:strong>constraints</html:strong>. We discuss these in greater detail once we talk about how geolog theories are lowered to a collection of tables; essentially the constraints are what enforces the type dependencies between the different arguments to a function.</html:p>
+                    <html:p>Tables also have associated <html:strong>constraints</html:strong>. We discuss these in greater detail once we talk about how Coln theories are lowered to a collection of tables; essentially the constraints are what enforces the type dependencies between the different arguments to a function.</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
@@ -147,7 +147,7 @@
                       <fr:month>5</fr:month>
                       <fr:day>23</fr:day>
                     </fr:date>
-                    <fr:uri>https://manual.geolog.sgai.uk/0027/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0027/</fr:uri>
                     <fr:display-uri>0027</fr:display-uri>
                     <fr:route>/0027/</fr:route>
                   </fr:frontmatter>
@@ -158,17 +158,17 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001T/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001T/</fr:uri>
                 <fr:display-uri>001T</fr:display-uri>
                 <fr:route>/001T/</fr:route>
                 <fr:title text="Distributing records over functions">Distributing records over functions</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>The key idea in translating a geolog theory into a usable database schema is that we can <html:em>distribute records over functions</html:em>. To understand this idea, first consider geolog theories of a special form.</html:p>
+                <html:p>The key idea in translating a Coln theory into a usable database schema is that we can <html:em>distribute records over functions</html:em>. To understand this idea, first consider Coln theories of a special form.</html:p>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/001U/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/001U/</fr:uri>
                     <fr:display-uri>001U</fr:display-uri>
                     <fr:route>/001U/</fr:route>
                     <fr:title text="\Sigma \Pi  normal form"><fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -181,7 +181,7 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/001V/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/001V/</fr:uri>
                     <fr:display-uri>001V</fr:display-uri>
                     <fr:route>/001V/</fr:route>
                     <fr:title text="Graph is in \Sigma \Pi  normal form.">Graph is in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</fr:title>
@@ -197,7 +197,7 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/001W/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/001W/</fr:uri>
                     <fr:display-uri>001W</fr:display-uri>
                     <fr:route>/001W/</fr:route>
                     <fr:title text="Bag of graphs is not in \Sigma \Pi  normal form">Bag of graphs is not in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -215,11 +215,11 @@
                 <html:ul><html:li>If <html:code>B</html:code> is a set, then we can represent this as a table with columns <html:code>A1,...,AN,B</html:code> and a primary key constraint on <html:code>A1,...,AN</html:code>.</html:li>
   <html:li>If <html:code>B</html:code> is <html:code>Set</html:code>, then this is a table with columns <html:code>A1,...,AN</html:code> and no primary key constraint.</html:li>
   <html:li>If <html:code>B</html:code> is <html:code>Prop</html:code>, then this is a table with columns <html:code>A1,...,AN</html:code> and a primary key constraint on <html:code>A1,...,AN</html:code>.</html:li></html:ul>
-                <html:p>Thus, the first job to do when translating a geolog theory into a database schema is to put the geolog theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</html:p>
+                <html:p>Thus, the first job to do when translating a Coln theory into a database schema is to put the Coln theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</html:p>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/001X/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/001X/</fr:uri>
                     <fr:display-uri>001X</fr:display-uri>
                     <fr:route>/001X/</fr:route>
                     <fr:title text="Bag of graphs in \Sigma \Pi  normal form">Bag of graphs in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -250,20 +250,20 @@
                   </fr:mainmatter>
                 </fr:tree>
                 <html:p>In this way, although when writing down <html:code>BagOfGraphs</html:code> it appears as if we would store a separate graph database for each graph id, in fact all of the graphs are stored in the same pair of tables. In particular, allocating a new graph id does not imply allocating a whole new graph structure.</html:p>
-                <html:p>There is a fairly straightforward algorithm to take a general theory to a theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form, producing the <html:code>from-normal</html:code> and <html:code>to-normal</html:code> migrations simultaneously, but describing it here would involve a conceptual framework around the <fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">elaborator</fr:link> which would take a while to get off the ground. Thus, we ask the reader to take as given that we have access to such an algorithm, and we continue on assuming that we are working with theories in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form.</html:p>
+                <html:p>There is a fairly straightforward algorithm to take a general theory to a theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form, producing the <html:code>from-normal</html:code> and <html:code>to-normal</html:code> migrations simultaneously, but describing it here would involve a conceptual framework around the <fr:link href="/000O/" title="What is elaboration?" uri="https://coln-project.github.io/000O/" display-uri="000O" type="local">elaborator</fr:link> which would take a while to get off the ground. Thus, we ask the reader to take as given that we have access to such an algorithm, and we continue on assuming that we are working with theories in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form.</html:p>
                 <html:p>One way of thinking about this algorithm is that it is a generalized version of the array-of-structs to struct-of-arrays transformation in, for instance, <fr:link href="https://ziglang.org/documentation/master/std/#std.MultiArrayList" type="external">Zig's MultiArrayList</fr:link>.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0020/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0020/</fr:uri>
                 <fr:display-uri>0020</fr:display-uri>
                 <fr:route>/0020/</fr:route>
                 <fr:title text="Theories as interfaces">Theories as interfaces</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>Each top-level theory <html:code>T</html:code> in geolog produces TypeScript declarations that look like the following.</html:p>
+                <html:p>Each top-level theory <html:code>T</html:code> in Coln produces TypeScript declarations that look like the following.</html:p>
                 <html:pre>namespace T {
   interface Readonly {
     ...
@@ -295,7 +295,7 @@
   }
 }
 </html:pre>
-                <html:p>The implementation of <html:code>T.ReadWrite</html:code> that <html:code>T.create</html:code> produces is based on the translation of <html:code>T</html:code> to <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form as in <fr:link href="/001T/" title="Distributing records over functions" uri="https://manual.geolog.sgai.uk/001T/" display-uri="001T" type="local">Distributing records over functions</fr:link>. However, crucially, this is not the only implementation of <html:code>T.ReadWrite</html:code>.</html:p>
+                <html:p>The implementation of <html:code>T.ReadWrite</html:code> that <html:code>T.create</html:code> produces is based on the translation of <html:code>T</html:code> to <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form as in <fr:link href="/001T/" title="Distributing records over functions" uri="https://coln-project.github.io/001T/" display-uri="001T" type="local">Distributing records over functions</fr:link>. However, crucially, this is not the only implementation of <html:code>T.ReadWrite</html:code>.</html:p>
                 <html:p>For example, <html:code>BagOfGraphs</html:code> produces</html:p>
                 <html:pre>namespace BagOfGraphs {
   interface Readonly {
@@ -319,29 +319,29 @@ const bog = BagOfGraphs.create()
 const g1_id = bog.graph_id.add()
 const g1 = bog.graph_for(g1_id)
 </html:pre>
-                <html:p>Specifically, <html:code>g0</html:code> has its own vertex and edge tables, but <html:code>g1</html:code> merely “forwards” into the vertex and edge tables for <html:em>all</html:em> of the graphs in <html:code>bog</html:code>, (recall <html:code>BagOfGraphs/normal</html:code> from <fr:link href="/001X/" title="Bag of graphs in \Sigma \Pi  normal form" uri="https://manual.geolog.sgai.uk/001X/" display-uri="001X" type="local">Bag of graphs in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:link>).</html:p>
+                <html:p>Specifically, <html:code>g0</html:code> has its own vertex and edge tables, but <html:code>g1</html:code> merely “forwards” into the vertex and edge tables for <html:em>all</html:em> of the graphs in <html:code>bog</html:code>, (recall <html:code>BagOfGraphs/normal</html:code> from <fr:link href="/001X/" title="Bag of graphs in \Sigma \Pi  normal form" uri="https://coln-project.github.io/001X/" display-uri="001X" type="local">Bag of graphs in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:link>).</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001Y/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001Y/</fr:uri>
                 <fr:display-uri>001Y</fr:display-uri>
                 <fr:route>/001Y/</fr:route>
                 <fr:title text="Lowering sets to types-with-predicates">Lowering sets to types-with-predicates</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>The next step after <fr:link href="/001T/" title="Distributing records over functions" uri="https://manual.geolog.sgai.uk/001T/" display-uri="001T" type="local">Distributing records over functions</fr:link> is to transform a set into pairs of a <html:em>base type</html:em> and <html:em>validity predicate</html:em>.</html:p>
+                <html:p>The next step after <fr:link href="/001T/" title="Distributing records over functions" uri="https://coln-project.github.io/001T/" display-uri="001T" type="local">Distributing records over functions</fr:link> is to transform a set into pairs of a <html:em>base type</html:em> and <html:em>validity predicate</html:em>.</html:p>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/001Z/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/001Z/</fr:uri>
                     <fr:display-uri>001Z</fr:display-uri>
                     <fr:route>/001Z/</fr:route>
                     <fr:title text="Lowering for jealousy-triangle">Lowering for jealousy-triangle</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Recall from <fr:link href="/001H/" title="Record types as sets" uri="https://manual.geolog.sgai.uk/001H/" display-uri="001H" type="local">Record types as sets</fr:link> the query <html:code>jealousy-triangle</html:code> defined by</html:p>
+                    <html:p>Recall from <fr:link href="/001H/" title="Record types as sets" uri="https://coln-project.github.io/001H/" display-uri="001H" type="local">Record types as sets</fr:link> the query <html:code>jealousy-triangle</html:code> defined by</html:p>
                     <html:pre><html:strong>def</html:strong> jealousy-triangle (m : Drama) : Set := <html:strong>tuple</html:strong>
   a b c : m.person
   m.jealous-of a b
@@ -373,17 +373,17 @@ const g1 = bog.graph_for(g1_id)
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/001T/</fr:uri>
+            <fr:uri>https://coln-project.github.io/001T/</fr:uri>
             <fr:display-uri>001T</fr:display-uri>
             <fr:route>/001T/</fr:route>
             <fr:title text="Distributing records over functions">Distributing records over functions</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The key idea in translating a geolog theory into a usable database schema is that we can <html:em>distribute records over functions</html:em>. To understand this idea, first consider geolog theories of a special form.</html:p>
+            <html:p>The key idea in translating a Coln theory into a usable database schema is that we can <html:em>distribute records over functions</html:em>. To understand this idea, first consider Coln theories of a special form.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001U/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001U/</fr:uri>
                 <fr:display-uri>001U</fr:display-uri>
                 <fr:route>/001U/</fr:route>
                 <fr:title text="\Sigma \Pi  normal form"><fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -396,7 +396,7 @@ const g1 = bog.graph_for(g1_id)
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001V/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001V/</fr:uri>
                 <fr:display-uri>001V</fr:display-uri>
                 <fr:route>/001V/</fr:route>
                 <fr:title text="Graph is in \Sigma \Pi  normal form.">Graph is in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</fr:title>
@@ -412,7 +412,7 @@ const g1 = bog.graph_for(g1_id)
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001W/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001W/</fr:uri>
                 <fr:display-uri>001W</fr:display-uri>
                 <fr:route>/001W/</fr:route>
                 <fr:title text="Bag of graphs is not in \Sigma \Pi  normal form">Bag of graphs is not in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -430,11 +430,11 @@ const g1 = bog.graph_for(g1_id)
             <html:ul><html:li>If <html:code>B</html:code> is a set, then we can represent this as a table with columns <html:code>A1,...,AN,B</html:code> and a primary key constraint on <html:code>A1,...,AN</html:code>.</html:li>
   <html:li>If <html:code>B</html:code> is <html:code>Set</html:code>, then this is a table with columns <html:code>A1,...,AN</html:code> and no primary key constraint.</html:li>
   <html:li>If <html:code>B</html:code> is <html:code>Prop</html:code>, then this is a table with columns <html:code>A1,...,AN</html:code> and a primary key constraint on <html:code>A1,...,AN</html:code>.</html:li></html:ul>
-            <html:p>Thus, the first job to do when translating a geolog theory into a database schema is to put the geolog theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</html:p>
+            <html:p>Thus, the first job to do when translating a Coln theory into a database schema is to put the Coln theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001X/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001X/</fr:uri>
                 <fr:display-uri>001X</fr:display-uri>
                 <fr:route>/001X/</fr:route>
                 <fr:title text="Bag of graphs in \Sigma \Pi  normal form">Bag of graphs in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -465,7 +465,7 @@ const g1 = bog.graph_for(g1_id)
               </fr:mainmatter>
             </fr:tree>
             <html:p>In this way, although when writing down <html:code>BagOfGraphs</html:code> it appears as if we would store a separate graph database for each graph id, in fact all of the graphs are stored in the same pair of tables. In particular, allocating a new graph id does not imply allocating a whole new graph structure.</html:p>
-            <html:p>There is a fairly straightforward algorithm to take a general theory to a theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form, producing the <html:code>from-normal</html:code> and <html:code>to-normal</html:code> migrations simultaneously, but describing it here would involve a conceptual framework around the <fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">elaborator</fr:link> which would take a while to get off the ground. Thus, we ask the reader to take as given that we have access to such an algorithm, and we continue on assuming that we are working with theories in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form.</html:p>
+            <html:p>There is a fairly straightforward algorithm to take a general theory to a theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form, producing the <html:code>from-normal</html:code> and <html:code>to-normal</html:code> migrations simultaneously, but describing it here would involve a conceptual framework around the <fr:link href="/000O/" title="What is elaboration?" uri="https://coln-project.github.io/000O/" display-uri="000O" type="local">elaborator</fr:link> which would take a while to get off the ground. Thus, we ask the reader to take as given that we have access to such an algorithm, and we continue on assuming that we are working with theories in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form.</html:p>
             <html:p>One way of thinking about this algorithm is that it is a generalized version of the array-of-structs to struct-of-arrays transformation in, for instance, <fr:link href="https://ziglang.org/documentation/master/std/#std.MultiArrayList" type="external">Zig's MultiArrayList</fr:link>.</html:p>
           </fr:mainmatter>
         </fr:tree>

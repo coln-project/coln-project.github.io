@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/derivation/</fr:uri>
+    <fr:uri>https://coln-project.github.io/derivation/</fr:uri>
     <fr:display-uri>derivation</fr:display-uri>
     <fr:route>/derivation/</fr:route>
     <fr:title text="Derivation">Derivation</fr:title>
@@ -12,7 +12,7 @@
   <fr:mainmatter>
     <html:p>A derivation is a sequence of applications of rules in some type theory, starting from the empty premise and concluding in a judgment.</html:p>
     <html:p>See <fr:link href="https://en.wikipedia.org/wiki/Rule_of_inference" type="external">Rule of inference</fr:link> on wikipedia for an introduction to this sort of thing. The only difference is that a derivation in type theory typically expresses that there is a term of a certain type rather than just expressing that a proposition is true.</html:p>
-    <html:p>A principled approach to derivations may be found in <fr:link href="/shulman-2016-categorical/" title="Categorical logic from a categorical point of view" uri="https://manual.geolog.sgai.uk/shulman-2016-categorical/" display-uri="shulman-2016-categorical" type="local">Categorical logic from a categorical point of view</fr:link>.</html:p>
+    <html:p>A principled approach to derivations may be found in <fr:link href="/shulman-2016-categorical/" title="Categorical logic from a categorical point of view" uri="https://coln-project.github.io/shulman-2016-categorical/" display-uri="shulman-2016-categorical" type="local">Categorical logic from a categorical point of view</fr:link>.</html:p>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree show-metadata="false" hidden-when-empty="true">
@@ -25,13 +25,13 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/michael-shulman/" title="Michael Shulman" uri="https://manual.geolog.sgai.uk/michael-shulman/" display-uri="michael-shulman" type="local">Michael Shulman</fr:link>
+                <fr:link href="/michael-shulman/" title="Michael Shulman" uri="https://coln-project.github.io/michael-shulman/" display-uri="michael-shulman" type="local">Michael Shulman</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2016</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/shulman-2016-categorical/</fr:uri>
+            <fr:uri>https://coln-project.github.io/shulman-2016-categorical/</fr:uri>
             <fr:display-uri>shulman-2016-categorical</fr:display-uri>
             <fr:route>/shulman-2016-categorical/</fr:route>
             <fr:title text="Categorical logic from a categorical point of view">Categorical logic from a categorical point of view</fr:title>
@@ -58,14 +58,14 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000P/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000P/</fr:uri>
             <fr:display-uri>000P</fr:display-uri>
             <fr:route>/000P/</fr:route>
-            <fr:title text="What is elaboration? › Syntax"><fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">What is elaboration?</fr:link> › Syntax</fr:title>
+            <fr:title text="What is elaboration? › Syntax"><fr:link href="/000O/" title="What is elaboration?" uri="https://coln-project.github.io/000O/" display-uri="000O" type="local">What is elaboration?</fr:link> › Syntax</fr:title>
             <fr:taxon>Definition</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>Syntax is a data type in the geolog compiler, the elements of which are a compressed form for correct <fr:link href="/derivation/" title="Derivation" uri="https://manual.geolog.sgai.uk/derivation/" display-uri="derivation" type="local">derivations</fr:link> in the geolog type theory.</html:p>
+            <html:p>Syntax is a data type in the Coln compiler, the elements of which are a compressed form for correct <fr:link href="/derivation/" title="Derivation" uri="https://coln-project.github.io/derivation/" display-uri="derivation" type="local">derivations</fr:link> in the Coln type theory.</html:p>
             <html:p>The process of elaboration ensures that any syntax produced does in fact refer uniquely to some derivation.</html:p>
           </fr:mainmatter>
         </fr:tree>

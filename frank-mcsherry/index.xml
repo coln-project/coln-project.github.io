@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/frank-mcsherry/</fr:uri>
+    <fr:uri>https://coln-project.github.io/frank-mcsherry/</fr:uri>
     <fr:display-uri>frank-mcsherry</fr:display-uri>
     <fr:route>/frank-mcsherry/</fr:route>
     <fr:title text="Frank McSherry">Frank McSherry</fr:title>
@@ -49,22 +49,22 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/mihai-budiu/" title="Mihai Budiu" uri="https://manual.geolog.sgai.uk/mihai-budiu/" display-uri="mihai-budiu" type="local">Mihai Budiu</fr:link>
+                <fr:link href="/mihai-budiu/" title="Mihai Budiu" uri="https://coln-project.github.io/mihai-budiu/" display-uri="mihai-budiu" type="local">Mihai Budiu</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/leonid-ryzhyk/" title="Leonid Ryzhyk" uri="https://manual.geolog.sgai.uk/leonid-ryzhyk/" display-uri="leonid-ryzhyk" type="local">Leonid Ryzhyk</fr:link>
+                <fr:link href="/leonid-ryzhyk/" title="Leonid Ryzhyk" uri="https://coln-project.github.io/leonid-ryzhyk/" display-uri="leonid-ryzhyk" type="local">Leonid Ryzhyk</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/frank-mcsherry/" title="Frank McSherry" uri="https://manual.geolog.sgai.uk/frank-mcsherry/" display-uri="frank-mcsherry" type="local">Frank McSherry</fr:link>
+                <fr:link href="/frank-mcsherry/" title="Frank McSherry" uri="https://coln-project.github.io/frank-mcsherry/" display-uri="frank-mcsherry" type="local">Frank McSherry</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/val-tannen/" title="Val Tannen" uri="https://manual.geolog.sgai.uk/val-tannen/" display-uri="val-tannen" type="local">Val Tannen</fr:link>
+                <fr:link href="/val-tannen/" title="Val Tannen" uri="https://coln-project.github.io/val-tannen/" display-uri="val-tannen" type="local">Val Tannen</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2022</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/budiu-2022-dbsp/</fr:uri>
+            <fr:uri>https://coln-project.github.io/budiu-2022-dbsp/</fr:uri>
             <fr:display-uri>budiu-2022-dbsp</fr:display-uri>
             <fr:route>/budiu-2022-dbsp/</fr:route>
             <fr:title text="DBSP: Automatic Incremental View Maintenance for Rich Query Languages">DBSP: Automatic Incremental View Maintenance for Rich Query Languages</fr:title>

@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/001L/</fr:uri>
+    <fr:uri>https://coln-project.github.io/001L/</fr:uri>
     <fr:display-uri>001L</fr:display-uri>
     <fr:route>/001L/</fr:route>
     <fr:title text="Elements of function types as views">Elements of function types as views</fr:title>
@@ -37,31 +37,31 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000S/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000S/</fr:uri>
             <fr:display-uri>000S</fr:display-uri>
             <fr:route>/000S/</fr:route>
             <fr:title text="Basic types">Basic types</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>At its core, there are only two things in the geolog language: types and elements of those types. We write <html:code>a : A</html:code> to express that <html:code>a</html:code> is an element of the type <html:code>A</html:code>. In this section, we describe informally the various types in geolog and how they are functionally involved in the database.</html:p>
+            <html:p>At its core, there are only two things in the Coln language: types and elements of those types. We write <html:code>a : A</html:code> to express that <html:code>a</html:code> is an element of the type <html:code>A</html:code>. In this section, we describe informally the various types in Coln and how they are functionally involved in the database.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001F/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001F/</fr:uri>
                 <fr:display-uri>001F</fr:display-uri>
                 <fr:route>/001F/</fr:route>
                 <fr:title text="Theories are schemas, models are instances">Theories are schemas, models are instances</fr:title>
                 <fr:taxon>Slogan</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>In geolog, we use the word <html:strong>theory</html:strong> to mean a type used as a database schema, and we say <html:strong>model</html:strong> to refer to an element of a theory, which you might also think of as a database instance on the schema described by that theory.</html:p>
+                <html:p>In Coln, we use the word <html:strong>theory</html:strong> to mean a type used as a database schema, and we say <html:strong>model</html:strong> to refer to an element of a theory, which you might also think of as a database instance on the schema described by that theory.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <html:p>We now show how to build up progressively more complex theories via different type formers. In order to give an intuition for what each of these type formers means, we also describe how to interact with models of those theories via the TypeScript FFI (note: the TypeScript FFI is a work in progress at the moment).</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001B/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001B/</fr:uri>
                 <fr:display-uri>001B</fr:display-uri>
                 <fr:route>/001B/</fr:route>
                 <fr:title text="The theory of sets">The theory of sets</fr:title>
@@ -103,7 +103,7 @@ assert(m.has(a))
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001C/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001C/</fr:uri>
                 <fr:display-uri>001C</fr:display-uri>
                 <fr:route>/001C/</fr:route>
                 <fr:title text="Record types as theories">Record types as theories</fr:title>
@@ -126,7 +126,7 @@ assert(!m.nice.has(bob))
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001D/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001D/</fr:uri>
                 <fr:display-uri>001D</fr:display-uri>
                 <fr:route>/001D/</fr:route>
                 <fr:title text="Sets as theories">Sets as theories</fr:title>
@@ -153,7 +153,7 @@ m.john.set(john)
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001E/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001E/</fr:uri>
                 <fr:display-uri>001E</fr:display-uri>
                 <fr:route>/001E/</fr:route>
                 <fr:title text="Function types as theories">Function types as theories</fr:title>
@@ -165,7 +165,7 @@ m.john.set(john)
   state : Set
   next : state -&gt; state
 <html:strong>end</html:strong></html:pre>
-                <html:p>If we have <html:code>m : StateMachine</html:code>, then <html:code>m.next</html:code> is a function that sends elements of <html:code>m.state</html:code> to other elements of <html:code>m.state</html:code>. The type <html:code>state -&gt; state</html:code> satisfies the criterion for being a theory because its domain is a set and its codomain is a theory (following <fr:link href="/001D/" title="Sets as theories" uri="https://manual.geolog.sgai.uk/001D/" display-uri="001D" type="local">Sets as theories</fr:link>). Concretely, in TypeScript, we could use this like</html:p>
+                <html:p>If we have <html:code>m : StateMachine</html:code>, then <html:code>m.next</html:code> is a function that sends elements of <html:code>m.state</html:code> to other elements of <html:code>m.state</html:code>. The type <html:code>state -&gt; state</html:code> satisfies the criterion for being a theory because its domain is a set and its codomain is a theory (following <fr:link href="/001D/" title="Sets as theories" uri="https://coln-project.github.io/001D/" display-uri="001D" type="local">Sets as theories</fr:link>). Concretely, in TypeScript, we could use this like</html:p>
                 <html:pre><html:strong>const</html:strong> m = StateMachine.create()
 <html:strong>const</html:strong> [x,y] = [m.state.add(), m.state.add()]
 m.next(x).set(y)
@@ -181,13 +181,13 @@ m.next(y).set(y)
                 <html:pre><html:strong>const</html:strong> y2025 = m.year.add()
 <html:strong>const</html:strong> bob = m.list(y2025).nice.add()
 </html:pre>
-                <html:p>Now, there are some ontological problems with this database schema. We cannot ask whether a person is nice one year and naughty the other year, because the nice and naughty sets for each year are disjoint. What we would really like is there to be <html:em>one</html:em> set of people, and then in different years they might be nice or naughty. This can be accomplished with <fr:link href="/001G/" title="Propositions and relations" uri="https://manual.geolog.sgai.uk/001G/" display-uri="001G" type="local">relations</fr:link>.</html:p>
+                <html:p>Now, there are some ontological problems with this database schema. We cannot ask whether a person is nice one year and naughty the other year, because the nice and naughty sets for each year are disjoint. What we would really like is there to be <html:em>one</html:em> set of people, and then in different years they might be nice or naughty. This can be accomplished with <fr:link href="/001G/" title="Propositions and relations" uri="https://coln-project.github.io/001G/" display-uri="001G" type="local">relations</fr:link>.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001G/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001G/</fr:uri>
                 <fr:display-uri>001G</fr:display-uri>
                 <fr:route>/001G/</fr:route>
                 <fr:title text="Propositions and relations">Propositions and relations</fr:title>
@@ -230,7 +230,7 @@ m.list(y2026).naughty(john).makeTrue()
                 <html:pre><html:strong>const</html:strong> [john, mary] = [m.person.add(), m.person.add()]
 m.jealous_of(john)(mary).makeTrue()
 </html:pre>
-                <html:p>Note that because names in fnotation can contain characters like <html:code>-</html:code> that are not allowed in TypeScript, we have to <html:em>mangle</html:em> the geolog name to create the TypeScript API. As <html:code>person_of</html:code> is also a valid name in geolog, a theory could have both <html:code>person-of</html:code> and <html:code>person_of</html:code> fields. In this case, emitting the TypeScript FFI would emit an error. The suggested fix is to not have fields that differ only by choice of hyphen/underscore, because that is bad and confusing in any case.</html:p>
+                <html:p>Note that because names in fnotation can contain characters like <html:code>-</html:code> that are not allowed in TypeScript, we have to <html:em>mangle</html:em> the Coln name to create the TypeScript API. As <html:code>person_of</html:code> is also a valid name in Coln, a theory could have both <html:code>person-of</html:code> and <html:code>person_of</html:code> fields. In this case, emitting the TypeScript FFI would emit an error. The suggested fix is to not have fields that differ only by choice of hyphen/underscore, because that is bad and confusing in any case.</html:p>
                 <html:p>Just like a set is a theory, a proposition is also a theory; a model of the proposition can be thought of as a witness that the proposition is true. We can use this to put <html:em>laws</html:em> in our database. For instance, we can make jealousy be transitive.</html:p>
                 <html:pre><html:strong>theory</html:strong> ExtraDrama := <html:strong>sig</html:strong>
   person : Set
@@ -238,19 +238,19 @@ m.jealous_of(john)(mary).makeTrue()
   jealous-of/is-transitive : (a b c : person) -&gt;
     jealous-of a b -&gt; jealous-of b c -&gt; jealous-of a c
 <html:strong>end</html:strong></html:pre>
-                <html:p>We saw <fr:link href="/001E/" title="Function types as theories" uri="https://manual.geolog.sgai.uk/001E/" display-uri="001E" type="local">earlier</fr:link> one way in which a model of a theory might be incomplete; a function might not yet be defined for given values of its inputs. Here we have a similar situation. For instance, we might have written:</html:p>
+                <html:p>We saw <fr:link href="/001E/" title="Function types as theories" uri="https://coln-project.github.io/001E/" display-uri="001E" type="local">earlier</fr:link> one way in which a model of a theory might be incomplete; a function might not yet be defined for given values of its inputs. Here we have a similar situation. For instance, we might have written:</html:p>
                 <html:pre><html:strong>const</html:strong> [john, mary, sue] =
   [m.person.add(), m.person.add(), m.person.add()]
 m.jealous_of(john)(mary).makeTrue()
 m.jealous_of(mary)(sue).makeTrue()
 </html:pre>
-                <html:p>When checking validity of <html:code>m</html:code> after executing this code, geolog will report that <html:code>jealous-of/is-transitive john mary sue _ _ : jealous-of mary sue</html:code> is not satisfied (though, geolog does not know what names we have given to these variables in TypeScript, so it would actually print out the row identifiers instead of the names).<html:sup class="smallcaps">todo</html:sup> Unlike with <html:code>next</html:code> in the <fr:link href="/001E/" title="Function types as theories" uri="https://manual.geolog.sgai.uk/001E/" display-uri="001E" type="local">section on functions</fr:link>, to fix this we don't need to touch <html:code>jealous-of/is-transitive</html:code>. Instead, we can just run <html:code>m.jealous_of(john)(sue).makeTrue()</html:code>, and the model will be valid again. This is because if the codomain of a function is a proposition, there is ultimately only one possible way for that function to exist, and thus the function need not be explicitly defined. We discuss how this works in a later section.<html:sup class="smallcaps">todo</html:sup></html:p>
+                <html:p>When checking validity of <html:code>m</html:code> after executing this code, Coln will report that <html:code>jealous-of/is-transitive john mary sue _ _ : jealous-of mary sue</html:code> is not satisfied (though, Coln does not know what names we have given to these variables in TypeScript, so it would actually print out the row identifiers instead of the names).<html:sup class="smallcaps">todo</html:sup> Unlike with <html:code>next</html:code> in the <fr:link href="/001E/" title="Function types as theories" uri="https://coln-project.github.io/001E/" display-uri="001E" type="local">section on functions</fr:link>, to fix this we don't need to touch <html:code>jealous-of/is-transitive</html:code>. Instead, we can just run <html:code>m.jealous_of(john)(sue).makeTrue()</html:code>, and the model will be valid again. This is because if the codomain of a function is a proposition, there is ultimately only one possible way for that function to exist, and thus the function need not be explicitly defined. We discuss how this works in a later section.<html:sup class="smallcaps">todo</html:sup></html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001I/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001I/</fr:uri>
                 <fr:display-uri>001I</fr:display-uri>
                 <fr:route>/001I/</fr:route>
                 <fr:title text="Equality types as theories">Equality types as theories</fr:title>
@@ -268,35 +268,35 @@ m.jealous_of(mary)(sue).makeTrue()
                 <html:pre><html:strong>theory</html:strong> IsPartialFunction (X : Set) (Y : Set) (R : X -&gt; Y -&gt; Prop) := 
   (x : X) -&gt; (y0 y1 : Y) -&gt; R x y0 -&gt; R x y1 -&gt; y0 = y1
 </html:pre>
-                <html:p>Equality is useful for constraints, but is especially useful for <fr:link href="/001A/" title="Basic types › Sets are queries, elements are results" uri="https://manual.geolog.sgai.uk/001A/" display-uri="001A" type="local">queries</fr:link>.</html:p>
+                <html:p>Equality is useful for constraints, but is especially useful for <fr:link href="/001A/" title="Basic types › Sets are queries, elements are results" uri="https://coln-project.github.io/001A/" display-uri="001A" type="local">queries</fr:link>.</html:p>
               </fr:mainmatter>
             </fr:tree>
-            <html:p>These six type formers (<fr:link href="/001B/" title="The theory of sets" uri="https://manual.geolog.sgai.uk/001B/" display-uri="001B" type="local">The theory of sets</fr:link>, <fr:link href="/001C/" title="Record types as theories" uri="https://manual.geolog.sgai.uk/001C/" display-uri="001C" type="local">Record types as theories</fr:link>, <fr:link href="/001D/" title="Sets as theories" uri="https://manual.geolog.sgai.uk/001D/" display-uri="001D" type="local">Sets as theories</fr:link>, <fr:link href="/001E/" title="Function types as theories" uri="https://manual.geolog.sgai.uk/001E/" display-uri="001E" type="local">Function types as theories</fr:link>, <fr:link href="/001G/" title="Propositions and relations" uri="https://manual.geolog.sgai.uk/001G/" display-uri="001G" type="local">Propositions and relations</fr:link> and <fr:link href="/001I/" title="Equality types as theories" uri="https://manual.geolog.sgai.uk/001I/" display-uri="001I" type="local">Equality types as theories</fr:link>) can be used to compositionally build up fairly complex combinatorial structures of sets, functions and relations. However, they are still limited when it comes to handling <html:em>data</html:em>, which often has, for instance, numbers and strings in it.</html:p>
+            <html:p>These six type formers (<fr:link href="/001B/" title="The theory of sets" uri="https://coln-project.github.io/001B/" display-uri="001B" type="local">The theory of sets</fr:link>, <fr:link href="/001C/" title="Record types as theories" uri="https://coln-project.github.io/001C/" display-uri="001C" type="local">Record types as theories</fr:link>, <fr:link href="/001D/" title="Sets as theories" uri="https://coln-project.github.io/001D/" display-uri="001D" type="local">Sets as theories</fr:link>, <fr:link href="/001E/" title="Function types as theories" uri="https://coln-project.github.io/001E/" display-uri="001E" type="local">Function types as theories</fr:link>, <fr:link href="/001G/" title="Propositions and relations" uri="https://coln-project.github.io/001G/" display-uri="001G" type="local">Propositions and relations</fr:link> and <fr:link href="/001I/" title="Equality types as theories" uri="https://coln-project.github.io/001I/" display-uri="001I" type="local">Equality types as theories</fr:link>) can be used to compositionally build up fairly complex combinatorial structures of sets, functions and relations. However, they are still limited when it comes to handling <html:em>data</html:em>, which often has, for instance, numbers and strings in it.</html:p>
             <html:p>We could simply put in <html:code>String</html:code> and <html:code>Int</html:code> in as “base sets”. However, this would permit functions <html:code>String -&gt; String</html:code>, and we cannot store a function like that in a database because the set of strings is infinite and the function must be total, so storing the value of the function at every string would take infinite storage. We could say that <html:code>String</html:code> was a theory and not a set, which would prevent it from being used in the domain of a function, but it is perfectly sensible to have the theory <html:code>String -&gt; Prop</html:code> (which denotes a subset of the set of all strings), and making <html:code>String</html:code> a theory would prevent us from forming that.</html:p>
-            <html:p>The solution to this problem requires building up a little more theory, so we do not address it right now, and instead continue on to give a full account of the “purely combinatorial” fragment of geolog.</html:p>
+            <html:p>The solution to this problem requires building up a little more theory, so we do not address it right now, and instead continue on to give a full account of the “purely combinatorial” fragment of Coln.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001A/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001A/</fr:uri>
                 <fr:display-uri>001A</fr:display-uri>
                 <fr:route>/001A/</fr:route>
                 <fr:title text="Sets are queries, elements are results">Sets are queries, elements are results</fr:title>
                 <fr:taxon>Slogan</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>One can query a database in geolog via for-loops in TypeScript, but this is obviously not the most efficient or ergonomic way to do it. In fact, we already have the machinery to write down queries, it just requires a bit of rethinking what we have already learned. The idea is that giving a way to produce a set from a model of a theory is a query. The elements of that set are the results of the query.</html:p>
+                <html:p>One can query a database in Coln via for-loops in TypeScript, but this is obviously not the most efficient or ergonomic way to do it. In fact, we already have the machinery to write down queries, it just requires a bit of rethinking what we have already learned. The idea is that giving a way to produce a set from a model of a theory is a query. The elements of that set are the results of the query.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001H/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001H/</fr:uri>
                 <fr:display-uri>001H</fr:display-uri>
                 <fr:route>/001H/</fr:route>
                 <fr:title text="Record types as sets">Record types as sets</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>Just like we have record types as the theory-level, we also have record types at the set-level. We can use this to define a set in the context of a model of a given theory; this is how to “natively query” an instance of a geolog theory.<html:sup class="smallcaps">todo</html:sup></html:p>
+                <html:p>Just like we have record types as the theory-level, we also have record types at the set-level. We can use this to define a set in the context of a model of a given theory; this is how to “natively query” an instance of a Coln theory.<html:sup class="smallcaps">todo</html:sup></html:p>
                 <html:pre><html:strong>def</html:strong> jealousy-triangle (m : Drama) : Set := <html:strong>tuple</html:strong>
   a : m.person
   b : m.person
@@ -306,7 +306,7 @@ m.jealous_of(mary)(sue).makeTrue()
   c-a : m.jealous-of c a
 <html:strong>end</html:strong></html:pre>
                 <html:p>In TypeScript, <html:code>jealousy-triangle</html:code> is compiled to a function that takes in a model of <html:code>Drama</html:code> and returns a <html:code>ReadonlySet</html:code>.<html:sup class="smallcaps">todo</html:sup> The elements <html:code>v</html:code> of this <html:code>ReadonlySet</html:code> are <html:code>Value</html:code>s with the <html:code>"tuple"</html:code> tag, which have fields <html:code>a</html:code>,<html:code>b</html:code>,<html:code>c</html:code> that are elements of <html:code>m.person</html:code>, such that <html:code>m.jealous-of(v.value.a)(v.value.b).isTrue()</html:code>, and so on. The value <html:code>v</html:code> will also have <html:code>v.value.a_b</html:code>, but it will just be <html:code>null</html:code>, thought of as the unique element of the singleton set.</html:p>
-                <html:p>Iterating through the elements of <html:code>jealousy_triangle(m)</html:code> will be faster than the naive approach of a triply-nested for-loop over <html:code>m.person</html:code> and then filtering out using <html:code>m.jealous-of</html:code>, because geolog can <html:em>plan</html:em> the query and take advantage of fast join algorithms on the <html:code>m.jealous-of</html:code> table.<html:sup class="smallcaps">todo</html:sup></html:p>
+                <html:p>Iterating through the elements of <html:code>jealousy_triangle(m)</html:code> will be faster than the naive approach of a triply-nested for-loop over <html:code>m.person</html:code> and then filtering out using <html:code>m.jealous-of</html:code>, because Coln can <html:em>plan</html:em> the query and take advantage of fast join algorithms on the <html:code>m.jealous-of</html:code> table.<html:sup class="smallcaps">todo</html:sup></html:p>
                 <html:p>This query can be written more compactly in the following way.<html:sup class="smallcaps">todo</html:sup></html:p>
                 <html:pre><html:strong>def</html:strong> jealousy-triangle (m : Drama) : Set := <html:strong>tuple</html:strong>
   a b c : m.person
@@ -327,14 +327,14 @@ m.jealous_of(mary)(sue).makeTrue()
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001J/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001J/</fr:uri>
                 <fr:display-uri>001J</fr:display-uri>
                 <fr:route>/001J/</fr:route>
                 <fr:title text="Views are top-level functions">Views are top-level functions</fr:title>
                 <fr:taxon>Slogan</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>In the <fr:link href="/001H/" title="Record types as sets" uri="https://manual.geolog.sgai.uk/001H/" display-uri="001H" type="local">queries</fr:link>, we saw several usages of the pattern</html:p>
+                <html:p>In the <fr:link href="/001H/" title="Record types as sets" uri="https://coln-project.github.io/001H/" display-uri="001H" type="local">queries</fr:link>, we saw several usages of the pattern</html:p>
                 <html:pre><html:strong>def</html:strong> query (m : T) : Set := ...
 </html:pre>
                 <html:p><html:code><html:strong>def</html:strong></html:code> is in fact a much more general construct; any theory can replace <html:code>Set</html:code> on the right, and we can take in multiple arguments.</html:p>
@@ -344,13 +344,13 @@ m.jealous_of(mary)(sue).makeTrue()
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001K/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001K/</fr:uri>
                 <fr:display-uri>001K</fr:display-uri>
                 <fr:route>/001K/</fr:route>
                 <fr:title text="Elements of record types as views">Elements of record types as views</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>If a theory is given by a record type (using <html:code><html:strong>sig</html:strong> ... <html:strong>end</html:strong></html:code>), then we can produce a model of it using <html:code><html:strong>struct</html:strong> ... <html:strong>end</html:strong></html:code>, setting all of its fields. For example, we can reward the wrong children with the following code (using <html:code>SantaList</html:code> from <fr:link href="/001C/" title="Record types as theories" uri="https://manual.geolog.sgai.uk/001C/" display-uri="001C" type="local">Record types as theories</fr:link>).</html:p>
+                <html:p>If a theory is given by a record type (using <html:code><html:strong>sig</html:strong> ... <html:strong>end</html:strong></html:code>), then we can produce a model of it using <html:code><html:strong>struct</html:strong> ... <html:strong>end</html:strong></html:code>, setting all of its fields. For example, we can reward the wrong children with the following code (using <html:code>SantaList</html:code> from <fr:link href="/001C/" title="Record types as theories" uri="https://coln-project.github.io/001C/" display-uri="001C" type="local">Record types as theories</fr:link>).</html:p>
                 <html:pre><html:strong>def</html:strong> santa-mixup (m : SantaList) : SantaList := <html:strong>struct</html:strong>
   naughty := m.nice
   nice := m.naughty
@@ -361,13 +361,13 @@ m.jealous_of(mary)(sue).makeTrue()
   naughty := <html:strong>tuple</html:strong> { child : m.person; m.list y .naughty child }
   nice := <html:strong>tuple</html:strong> { child : m.person; m.list y .nice child }
 <html:strong>end</html:strong></html:pre>
-                <html:p>Intuitively, this assigns <html:code>naughty</html:code> to the set of children naughty in that year, and similarly with <html:code>nice</html:code>. The <html:code><html:strong>tuple</html:strong></html:code> syntax is just as in <fr:link href="/001H/" title="Record types as sets" uri="https://manual.geolog.sgai.uk/001H/" display-uri="001H" type="local">Record types as sets</fr:link>, using the curly-brace inline syntax. And <html:code>m.list y .naughty child</html:code> is just a sequence of function applications and field projection. Walking through the types, we have <html:code>m.list : m.person -&gt; SantaListOver m.person</html:code>, so <html:code>m .list y : SantaListOver m.person</html:code> and then <html:code>m.list y .naughty : m.person -&gt; Prop</html:code> and finally <html:code>m.list y .naughty child : Prop</html:code>.</html:p>
+                <html:p>Intuitively, this assigns <html:code>naughty</html:code> to the set of children naughty in that year, and similarly with <html:code>nice</html:code>. The <html:code><html:strong>tuple</html:strong></html:code> syntax is just as in <fr:link href="/001H/" title="Record types as sets" uri="https://coln-project.github.io/001H/" display-uri="001H" type="local">Record types as sets</fr:link>, using the curly-brace inline syntax. And <html:code>m.list y .naughty child</html:code> is just a sequence of function applications and field projection. Walking through the types, we have <html:code>m.list : m.person -&gt; SantaListOver m.person</html:code>, so <html:code>m .list y : SantaListOver m.person</html:code> and then <html:code>m.list y .naughty : m.person -&gt; Prop</html:code> and finally <html:code>m.list y .naughty child : Prop</html:code>.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001L/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001L/</fr:uri>
                 <fr:display-uri>001L</fr:display-uri>
                 <fr:route>/001L/</fr:route>
                 <fr:title text="Elements of function types as views">Elements of function types as views</fr:title>
@@ -388,17 +388,17 @@ m.jealous_of(mary)(sue).makeTrue()
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001M/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001M/</fr:uri>
                 <fr:display-uri>001M</fr:display-uri>
                 <fr:route>/001M/</fr:route>
-                <fr:title text="Summary of Basic types">Summary of <fr:link href="/000S/" title="Basic types" uri="https://manual.geolog.sgai.uk/000S/" display-uri="000S" type="local">Basic types</fr:link></fr:title>
+                <fr:title text="Summary of Basic types">Summary of <fr:link href="/000S/" title="Basic types" uri="https://coln-project.github.io/000S/" display-uri="000S" type="local">Basic types</fr:link></fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>In <fr:link href="/000S/" title="Basic types" uri="https://manual.geolog.sgai.uk/000S/" display-uri="000S" type="local">Basic types</fr:link> we learned:</html:p>
-                <html:ul><html:li>How to use <html:code><html:strong>theory</html:strong></html:code> and <html:code><html:strong>def</html:strong></html:code>. These are the only two top-level declarations in geolog, so we have now learned all of the top-level declarations.</html:li>
+                <html:p>In <fr:link href="/000S/" title="Basic types" uri="https://coln-project.github.io/000S/" display-uri="000S" type="local">Basic types</fr:link> we learned:</html:p>
+                <html:ul><html:li>How to use <html:code><html:strong>theory</html:strong></html:code> and <html:code><html:strong>def</html:strong></html:code>. These are the only two top-level declarations in Coln, so we have now learned all of the top-level declarations.</html:li>
   <html:li>How to use <html:code>Set</html:code>, <html:code>Prop</html:code>, sets, record types, function types and equality types to build up theories.</html:li>
   <html:li>How to produce some models of theories from other models.</html:li></html:ul>
-                <html:p>In <fr:link href="/001N/" title="Inductive types" uri="https://manual.geolog.sgai.uk/001N/" display-uri="001N" type="local">Inductive types</fr:link>, we will see how to produce more models of theories, which will in turn allow us to produce more theories. However, the basic structure introduced here will remain more or less the same.</html:p>
+                <html:p>In <fr:link href="/001N/" title="Inductive types" uri="https://coln-project.github.io/001N/" display-uri="001N" type="local">Inductive types</fr:link>, we will see how to produce more models of theories, which will in turn allow us to produce more theories. However, the basic structure introduced here will remain more or less the same.</html:p>
               </fr:mainmatter>
             </fr:tree>
           </fr:mainmatter>

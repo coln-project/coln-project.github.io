@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/michael-shulman/</fr:uri>
+    <fr:uri>https://coln-project.github.io/michael-shulman/</fr:uri>
     <fr:display-uri>michael-shulman</fr:display-uri>
     <fr:route>/michael-shulman/</fr:route>
     <fr:title text="Michael Shulman">Michael Shulman</fr:title>
@@ -50,13 +50,13 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/michael-shulman/" title="Michael Shulman" uri="https://manual.geolog.sgai.uk/michael-shulman/" display-uri="michael-shulman" type="local">Michael Shulman</fr:link>
+                <fr:link href="/michael-shulman/" title="Michael Shulman" uri="https://coln-project.github.io/michael-shulman/" display-uri="michael-shulman" type="local">Michael Shulman</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2016</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/shulman-2016-categorical/</fr:uri>
+            <fr:uri>https://coln-project.github.io/shulman-2016-categorical/</fr:uri>
             <fr:display-uri>shulman-2016-categorical</fr:display-uri>
             <fr:route>/shulman-2016-categorical/</fr:route>
             <fr:title text="Categorical logic from a categorical point of view">Categorical logic from a categorical point of view</fr:title>

@@ -3,20 +3,20 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/0028/</fr:uri>
+    <fr:uri>https://coln-project.github.io/0028/</fr:uri>
     <fr:display-uri>0028</fr:display-uri>
     <fr:route>/0028/</fr:route>
     <fr:title text="Type theory as a language for anything">Type theory as a language for anything</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
-    <html:p>(This is meant for <fr:link href="/000D/" title="The type theorist" uri="https://manual.geolog.sgai.uk/000D/" display-uri="000D" type="local">The type theorist</fr:link>, <fr:link href="/000E/" title="The database engineer" uri="https://manual.geolog.sgai.uk/000E/" display-uri="000E" type="local">The database engineer</fr:link>, <fr:link href="/000H/" title="The developer" uri="https://manual.geolog.sgai.uk/000H/" display-uri="000H" type="local">The developer</fr:link>, <fr:link href="/000G/" title="The programmer-user" uri="https://manual.geolog.sgai.uk/000G/" display-uri="000G" type="local">The programmer-user</fr:link>)</html:p>
+    <html:p>(This is meant for <fr:link href="/000D/" title="The type theorist" uri="https://coln-project.github.io/000D/" display-uri="000D" type="local">The type theorist</fr:link>, <fr:link href="/000E/" title="The database engineer" uri="https://coln-project.github.io/000E/" display-uri="000E" type="local">The database engineer</fr:link>, <fr:link href="/000H/" title="The developer" uri="https://coln-project.github.io/000H/" display-uri="000H" type="local">The developer</fr:link>, <fr:link href="/000G/" title="The programmer-user" uri="https://coln-project.github.io/000G/" display-uri="000G" type="local">The programmer-user</fr:link>)</html:p>
     <html:p>A programmer with a passing familiarity with type theory may have formed some preconceptions about what a type is, and what it means to give an element of that type. For instance, in a language like Haskell or Rust, types are how we put structure on pieces of computer memory, so that we remember that the value at a certain address is a pointer or integer or floating point number. In a proof assistant, types are used as a foundation for mathematics; types play the role of the “sets” that informal mathematicians use.</html:p>
     <html:p>The truth is that types do not have any intrinsic meaning. Rather, type theory is a convenient tool for working with any collection of things which relate to each other in certain precise, well-structured ways.</html:p>
     <html:p>In particular, type theory is a tool for working with things defined by <html:em>universal properties</html:em>.</html:p>
     <fr:tree show-metadata="false">
       <fr:frontmatter>
         <fr:authors />
-        <fr:uri>https://manual.geolog.sgai.uk/0029/</fr:uri>
+        <fr:uri>https://coln-project.github.io/0029/</fr:uri>
         <fr:display-uri>0029</fr:display-uri>
         <fr:route>/0029/</fr:route>
         <fr:title text="The universal property of product">The universal property of product</fr:title>
@@ -33,11 +33,11 @@
       </fr:mainmatter>
     </fr:tree>
     <html:p>The concept of a universal property is formalized in different ways, often using category theory, but we need not bother with formalization at this stage.</html:p>
-    <html:p>The reader may have heard of “<fr:link href="/curry-howard/" title="The Curry-Howard Correspondence" uri="https://manual.geolog.sgai.uk/curry-howard/" display-uri="curry-howard" type="local">the Curry-Howard correspondence</fr:link>”, often informally referred to “propositions as types”. The Curry-Howard correspondence shows how various type formers and logical connectives correspond. With all due respect to Curry-Howard the name “correspondence” is somewhat of a misnomer because it assumes a false equivalence between the two things that are claimed to be in correspondence. In particular, propositional logic is a <html:em>mathematical domain</html:em> in which type theory may be applied to form a convenient syntax; it is by no means the only domain.</html:p>
+    <html:p>The reader may have heard of “<fr:link href="/curry-howard/" title="The Curry-Howard Correspondence" uri="https://coln-project.github.io/curry-howard/" display-uri="curry-howard" type="local">the Curry-Howard correspondence</fr:link>”, often informally referred to “propositions as types”. The Curry-Howard correspondence shows how various type formers and logical connectives correspond. With all due respect to Curry-Howard the name “correspondence” is somewhat of a misnomer because it assumes a false equivalence between the two things that are claimed to be in correspondence. In particular, propositional logic is a <html:em>mathematical domain</html:em> in which type theory may be applied to form a convenient syntax; it is by no means the only domain.</html:p>
     <html:p>The reason type theory may be usefully applied to propositional logic because all of the connectives of propositional logic (and, or, not, forall, exists, etc.) satisfy universal properties; this is the same as the reason why type theory may be applied to any other area.</html:p>
     <html:p>The way that type theory may be applied to a particular area is via the development of <html:em>a particular</html:em> type theory. Confusion between type theory as a subject and the concept of <html:em>a type theory</html:em> as a mathematical object is an unfortunate side effect of the nomenclature, because “ breaks with the convention that in group theory, we study groups, in field theory we study fields, or in category theory we study categories.</html:p>
     <html:p>A particular type theory is merely a syntactic formalization of some collection of universal properties, consisting of a collection of <html:em>rules</html:em> by which we judge that a certain piece of syntax is <html:em>well-typed</html:em>. The beauty of universal properties is that each universal property is quite self-contained, so a type theory may be designed by systematically observing which universal properties the objects of interest support, and then adding the standard type-theoretic rules for those universal properties to one's type theory.</html:p>
-    <html:p>And this is the method that we have followed in order to design the type theory for geolog: observe the universal properties that our domain of interest (relational databases) satisfy, and add rules corresponding to these universal properties. Fortunately, the result of this systematic development seems to produce a language which expresses many of the important database operations.</html:p>
+    <html:p>And this is the method that we have followed in order to design the type theory for Coln: observe the universal properties that our domain of interest (relational databases) satisfy, and add rules corresponding to these universal properties. Fortunately, the result of this systematic development seems to produce a language which expresses many of the important database operations.</html:p>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree show-metadata="false" hidden-when-empty="true">
@@ -56,30 +56,30 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000K/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000K/</fr:uri>
             <fr:display-uri>000K</fr:display-uri>
             <fr:route>/000K/</fr:route>
             <fr:title text="Theoretical foundations">Theoretical foundations</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>In this section, each section is a relatively self-contained introduction to some of the math or design philosophy behind geolog. The start of each section specifies which <fr:link href="/000B/" title="Audience" uri="https://manual.geolog.sgai.uk/000B/" display-uri="000B" type="local">audience</fr:link> the section is intended for.</html:p>
+            <html:p>In this section, each section is a relatively self-contained introduction to some of the math or design philosophy behind Coln. The start of each section specifies which <fr:link href="/000B/" title="Audience" uri="https://coln-project.github.io/000B/" display-uri="000B" type="local">audience</fr:link> the section is intended for.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0028/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0028/</fr:uri>
                 <fr:display-uri>0028</fr:display-uri>
                 <fr:route>/0028/</fr:route>
                 <fr:title text="Type theory as a language for anything">Type theory as a language for anything</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>(This is meant for <fr:link href="/000D/" title="The type theorist" uri="https://manual.geolog.sgai.uk/000D/" display-uri="000D" type="local">The type theorist</fr:link>, <fr:link href="/000E/" title="The database engineer" uri="https://manual.geolog.sgai.uk/000E/" display-uri="000E" type="local">The database engineer</fr:link>, <fr:link href="/000H/" title="The developer" uri="https://manual.geolog.sgai.uk/000H/" display-uri="000H" type="local">The developer</fr:link>, <fr:link href="/000G/" title="The programmer-user" uri="https://manual.geolog.sgai.uk/000G/" display-uri="000G" type="local">The programmer-user</fr:link>)</html:p>
+                <html:p>(This is meant for <fr:link href="/000D/" title="The type theorist" uri="https://coln-project.github.io/000D/" display-uri="000D" type="local">The type theorist</fr:link>, <fr:link href="/000E/" title="The database engineer" uri="https://coln-project.github.io/000E/" display-uri="000E" type="local">The database engineer</fr:link>, <fr:link href="/000H/" title="The developer" uri="https://coln-project.github.io/000H/" display-uri="000H" type="local">The developer</fr:link>, <fr:link href="/000G/" title="The programmer-user" uri="https://coln-project.github.io/000G/" display-uri="000G" type="local">The programmer-user</fr:link>)</html:p>
                 <html:p>A programmer with a passing familiarity with type theory may have formed some preconceptions about what a type is, and what it means to give an element of that type. For instance, in a language like Haskell or Rust, types are how we put structure on pieces of computer memory, so that we remember that the value at a certain address is a pointer or integer or floating point number. In a proof assistant, types are used as a foundation for mathematics; types play the role of the “sets” that informal mathematicians use.</html:p>
                 <html:p>The truth is that types do not have any intrinsic meaning. Rather, type theory is a convenient tool for working with any collection of things which relate to each other in certain precise, well-structured ways.</html:p>
                 <html:p>In particular, type theory is a tool for working with things defined by <html:em>universal properties</html:em>.</html:p>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0029/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0029/</fr:uri>
                     <fr:display-uri>0029</fr:display-uri>
                     <fr:route>/0029/</fr:route>
                     <fr:title text="The universal property of product">The universal property of product</fr:title>
@@ -96,30 +96,30 @@
                   </fr:mainmatter>
                 </fr:tree>
                 <html:p>The concept of a universal property is formalized in different ways, often using category theory, but we need not bother with formalization at this stage.</html:p>
-                <html:p>The reader may have heard of “<fr:link href="/curry-howard/" title="The Curry-Howard Correspondence" uri="https://manual.geolog.sgai.uk/curry-howard/" display-uri="curry-howard" type="local">the Curry-Howard correspondence</fr:link>”, often informally referred to “propositions as types”. The Curry-Howard correspondence shows how various type formers and logical connectives correspond. With all due respect to Curry-Howard the name “correspondence” is somewhat of a misnomer because it assumes a false equivalence between the two things that are claimed to be in correspondence. In particular, propositional logic is a <html:em>mathematical domain</html:em> in which type theory may be applied to form a convenient syntax; it is by no means the only domain.</html:p>
+                <html:p>The reader may have heard of “<fr:link href="/curry-howard/" title="The Curry-Howard Correspondence" uri="https://coln-project.github.io/curry-howard/" display-uri="curry-howard" type="local">the Curry-Howard correspondence</fr:link>”, often informally referred to “propositions as types”. The Curry-Howard correspondence shows how various type formers and logical connectives correspond. With all due respect to Curry-Howard the name “correspondence” is somewhat of a misnomer because it assumes a false equivalence between the two things that are claimed to be in correspondence. In particular, propositional logic is a <html:em>mathematical domain</html:em> in which type theory may be applied to form a convenient syntax; it is by no means the only domain.</html:p>
                 <html:p>The reason type theory may be usefully applied to propositional logic because all of the connectives of propositional logic (and, or, not, forall, exists, etc.) satisfy universal properties; this is the same as the reason why type theory may be applied to any other area.</html:p>
                 <html:p>The way that type theory may be applied to a particular area is via the development of <html:em>a particular</html:em> type theory. Confusion between type theory as a subject and the concept of <html:em>a type theory</html:em> as a mathematical object is an unfortunate side effect of the nomenclature, because “ breaks with the convention that in group theory, we study groups, in field theory we study fields, or in category theory we study categories.</html:p>
                 <html:p>A particular type theory is merely a syntactic formalization of some collection of universal properties, consisting of a collection of <html:em>rules</html:em> by which we judge that a certain piece of syntax is <html:em>well-typed</html:em>. The beauty of universal properties is that each universal property is quite self-contained, so a type theory may be designed by systematically observing which universal properties the objects of interest support, and then adding the standard type-theoretic rules for those universal properties to one's type theory.</html:p>
-                <html:p>And this is the method that we have followed in order to design the type theory for geolog: observe the universal properties that our domain of interest (relational databases) satisfy, and add rules corresponding to these universal properties. Fortunately, the result of this systematic development seems to produce a language which expresses many of the important database operations.</html:p>
+                <html:p>And this is the method that we have followed in order to design the type theory for Coln: observe the universal properties that our domain of interest (relational databases) satisfy, and add rules corresponding to these universal properties. Fortunately, the result of this systematic development seems to produce a language which expresses many of the important database operations.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/002A/</fr:uri>
+                <fr:uri>https://coln-project.github.io/002A/</fr:uri>
                 <fr:display-uri>002A</fr:display-uri>
                 <fr:route>/002A/</fr:route>
                 <fr:title text="A type theory for geometric theories">A type theory for geometric theories</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>(This is meant for <fr:link href="/000C/" title="The categorical logician" uri="https://manual.geolog.sgai.uk/000C/" display-uri="000C" type="local">The categorical logician</fr:link>)</html:p>
-                <html:p>The ultimate intended semantics for geolog is in arithmetic theories, which are the analogue of geometric theories for <fr:link href="/arithmetic-universes/" title="Arithmetic universes" uri="https://manual.geolog.sgai.uk/arithmetic-universes/" display-uri="arithmetic-universes" type="local">arithmetic universes</fr:link>. However, geometric theories and topoi are both better-studied than arithmetic universes and are additionally closely related, so we give an exposition of the basic type theory in terms of geometric theories. Note that by topos we mean Grothendieck topos, not elementary topos, so in particular all topoi have natural numbers objects.</html:p>
+                <html:p>(This is meant for <fr:link href="/000C/" title="The categorical logician" uri="https://coln-project.github.io/000C/" display-uri="000C" type="local">The categorical logician</fr:link>)</html:p>
+                <html:p>The ultimate intended semantics for Coln is in arithmetic theories, which are the analogue of geometric theories for <fr:link href="/arithmetic-universes/" title="Arithmetic universes" uri="https://coln-project.github.io/arithmetic-universes/" display-uri="arithmetic-universes" type="local">arithmetic universes</fr:link>. However, geometric theories and topoi are both better-studied than arithmetic universes and are additionally closely related, so we give an exposition of the basic type theory in terms of geometric theories. Note that by topos we mean Grothendieck topos, not elementary topos, so in particular all topoi have natural numbers objects.</html:p>
                 <html:p>Following the principles of this manual, this is <html:em>not</html:em> a mathematical paper; there will be a more formal account of this type theory, but that is in progress. Rather, this is a conceptual account that makes reference to mathematics.</html:p>
-                <html:p>In <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">The Elephant</fr:link>, Johnstone makes the following definitions for “theory”; we call this an <html:em>elephant theory</html:em> in order to distinguish it from other notions of theory we might consider.</html:p>
+                <html:p>In <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://coln-project.github.io/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">The Elephant</fr:link>, Johnstone makes the following definitions for “theory”; we call this an <html:em>elephant theory</html:em> in order to distinguish it from other notions of theory we might consider.</html:p>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/002C/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/002C/</fr:uri>
                     <fr:display-uri>002C</fr:display-uri>
                     <fr:route>/002C/</fr:route>
                     <fr:title text="Elephant Theory">Elephant Theory</fr:title>
@@ -129,13 +129,13 @@
                     <html:p>For <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> a topos, an <html:strong>elephant theory</html:strong> over <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> is a (pseudo-)functor <fr:tex display="inline"><![CDATA[T \colon  (\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat},]]></fr:tex> where <fr:tex display="inline"><![CDATA[(\mathsf {BTop}/\mathcal {S})^\mathrm {op}]]></fr:tex> is the 2-category of bounded geometric morphisms into <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {Cat}]]></fr:tex> is the 2-category of large categories.</html:p>
                     <html:p>A morphism of elephant theories is simply an indexed functor.</html:p>
                     <html:p>We say that <fr:tex display="inline"><![CDATA[T]]></fr:tex> is <html:strong>classified</html:strong> by <fr:tex display="inline"><![CDATA[\mathsf {S}[T] \colon  \mathsf {BTop}/\mathcal {S}]]></fr:tex> if <fr:tex display="inline"><![CDATA[T]]></fr:tex> is contravariantly represented by <fr:tex display="inline"><![CDATA[\mathcal {S}[T]]]></fr:tex>, that is <fr:tex display="inline"><![CDATA[T(\mathcal {E}) \cong  \mathsf {BTop}/\mathcal {S}(\mathcal {E}, \mathcal {S}[T])]]></fr:tex>. We also call <fr:tex display="inline"><![CDATA[\mathsf {S}[T]]]></fr:tex> the <html:strong>classifying topos</html:strong> for <fr:tex display="inline"><![CDATA[T]]></fr:tex>.</html:p>
-                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.1)</html:p>
+                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://coln-project.github.io/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.1)</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/002E/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/002E/</fr:uri>
                     <fr:display-uri>002E</fr:display-uri>
                     <fr:route>/002E/</fr:route>
                     <fr:title text="Object classifier">Object classifier</fr:title>
@@ -143,13 +143,13 @@
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:p>The <html:strong>object classifier</html:strong> <fr:tex display="inline"><![CDATA[\mathbb {O}]]></fr:tex> is the elephant theory defined by the forgetful functor <fr:tex display="inline"><![CDATA[(\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex> which sends a bounded topos over <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> to its underlying category of objects.</html:p>
-                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Example B4.2.4(a))</html:p>
+                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://coln-project.github.io/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Example B4.2.4(a))</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/002F/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/002F/</fr:uri>
                     <fr:display-uri>002F</fr:display-uri>
                     <fr:route>/002F/</fr:route>
                     <fr:title text="Geometric construct">Geometric construct</fr:title>
@@ -158,45 +158,45 @@
                   <fr:mainmatter>
                     <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a geometric theory, then a <html:strong>geometric construct</html:strong> is a <fr:tex display="inline"><![CDATA[\mathsf {BTop}/\mathcal {S}]]></fr:tex>-indexed functor <fr:tex display="inline"><![CDATA[F \colon  T \to  \mathbb {O}]]></fr:tex>.</html:p>
                     <html:p>The idea is that <fr:tex display="inline"><![CDATA[F]]></fr:tex>, given a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> in an <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-topos <fr:tex display="inline"><![CDATA[\mathcal {E}]]></fr:tex>, produces an object of <fr:tex display="inline"><![CDATA[\mathcal {E}]]></fr:tex>.</html:p>
-                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.5)</html:p>
+                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://coln-project.github.io/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.5)</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/002D/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/002D/</fr:uri>
                     <fr:display-uri>002D</fr:display-uri>
                     <fr:route>/002D/</fr:route>
                     <fr:title text="Geometric theory">Geometric theory</fr:title>
                     <fr:taxon>Definition</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p><html:strong>Geometric theories</html:strong> may be consicely defined as the elephant theories built up via a sequence of <fr:link href="/pie-limit/" title="PIE Limit" uri="https://manual.geolog.sgai.uk/pie-limit/" display-uri="pie-limit" type="local">product-inserter-equifier limits</fr:link> starting from the object classifier.</html:p>
+                    <html:p><html:strong>Geometric theories</html:strong> may be consicely defined as the elephant theories built up via a sequence of <fr:link href="/pie-limit/" title="PIE Limit" uri="https://coln-project.github.io/pie-limit/" display-uri="pie-limit" type="local">product-inserter-equifier limits</fr:link> starting from the object classifier.</html:p>
                     <html:p>We expand this to give more intuition.</html:p>
                     <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a theory, a <html:strong>simple functional extension</html:strong> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> is another theory <fr:tex display="inline"><![CDATA[T']]></fr:tex> given as the <html:em>inserter</html:em> of two geometric constructs <fr:tex display="inline"><![CDATA[F,G \colon  T \to  \mathbb {O}]]></fr:tex>. Intuitively, <fr:tex display="inline"><![CDATA[T']]></fr:tex> is the theory given by freely adding a new morphism between the “objects” <fr:tex display="inline"><![CDATA[F]]></fr:tex> and <fr:tex display="inline"><![CDATA[G]]></fr:tex>.</html:p>
                     <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a theory, a <html:strong>simple equational extension</html:strong> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> is another theory <fr:tex display="inline"><![CDATA[T']]></fr:tex> given as the <html:em>equifier</html:em> of two indexed natural transformations <fr:tex display="inline"><![CDATA[\alpha , \beta  \colon  F \Rightarrow  G]]></fr:tex>, where <fr:tex display="inline"><![CDATA[F]]></fr:tex> and <fr:tex display="inline"><![CDATA[G]]></fr:tex> are geometric constructs. Intuitively, <fr:tex display="inline"><![CDATA[T']]></fr:tex> is the theory given by adding a new equality between morphisms of “objects”.</html:p>
                     <html:p>A <html:strong>geometric theory</html:strong> is a theory built up by a finite sequence <fr:tex display="inline"><![CDATA[T_0,\ldots ,T_n]]></fr:tex> of simple functional extensions and simple equational extensions starting from <fr:tex display="inline"><![CDATA[T_0 = \mathbb {O}^m]]></fr:tex> for some finite <fr:tex display="inline"><![CDATA[m]]></fr:tex>.</html:p>
-                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition 4.2.7, note that Johnstone gives a slightly different definition, using <html:em>simple geometric quotients</html:em> in place of simple equational extensions, which use inverters instead of equifiers. The name “simple equational extension” is not known to us to be previously used, but it follows the schema of “simple functional extension.”)</html:p>
+                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://coln-project.github.io/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition 4.2.7, note that Johnstone gives a slightly different definition, using <html:em>simple geometric quotients</html:em> in place of simple equational extensions, which use inverters instead of equifiers. The name “simple equational extension” is not known to us to be previously used, but it follows the schema of “simple functional extension.”)</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/002G/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/002G/</fr:uri>
                     <fr:display-uri>002G</fr:display-uri>
                     <fr:route>/002G/</fr:route>
                     <fr:title text="Geometric theories have classifying topoi">Geometric theories have classifying topoi</fr:title>
                     <fr:taxon>Theorem</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Any <fr:link href="/002D/" title="Geometric theory" uri="https://manual.geolog.sgai.uk/002D/" display-uri="002D" type="local">geometric theory</fr:link> has a <fr:link href="/002C/" title="Elephant Theory" uri="https://manual.geolog.sgai.uk/002C/" display-uri="002C" type="local">classifying topos</fr:link>.</html:p>
-                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Theorem 4.2.9)</html:p>
+                    <html:p>Any <fr:link href="/002D/" title="Geometric theory" uri="https://coln-project.github.io/002D/" display-uri="002D" type="local">geometric theory</fr:link> has a <fr:link href="/002C/" title="Elephant Theory" uri="https://coln-project.github.io/002C/" display-uri="002C" type="local">classifying topos</fr:link>.</html:p>
+                    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://coln-project.github.io/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Theorem 4.2.9)</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/002I/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/002I/</fr:uri>
                     <fr:display-uri>002I</fr:display-uri>
                     <fr:route>/002I/</fr:route>
                     <fr:title text="A category with families structure on elephant theories">A category with families structure on elephant theories</fr:title>
@@ -220,7 +220,7 @@
                       <fr:month>5</fr:month>
                       <fr:day>27</fr:day>
                     </fr:date>
-                    <fr:uri>https://manual.geolog.sgai.uk/002J/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/002J/</fr:uri>
                     <fr:display-uri>002J</fr:display-uri>
                     <fr:route>/002J/</fr:route>
                   </fr:frontmatter>
@@ -248,7 +248,7 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/curry-howard/</fr:uri>
+            <fr:uri>https://coln-project.github.io/curry-howard/</fr:uri>
             <fr:display-uri>curry-howard</fr:display-uri>
             <fr:route>/curry-howard/</fr:route>
             <fr:title text="The Curry-Howard Correspondence">The Curry-Howard Correspondence</fr:title>
@@ -260,53 +260,53 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000E/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000E/</fr:uri>
             <fr:display-uri>000E</fr:display-uri>
             <fr:route>/000E/</fr:route>
             <fr:title text="The database engineer">The database engineer</fr:title>
             <fr:taxon>Audience</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The <html:strong>database engineer</html:strong> is a reader who does not necessarily know any type theory, but is familiar with <fr:link href="/sql/" title="SQL" uri="https://manual.geolog.sgai.uk/sql/" display-uri="sql" type="local">SQL</fr:link>, <fr:link href="/datalog/" title="Datalog" uri="https://manual.geolog.sgai.uk/datalog/" display-uri="datalog" type="local">Datalog</fr:link>, <fr:link href="/conjunctive-queries/" title="Conjunctive queries" uri="https://manual.geolog.sgai.uk/conjunctive-queries/" display-uri="conjunctive-queries" type="local">Conjunctive queries</fr:link>, <fr:link href="/egglog/" title="Egglog" uri="https://manual.geolog.sgai.uk/egglog/" display-uri="egglog" type="local">Egglog</fr:link>, <fr:link href="/automerge/" title="Automerge" uri="https://manual.geolog.sgai.uk/automerge/" display-uri="automerge" type="local">Automerge</fr:link>, and perhaps some of the methods for incrementalizing queries like <fr:link href="/dbsp/" title="DBSP" uri="https://manual.geolog.sgai.uk/dbsp/" display-uri="dbsp" type="local">DBSP</fr:link>.</html:p>
+            <html:p>The <html:strong>database engineer</html:strong> is a reader who does not necessarily know any type theory, but is familiar with <fr:link href="/sql/" title="SQL" uri="https://coln-project.github.io/sql/" display-uri="sql" type="local">SQL</fr:link>, <fr:link href="/datalog/" title="Datalog" uri="https://coln-project.github.io/datalog/" display-uri="datalog" type="local">Datalog</fr:link>, <fr:link href="/conjunctive-queries/" title="Conjunctive queries" uri="https://coln-project.github.io/conjunctive-queries/" display-uri="conjunctive-queries" type="local">Conjunctive queries</fr:link>, <fr:link href="/egglog/" title="Egglog" uri="https://coln-project.github.io/egglog/" display-uri="egglog" type="local">Egglog</fr:link>, <fr:link href="/automerge/" title="Automerge" uri="https://coln-project.github.io/automerge/" display-uri="automerge" type="local">Automerge</fr:link>, and perhaps some of the methods for incrementalizing queries like <fr:link href="/dbsp/" title="DBSP" uri="https://coln-project.github.io/dbsp/" display-uri="dbsp" type="local">DBSP</fr:link>.</html:p>
           </fr:mainmatter>
         </fr:tree>
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000H/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000H/</fr:uri>
             <fr:display-uri>000H</fr:display-uri>
             <fr:route>/000H/</fr:route>
             <fr:title text="The developer">The developer</fr:title>
             <fr:taxon>Audience</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The <html:strong>developer</html:strong> is someone who is interested in contributing to geolog, or creating a geolog-like system.</html:p>
+            <html:p>The <html:strong>developer</html:strong> is someone who is interested in contributing to Coln, or creating a Coln-like system.</html:p>
           </fr:mainmatter>
         </fr:tree>
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000G/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000G/</fr:uri>
             <fr:display-uri>000G</fr:display-uri>
             <fr:route>/000G/</fr:route>
             <fr:title text="The programmer-user">The programmer-user</fr:title>
             <fr:taxon>Audience</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The <html:strong>programmer-user</html:strong> is a reader who intends to incorporate geolog into a larger application. The programmer-user should be familiar with the language that they intend to use geolog from (currently, this is only TypeScript), and should be willing to learn a new language. We say “programmer-user” to distinguish this audience from the user of an application that the “programmer-user” creates; this user needs not read this manual.</html:p>
+            <html:p>The <html:strong>programmer-user</html:strong> is a reader who intends to incorporate Coln into a larger application. The programmer-user should be familiar with the language that they intend to use Coln from (currently, this is only TypeScript), and should be willing to learn a new language. We say “programmer-user” to distinguish this audience from the user of an application that the “programmer-user” creates; this user needs not read this manual.</html:p>
           </fr:mainmatter>
         </fr:tree>
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000D/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000D/</fr:uri>
             <fr:display-uri>000D</fr:display-uri>
             <fr:route>/000D/</fr:route>
             <fr:title text="The type theorist">The type theorist</fr:title>
             <fr:taxon>Audience</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The <html:strong>type theorist</html:strong> is a reader who is comfortable with traditional type theory rules given in Gentzen’s tree notation and who might also have some experience with normalization by evaluation, but who is not yet familiar with the modern approaches of <fr:link href="/000C/" title="The categorical logician" uri="https://manual.geolog.sgai.uk/000C/" display-uri="000C" type="local">The categorical logician</fr:link>.</html:p>
+            <html:p>The <html:strong>type theorist</html:strong> is a reader who is comfortable with traditional type theory rules given in Gentzen’s tree notation and who might also have some experience with normalization by evaluation, but who is not yet familiar with the modern approaches of <fr:link href="/000C/" title="The categorical logician" uri="https://coln-project.github.io/000C/" display-uri="000C" type="local">The categorical logician</fr:link>.</html:p>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/forester/</fr:uri>
+    <fr:uri>https://coln-project.github.io/forester/</fr:uri>
     <fr:display-uri>forester</fr:display-uri>
     <fr:route>/forester/</fr:route>
     <fr:title text="Forester">Forester</fr:title>
@@ -35,18 +35,18 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/0003/</fr:uri>
+            <fr:uri>https://coln-project.github.io/0003/</fr:uri>
             <fr:display-uri>0003</fr:display-uri>
             <fr:route>/0003/</fr:route>
             <fr:title text="Glossary and index">Glossary and index</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>This page collects technical terms used throughout the manual. Some of these terms refer to specific projects, some of them refer to more general concepts. Via the backlink system of <fr:link href="/forester/" title="Forester" uri="https://manual.geolog.sgai.uk/forester/" display-uri="forester" type="local">Forester</fr:link>, this also serves as an index; going to the page for any entry in the glossary gives the reader a list of sections in the manual that reference it.</html:p>
+            <html:p>This page collects technical terms used throughout the manual. Some of these terms refer to specific projects, some of them refer to more general concepts. Via the backlink system of <fr:link href="/forester/" title="Forester" uri="https://coln-project.github.io/forester/" display-uri="forester" type="local">Forester</fr:link>, this also serves as an index; going to the page for any entry in the glossary gives the reader a list of sections in the manual that reference it.</html:p>
             <html:p>We have chosen to put projects in the glossary rather than as bibliographic items because of the nature of projects as ongoing and evolving rather than static, moreover in the software world the distinction between a concept and the flagship software which implements that concept can sometimes be blurry. Additionally, as this is a manual and not an academic document, the primary function of references is breadcrumbs-to-learn-more not attributions-of-credit; thus the link given is often Wikipedia or the nlab.</html:p>
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/acset/</fr:uri>
+                <fr:uri>https://coln-project.github.io/acset/</fr:uri>
                 <fr:display-uri>acset</fr:display-uri>
                 <fr:route>/acset/</fr:route>
                 <fr:title text="ACSet">ACSet</fr:title>
@@ -54,14 +54,14 @@
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>ACSet stands for “attributed C-set” and is pronounced with the Hungarian “cs” which is the English “ch.”</html:p>
-                <html:ul><html:li>Paper: <fr:link href="/patterson-2022-categorical/" title="Categorical Data Structures for Technical Computing" uri="https://manual.geolog.sgai.uk/patterson-2022-categorical/" display-uri="patterson-2022-categorical" type="local">Categorical Data Structures for Technical Computing</fr:link></html:li>
-  <html:li>Implementation: <fr:link href="/acsets-jl/" title="ACSets.jl" uri="https://manual.geolog.sgai.uk/acsets-jl/" display-uri="acsets-jl" type="local">ACSets.jl</fr:link></html:li></html:ul>
+                <html:ul><html:li>Paper: <fr:link href="/patterson-2022-categorical/" title="Categorical Data Structures for Technical Computing" uri="https://coln-project.github.io/patterson-2022-categorical/" display-uri="patterson-2022-categorical" type="local">Categorical Data Structures for Technical Computing</fr:link></html:li>
+  <html:li>Implementation: <fr:link href="/acsets-jl/" title="ACSets.jl" uri="https://coln-project.github.io/acsets-jl/" display-uri="acsets-jl" type="local">ACSets.jl</fr:link></html:li></html:ul>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/acsets-jl/</fr:uri>
+                <fr:uri>https://coln-project.github.io/acsets-jl/</fr:uri>
                 <fr:display-uri>acsets-jl</fr:display-uri>
                 <fr:route>/acsets-jl/</fr:route>
                 <fr:title text="ACSets.jl">ACSets.jl</fr:title>
@@ -73,7 +73,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/arithmetic-universes/</fr:uri>
+                <fr:uri>https://coln-project.github.io/arithmetic-universes/</fr:uri>
                 <fr:display-uri>arithmetic-universes</fr:display-uri>
                 <fr:route>/arithmetic-universes/</fr:route>
                 <fr:title text="Arithmetic universes">Arithmetic universes</fr:title>
@@ -87,7 +87,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/automerge/</fr:uri>
+                <fr:uri>https://coln-project.github.io/automerge/</fr:uri>
                 <fr:display-uri>automerge</fr:display-uri>
                 <fr:route>/automerge/</fr:route>
                 <fr:title text="Automerge">Automerge</fr:title>
@@ -99,7 +99,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/conjunctive-queries/</fr:uri>
+                <fr:uri>https://coln-project.github.io/conjunctive-queries/</fr:uri>
                 <fr:display-uri>conjunctive-queries</fr:display-uri>
                 <fr:route>/conjunctive-queries/</fr:route>
                 <fr:title text="Conjunctive queries">Conjunctive queries</fr:title>
@@ -111,20 +111,20 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/dbsp/</fr:uri>
+                <fr:uri>https://coln-project.github.io/dbsp/</fr:uri>
                 <fr:display-uri>dbsp</fr:display-uri>
                 <fr:route>/dbsp/</fr:route>
                 <fr:title text="DBSP">DBSP</fr:title>
                 <fr:taxon>Term</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>DBSP is a language for “describing computations over data streams.” It is defined in <fr:link href="/budiu-2022-dbsp/" title="DBSP: Automatic Incremental View Maintenance for Rich Query Languages" uri="https://manual.geolog.sgai.uk/budiu-2022-dbsp/" display-uri="budiu-2022-dbsp" type="local">DBSP: Automatic Incremental View Maintenance for Rich Query Languages</fr:link>, and currently implemented in <fr:link href="/feldera/" title="Feldera" uri="https://manual.geolog.sgai.uk/feldera/" display-uri="feldera" type="local">Feldera</fr:link>.</html:p>
+                <html:p>DBSP is a language for “describing computations over data streams.” It is defined in <fr:link href="/budiu-2022-dbsp/" title="DBSP: Automatic Incremental View Maintenance for Rich Query Languages" uri="https://coln-project.github.io/budiu-2022-dbsp/" display-uri="budiu-2022-dbsp" type="local">DBSP: Automatic Incremental View Maintenance for Rich Query Languages</fr:link>, and currently implemented in <fr:link href="/feldera/" title="Feldera" uri="https://coln-project.github.io/feldera/" display-uri="feldera" type="local">Feldera</fr:link>.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/datalog/</fr:uri>
+                <fr:uri>https://coln-project.github.io/datalog/</fr:uri>
                 <fr:display-uri>datalog</fr:display-uri>
                 <fr:route>/datalog/</fr:route>
                 <fr:title text="Datalog">Datalog</fr:title>
@@ -136,7 +136,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/derivation/</fr:uri>
+                <fr:uri>https://coln-project.github.io/derivation/</fr:uri>
                 <fr:display-uri>derivation</fr:display-uri>
                 <fr:route>/derivation/</fr:route>
                 <fr:title text="Derivation">Derivation</fr:title>
@@ -145,13 +145,13 @@
               <fr:mainmatter>
                 <html:p>A derivation is a sequence of applications of rules in some type theory, starting from the empty premise and concluding in a judgment.</html:p>
                 <html:p>See <fr:link href="https://en.wikipedia.org/wiki/Rule_of_inference" type="external">Rule of inference</fr:link> on wikipedia for an introduction to this sort of thing. The only difference is that a derivation in type theory typically expresses that there is a term of a certain type rather than just expressing that a proposition is true.</html:p>
-                <html:p>A principled approach to derivations may be found in <fr:link href="/shulman-2016-categorical/" title="Categorical logic from a categorical point of view" uri="https://manual.geolog.sgai.uk/shulman-2016-categorical/" display-uri="shulman-2016-categorical" type="local">Categorical logic from a categorical point of view</fr:link>.</html:p>
+                <html:p>A principled approach to derivations may be found in <fr:link href="/shulman-2016-categorical/" title="Categorical logic from a categorical point of view" uri="https://coln-project.github.io/shulman-2016-categorical/" display-uri="shulman-2016-categorical" type="local">Categorical logic from a categorical point of view</fr:link>.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/egglog/</fr:uri>
+                <fr:uri>https://coln-project.github.io/egglog/</fr:uri>
                 <fr:display-uri>egglog</fr:display-uri>
                 <fr:route>/egglog/</fr:route>
                 <fr:title text="Egglog">Egglog</fr:title>
@@ -163,7 +163,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/eqlog/</fr:uri>
+                <fr:uri>https://coln-project.github.io/eqlog/</fr:uri>
                 <fr:display-uri>eqlog</fr:display-uri>
                 <fr:route>/eqlog/</fr:route>
                 <fr:title text="Eqlog">Eqlog</fr:title>
@@ -175,7 +175,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/feldera/</fr:uri>
+                <fr:uri>https://coln-project.github.io/feldera/</fr:uri>
                 <fr:display-uri>feldera</fr:display-uri>
                 <fr:route>/feldera/</fr:route>
                 <fr:title text="Feldera">Feldera</fr:title>
@@ -187,7 +187,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/forester/</fr:uri>
+                <fr:uri>https://coln-project.github.io/forester/</fr:uri>
                 <fr:display-uri>forester</fr:display-uri>
                 <fr:route>/forester/</fr:route>
                 <fr:title text="Forester">Forester</fr:title>
@@ -199,7 +199,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/hyperbook/</fr:uri>
+                <fr:uri>https://coln-project.github.io/hyperbook/</fr:uri>
                 <fr:display-uri>hyperbook</fr:display-uri>
                 <fr:route>/hyperbook/</fr:route>
                 <fr:title text="Hyperbook">Hyperbook</fr:title>
@@ -211,7 +211,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/julia/</fr:uri>
+                <fr:uri>https://coln-project.github.io/julia/</fr:uri>
                 <fr:display-uri>julia</fr:display-uri>
                 <fr:route>/julia/</fr:route>
                 <fr:title text="Julia">Julia</fr:title>
@@ -224,10 +224,10 @@
               <fr:frontmatter>
                 <fr:authors>
                   <fr:author>
-                    <fr:link href="/robert-atkey/" title="Robert Atkey" uri="https://manual.geolog.sgai.uk/robert-atkey/" display-uri="robert-atkey" type="local">Robert Atkey</fr:link>
+                    <fr:link href="/robert-atkey/" title="Robert Atkey" uri="https://coln-project.github.io/robert-atkey/" display-uri="robert-atkey" type="local">Robert Atkey</fr:link>
                   </fr:author>
                 </fr:authors>
-                <fr:uri>https://manual.geolog.sgai.uk/modulog/</fr:uri>
+                <fr:uri>https://coln-project.github.io/modulog/</fr:uri>
                 <fr:display-uri>modulog</fr:display-uri>
                 <fr:route>/modulog/</fr:route>
                 <fr:title text="Modulog">Modulog</fr:title>
@@ -239,7 +239,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/pie-limit/</fr:uri>
+                <fr:uri>https://coln-project.github.io/pie-limit/</fr:uri>
                 <fr:display-uri>pie-limit</fr:display-uri>
                 <fr:route>/pie-limit/</fr:route>
                 <fr:title text="PIE Limit">PIE Limit</fr:title>
@@ -251,7 +251,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/pterodactyl/</fr:uri>
+                <fr:uri>https://coln-project.github.io/pterodactyl/</fr:uri>
                 <fr:display-uri>pterodactyl</fr:display-uri>
                 <fr:route>/pterodactyl/</fr:route>
                 <fr:title text="Pterodactyl">Pterodactyl</fr:title>
@@ -263,7 +263,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/rhombus/</fr:uri>
+                <fr:uri>https://coln-project.github.io/rhombus/</fr:uri>
                 <fr:display-uri>rhombus</fr:display-uri>
                 <fr:route>/rhombus/</fr:route>
                 <fr:title text="Rhombus">Rhombus</fr:title>
@@ -277,7 +277,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/sql/</fr:uri>
+                <fr:uri>https://coln-project.github.io/sql/</fr:uri>
                 <fr:display-uri>sql</fr:display-uri>
                 <fr:route>/sql/</fr:route>
                 <fr:title text="SQL">SQL</fr:title>
@@ -291,7 +291,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/curry-howard/</fr:uri>
+                <fr:uri>https://coln-project.github.io/curry-howard/</fr:uri>
                 <fr:display-uri>curry-howard</fr:display-uri>
                 <fr:route>/curry-howard/</fr:route>
                 <fr:title text="The Curry-Howard Correspondence">The Curry-Howard Correspondence</fr:title>
@@ -303,7 +303,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/stacks-project/</fr:uri>
+                <fr:uri>https://coln-project.github.io/stacks-project/</fr:uri>
                 <fr:display-uri>stacks-project</fr:display-uri>
                 <fr:route>/stacks-project/</fr:route>
                 <fr:title text="The Stacks Project">The Stacks Project</fr:title>
@@ -315,7 +315,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/type-universe/</fr:uri>
+                <fr:uri>https://coln-project.github.io/type-universe/</fr:uri>
                 <fr:display-uri>type-universe</fr:display-uri>
                 <fr:route>/type-universe/</fr:route>
                 <fr:title text="Type universe">Type universe</fr:title>
@@ -327,7 +327,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/zettelkasten/</fr:uri>
+                <fr:uri>https://coln-project.github.io/zettelkasten/</fr:uri>
                 <fr:display-uri>zettelkasten</fr:display-uri>
                 <fr:route>/zettelkasten/</fr:route>
                 <fr:title text="Zettelkasten">Zettelkasten</fr:title>
@@ -339,7 +339,7 @@
             <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/yuujinchou/</fr:uri>
+                <fr:uri>https://coln-project.github.io/yuujinchou/</fr:uri>
                 <fr:display-uri>yuujinchou</fr:display-uri>
                 <fr:route>/yuujinchou/</fr:route>
                 <fr:title text="yuujinchou">yuujinchou</fr:title>
@@ -353,66 +353,66 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/0008/</fr:uri>
+            <fr:uri>https://coln-project.github.io/0008/</fr:uri>
             <fr:display-uri>0008</fr:display-uri>
             <fr:route>/0008/</fr:route>
-            <fr:title text="About the manual › Meta"><fr:link href="/0002/" title="About the manual" uri="https://manual.geolog.sgai.uk/0002/" display-uri="0002" type="local">About the manual</fr:link> › Meta</fr:title>
+            <fr:title text="About the manual › Meta"><fr:link href="/0002/" title="About the manual" uri="https://coln-project.github.io/0002/" display-uri="0002" type="local">About the manual</fr:link> › Meta</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The geolog manual is written in <fr:link href="/forester/" title="Forester" uri="https://manual.geolog.sgai.uk/forester/" display-uri="forester" type="local">Forester</fr:link>. Forester is a very flexible tool that can be used in many ways. In order for the manual to achieve its goals, it is necessary to put constraints on the use of forester.</html:p>
+            <html:p>The Coln manual is written in <fr:link href="/forester/" title="Forester" uri="https://coln-project.github.io/forester/" display-uri="forester" type="local">Forester</fr:link>. Forester is a very flexible tool that can be used in many ways. In order for the manual to achieve its goals, it is necessary to put constraints on the use of forester.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0009/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0009/</fr:uri>
                 <fr:display-uri>0009</fr:display-uri>
                 <fr:route>/0009/</fr:route>
                 <fr:title text="Address usage">Address usage</fr:title>
                 <fr:taxon>Constraint</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>We use a single address namespace without prefixes, similar to <fr:link href="/stacks-project/" title="The Stacks Project" uri="https://manual.geolog.sgai.uk/stacks-project/" display-uri="stacks-project" type="local">The Stacks Project</fr:link>. This means that creating new pages requires obtaining a “global lock” on the “next address” counter. Currently, Owen is holding this global lock; when more people are working on the manual we will coordinate around address allocation.</html:p>
+                <html:p>We use a single address namespace without prefixes, similar to <fr:link href="/stacks-project/" title="The Stacks Project" uri="https://coln-project.github.io/stacks-project/" display-uri="stacks-project" type="local">The Stacks Project</fr:link>. This means that creating new pages requires obtaining a “global lock” on the “next address” counter. Currently, Owen is holding this global lock; when more people are working on the manual we will coordinate around address allocation.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/000A/</fr:uri>
+                <fr:uri>https://coln-project.github.io/000A/</fr:uri>
                 <fr:display-uri>000A</fr:display-uri>
                 <fr:route>/000A/</fr:route>
                 <fr:title text="Global linear ordering">Global linear ordering</fr:title>
                 <fr:taxon>Constraint</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>The entire manual is meant to be kept in a single global hierarchy rooted at the <fr:link href="/0001/" title="Geolog manual" uri="https://manual.geolog.sgai.uk/0001/" display-uri="0001" type="local">home page</fr:link>.</html:p>
+                <html:p>The entire manual is meant to be kept in a single global hierarchy rooted at the <fr:link href="/0001/" title="Coln manual" uri="https://coln-project.github.io/0001/" display-uri="0001" type="local">home page</fr:link>.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/000F/</fr:uri>
+                <fr:uri>https://coln-project.github.io/000F/</fr:uri>
                 <fr:display-uri>000F</fr:display-uri>
                 <fr:route>/000F/</fr:route>
                 <fr:title text="Glossary and index">Glossary and index</fr:title>
                 <fr:taxon>Constraint</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>The manual contains a combination <fr:link href="/0003/" title="Glossary and index" uri="https://manual.geolog.sgai.uk/0003/" display-uri="0003" type="local">glossary and index</fr:link>, which collects technical terms used throughout the manual.</html:p>
+                <html:p>The manual contains a combination <fr:link href="/0003/" title="Glossary and index" uri="https://coln-project.github.io/0003/" display-uri="0003" type="local">glossary and index</fr:link>, which collects technical terms used throughout the manual.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/000J/</fr:uri>
+                <fr:uri>https://coln-project.github.io/000J/</fr:uri>
                 <fr:display-uri>000J</fr:display-uri>
                 <fr:route>/000J/</fr:route>
                 <fr:title text="Lack of tree metadata">Lack of tree metadata</fr:title>
                 <fr:taxon>Constraint</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>This manual is meant to be a single document with a single voice. Therefore, we do not put author metadata on individual trees, and all trees are considered to have been written by the geolog project. Moreover, we omit dates on non-reference trees; the manual as a whole should be considered as current, and out-of-date trees should be edited or deleted.</html:p>
+                <html:p>This manual is meant to be a single document with a single voice. Therefore, we do not put author metadata on individual trees, and all trees are considered to have been written by the Coln project. Moreover, we omit dates on non-reference trees; the manual as a whole should be considered as current, and out-of-date trees should be edited or deleted.</html:p>
               </fr:mainmatter>
             </fr:tree>
-            <html:p>More generally, the geolog manual should be thought of as more of a <fr:link href="/hyperbook/" title="Hyperbook" uri="https://manual.geolog.sgai.uk/hyperbook/" display-uri="hyperbook" type="local">Hyperbook</fr:link> than a <fr:link href="/zettelkasten/" title="Zettelkasten" uri="https://manual.geolog.sgai.uk/zettelkasten/" display-uri="zettelkasten" type="local">Zettelkasten</fr:link>.</html:p>
+            <html:p>More generally, the Coln manual should be thought of as more of a <fr:link href="/hyperbook/" title="Hyperbook" uri="https://coln-project.github.io/hyperbook/" display-uri="hyperbook" type="local">Hyperbook</fr:link> than a <fr:link href="/zettelkasten/" title="Zettelkasten" uri="https://coln-project.github.io/zettelkasten/" display-uri="zettelkasten" type="local">Zettelkasten</fr:link>.</html:p>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

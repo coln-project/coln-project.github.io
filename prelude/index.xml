@@ -3,13 +3,13 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/prelude/</fr:uri>
+    <fr:uri>https://coln-project.github.io/prelude/</fr:uri>
     <fr:display-uri>prelude</fr:display-uri>
     <fr:route>/prelude/</fr:route>
     <fr:title text="Prelude">Prelude</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
-    <html:p>This file contains the definition of macros used throughout the geolog manual.</html:p>
+    <html:p>This file contains the definition of macros used throughout the Coln manual.</html:p>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree show-metadata="false" hidden-when-empty="true">

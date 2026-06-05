@@ -3,14 +3,14 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/0006/</fr:uri>
+    <fr:uri>https://coln-project.github.io/0006/</fr:uri>
     <fr:display-uri>0006</fr:display-uri>
     <fr:route>/0006/</fr:route>
-    <fr:title text="About the manual › Principles › Conceptual"><fr:link href="/0004/" title="About the manual › Principles" uri="https://manual.geolog.sgai.uk/0004/" display-uri="0004" type="local"><fr:link href="/0002/" title="About the manual" uri="https://manual.geolog.sgai.uk/0002/" display-uri="0002" type="local">About the manual</fr:link> › Principles</fr:link> › Conceptual</fr:title>
+    <fr:title text="About the manual › Principles › Conceptual"><fr:link href="/0004/" title="About the manual › Principles" uri="https://coln-project.github.io/0004/" display-uri="0004" type="local"><fr:link href="/0002/" title="About the manual" uri="https://coln-project.github.io/0002/" display-uri="0002" type="local">About the manual</fr:link> › Principles</fr:link> › Conceptual</fr:title>
     <fr:taxon>Principle</fr:taxon>
   </fr:frontmatter>
   <fr:mainmatter>
-    <html:p>The purpose of the manual is to produce <html:em>understanding</html:em>. The manual is not a specification, but a motivated reader could probably fill in the full details of a specification from the understanding imparted in the manual. Most importantly, a user of geolog who has carefully read the manual should not need to guess at what any particular piece of code means; the conceptual understanding laid out in this manual should be sufficient to give an unambiguous human-comprehensible semantics.</html:p>
+    <html:p>The purpose of the manual is to produce <html:em>understanding</html:em>. The manual is not a specification, but a motivated reader could probably fill in the full details of a specification from the understanding imparted in the manual. Most importantly, a user of Coln who has carefully read the manual should not need to guess at what any particular piece of code means; the conceptual understanding laid out in this manual should be sufficient to give an unambiguous human-comprehensible semantics.</html:p>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree show-metadata="false" hidden-when-empty="true">
@@ -29,55 +29,55 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/0004/</fr:uri>
+            <fr:uri>https://coln-project.github.io/0004/</fr:uri>
             <fr:display-uri>0004</fr:display-uri>
             <fr:route>/0004/</fr:route>
-            <fr:title text="About the manual › Principles"><fr:link href="/0002/" title="About the manual" uri="https://manual.geolog.sgai.uk/0002/" display-uri="0002" type="local">About the manual</fr:link> › Principles</fr:title>
+            <fr:title text="About the manual › Principles"><fr:link href="/0002/" title="About the manual" uri="https://coln-project.github.io/0002/" display-uri="0002" type="local">About the manual</fr:link> › Principles</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The geolog manual is an <html:em>authoratative</html:em>, <html:em>conceptual</html:em>, and <html:em>incomplete</html:em> reference document for engaged users and developers of geolog.</html:p>
+            <html:p>The Coln manual is an <html:em>authoratative</html:em>, <html:em>conceptual</html:em>, and <html:em>incomplete</html:em> reference document for engaged users and developers of Coln.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0005/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0005/</fr:uri>
                 <fr:display-uri>0005</fr:display-uri>
                 <fr:route>/0005/</fr:route>
                 <fr:title text="Authoratative">Authoratative</fr:title>
                 <fr:taxon>Principle</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>When the manual makes a definitive statement about the behavior of geolog, if the code deviates from the manual then the code is considered to have a bug.</html:p>
-                <html:p>There may be points in the manual where as I am writing, I decide that the current behavior of geolog is inadequate. In these places, I will write down what I intend the behavior to be, and mark the sentence with <html:sup class="smallcaps">todo</html:sup> at the end.</html:p>
+                <html:p>When the manual makes a definitive statement about the behavior of Coln, if the code deviates from the manual then the code is considered to have a bug.</html:p>
+                <html:p>There may be points in the manual where as I am writing, I decide that the current behavior of Coln is inadequate. In these places, I will write down what I intend the behavior to be, and mark the sentence with <html:sup class="smallcaps">todo</html:sup> at the end.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0006/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0006/</fr:uri>
                 <fr:display-uri>0006</fr:display-uri>
                 <fr:route>/0006/</fr:route>
                 <fr:title text="Conceptual">Conceptual</fr:title>
                 <fr:taxon>Principle</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>The purpose of the manual is to produce <html:em>understanding</html:em>. The manual is not a specification, but a motivated reader could probably fill in the full details of a specification from the understanding imparted in the manual. Most importantly, a user of geolog who has carefully read the manual should not need to guess at what any particular piece of code means; the conceptual understanding laid out in this manual should be sufficient to give an unambiguous human-comprehensible semantics.</html:p>
+                <html:p>The purpose of the manual is to produce <html:em>understanding</html:em>. The manual is not a specification, but a motivated reader could probably fill in the full details of a specification from the understanding imparted in the manual. Most importantly, a user of Coln who has carefully read the manual should not need to guess at what any particular piece of code means; the conceptual understanding laid out in this manual should be sufficient to give an unambiguous human-comprehensible semantics.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0007/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0007/</fr:uri>
                 <fr:display-uri>0007</fr:display-uri>
                 <fr:route>/0007/</fr:route>
                 <fr:title text="Incomplete">Incomplete</fr:title>
                 <fr:taxon>Principle</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>This manual (like geolog itself) is currently incomplete.</html:p>
+                <html:p>This manual (like Coln itself) is currently incomplete.</html:p>
               </fr:mainmatter>
             </fr:tree>
-            <html:p>The geolog manual is <html:em>not</html:em> a tutorial. The geolog manual is <html:em>not</html:em> a place for original mathematical research. The geolog manual is <html:em>not</html:em> a development log.</html:p>
-            <html:p>Moreover, the geolog manual is <html:em>not</html:em> an advertisement. The intended audience of this manual is a reader with patience and a good amount of time, who is motivated for reasons found elsewhere to learn about geolog. There may be sections where we outline the <html:em>rationale</html:em> for a design decision; these should not be interpreted as claims of the superiority of this design decision, merely as a record of the thought process that went into it.</html:p>
+            <html:p>The Coln manual is <html:em>not</html:em> a tutorial. The Coln manual is <html:em>not</html:em> a place for original mathematical research. The Coln manual is <html:em>not</html:em> a development log.</html:p>
+            <html:p>Moreover, the Coln manual is <html:em>not</html:em> an advertisement. The intended audience of this manual is a reader with patience and a good amount of time, who is motivated for reasons found elsewhere to learn about Coln. There may be sections where we outline the <html:em>rationale</html:em> for a design decision; these should not be interpreted as claims of the superiority of this design decision, merely as a record of the thought process that went into it.</html:p>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/shriram-krishnamurthi/</fr:uri>
+    <fr:uri>https://coln-project.github.io/shriram-krishnamurthi/</fr:uri>
     <fr:display-uri>shriram-krishnamurthi</fr:display-uri>
     <fr:route>/shriram-krishnamurthi/</fr:route>
     <fr:title text="Shriram Krishnamurthi">Shriram Krishnamurthi</fr:title>
@@ -34,18 +34,18 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000R/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000R/</fr:uri>
             <fr:display-uri>000R</fr:display-uri>
             <fr:route>/000R/</fr:route>
             <fr:title text="F-notation">F-notation</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>Geolog follows the philosophy of <fr:link href="/krishnamurthi-2024-bicameral/" title="Bicameral, Not Homoiconic" uri="https://manual.geolog.sgai.uk/krishnamurthi-2024-bicameral/" display-uri="krishnamurthi-2024-bicameral" type="local">Bicameral, Not Homoiconic</fr:link> in using a fairly unstructured “lower house syntax” as the target of parsing (or as <fr:link href="/shriram-krishnamurthi/" title="Shriram Krishnamurthi" uri="https://manual.geolog.sgai.uk/shriram-krishnamurthi/" display-uri="shriram-krishnamurthi" type="local">Krishnamurthi</fr:link> calls it, “reading”). We use the term “notation” as a shorthand for “lower house syntax” in order to reserve the word “syntax” for <fr:link href="/000Q/" title="What is elaboration? › Notation" uri="https://manual.geolog.sgai.uk/000Q/" display-uri="000Q" type="local">trees that compactly refer to derivations</fr:link>. Unlike a traditional LISP, we do not use s-expressions. Our notation is instead inspired by modern LISPs like <fr:link href="/julia/" title="Julia" uri="https://manual.geolog.sgai.uk/julia/" display-uri="julia" type="local">Julia</fr:link> and <fr:link href="/rhombus/" title="Rhombus" uri="https://manual.geolog.sgai.uk/rhombus/" display-uri="rhombus" type="local">Rhombus</fr:link>. We call it “f-notation” for no particular reason.</html:p>
+            <html:p>Coln follows the philosophy of <fr:link href="/krishnamurthi-2024-bicameral/" title="Bicameral, Not Homoiconic" uri="https://coln-project.github.io/krishnamurthi-2024-bicameral/" display-uri="krishnamurthi-2024-bicameral" type="local">Bicameral, Not Homoiconic</fr:link> in using a fairly unstructured “lower house syntax” as the target of parsing (or as <fr:link href="/shriram-krishnamurthi/" title="Shriram Krishnamurthi" uri="https://coln-project.github.io/shriram-krishnamurthi/" display-uri="shriram-krishnamurthi" type="local">Krishnamurthi</fr:link> calls it, “reading”). We use the term “notation” as a shorthand for “lower house syntax” in order to reserve the word “syntax” for <fr:link href="/000Q/" title="What is elaboration? › Notation" uri="https://coln-project.github.io/000Q/" display-uri="000Q" type="local">trees that compactly refer to derivations</fr:link>. Unlike a traditional LISP, we do not use s-expressions. Our notation is instead inspired by modern LISPs like <fr:link href="/julia/" title="Julia" uri="https://coln-project.github.io/julia/" display-uri="julia" type="local">Julia</fr:link> and <fr:link href="/rhombus/" title="Rhombus" uri="https://coln-project.github.io/rhombus/" display-uri="rhombus" type="local">Rhombus</fr:link>. We call it “f-notation” for no particular reason.</html:p>
             <html:p>In this section, we describe f-notation.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/000W/</fr:uri>
+                <fr:uri>https://coln-project.github.io/000W/</fr:uri>
                 <fr:display-uri>000W</fr:display-uri>
                 <fr:route>/000W/</fr:route>
                 <fr:title text="Tokens">Tokens</fr:title>
@@ -55,14 +55,14 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0014/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0014/</fr:uri>
                     <fr:display-uri>0014</fr:display-uri>
                     <fr:route>/0014/</fr:route>
                     <fr:title text="Names">Names</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:p>A name is built up out of a sequence of <html:em>name segments</html:em> separated by slashes with no intervening spaces. Each name segment is comprised either of alphanumerical letters or of symbols. Hyphens may appear in symbolic name segments or alphanumerical name segments. Only the last name segment in a name may be symbolic. Examples: <html:code>Monoid/is-commutative</html:code>, <html:code>List/::</html:code>.</html:p>
-                    <html:p>The slashes are eventually intended to be used for namespacing in the style of <fr:link href="/yuujinchou/" title="yuujinchou" uri="https://manual.geolog.sgai.uk/yuujinchou/" display-uri="yuujinchou" type="local">yuujinchou</fr:link>; this is currently not supported however.</html:p>
+                    <html:p>The slashes are eventually intended to be used for namespacing in the style of <fr:link href="/yuujinchou/" title="yuujinchou" uri="https://coln-project.github.io/yuujinchou/" display-uri="yuujinchou" type="local">yuujinchou</fr:link>; this is currently not supported however.</html:p>
                     <html:p>The f-notation configuration assigns special token kinds to specific name segments.</html:p>
                     <html:table>
                       <html:thead>
@@ -79,7 +79,7 @@
 <html:tr><html:td><html:code>End</html:code></html:td> <html:td>Used to end a block</html:td></html:tr>
 </html:tbody>
                     </html:table>
-                    <html:p>In geolog, the special name segments and their corresponding kinds are as follows.</html:p>
+                    <html:p>In Coln, the special name segments and their corresponding kinds are as follows.</html:p>
                     <html:table>
                       <html:thead>
 <html:tr><html:th>Name</html:th> <html:th>Kind</html:th></html:tr>
@@ -108,7 +108,7 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0015/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0015/</fr:uri>
                     <fr:display-uri>0015</fr:display-uri>
                     <fr:route>/0015/</fr:route>
                     <fr:title text="Fields and tags">Fields and tags</fr:title>
@@ -116,13 +116,13 @@
                   <fr:mainmatter>
                     <html:p>Putting <html:code>.</html:code> in front of a name turns it into a <html:strong>field</html:strong>, and putting <html:code>'</html:code> in front of a name turns it into a <html:strong>tag</html:strong>.</html:p>
                     <html:p>Fields are intended for use in accessing a record. For instance <html:code>a .b</html:code> gets the <html:code>b</html:code> field from the record; <html:code>a.b</html:code> is also valid and parses the same.</html:p>
-                    <html:p>Tags are intended for use in creating elements of a sum type. For instance <html:code>'just 1</html:code> could be an element of the sum type <html:code>Maybe Int</html:code>. Currently geolog does not have either sum types or tags, however.</html:p>
+                    <html:p>Tags are intended for use in creating elements of a sum type. For instance <html:code>'just 1</html:code> could be an element of the sum type <html:code>Maybe Int</html:code>. Currently Coln does not have either sum types or tags, however.</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0016/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0016/</fr:uri>
                     <fr:display-uri>0016</fr:display-uri>
                     <fr:route>/0016/</fr:route>
                     <fr:title text="Literals">Literals</fr:title>
@@ -134,7 +134,7 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0017/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0017/</fr:uri>
                     <fr:display-uri>0017</fr:display-uri>
                     <fr:route>/0017/</fr:route>
                     <fr:title text="Punctuation">Punctuation</fr:title>
@@ -146,7 +146,7 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0018/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0018/</fr:uri>
                     <fr:display-uri>0018</fr:display-uri>
                     <fr:route>/0018/</fr:route>
                     <fr:title text="Error">Error</fr:title>
@@ -158,7 +158,7 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0019/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0019/</fr:uri>
                     <fr:display-uri>0019</fr:display-uri>
                     <fr:route>/0019/</fr:route>
                     <fr:title text="Whitespace">Whitespace</fr:title>
@@ -173,7 +173,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/000Y/</fr:uri>
+                <fr:uri>https://coln-project.github.io/000Y/</fr:uri>
                 <fr:display-uri>000Y</fr:display-uri>
                 <fr:route>/000Y/</fr:route>
                 <fr:title text="Trees">Trees</fr:title>
@@ -183,47 +183,47 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0013/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0013/</fr:uri>
                     <fr:display-uri>0013</fr:display-uri>
                     <fr:route>/0013/</fr:route>
                     <fr:title text="Statements and expressions">Statements and expressions</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
                     <html:p>Most things in f-notation are <html:em>expressions</html:em>, including:</html:p>
-                    <html:ul><html:li><fr:link href="/000Z/" title="Trees › Single-token trees" uri="https://manual.geolog.sgai.uk/000Z/" display-uri="000Z" type="local"><fr:link href="/000Y/" title="Trees" uri="https://manual.geolog.sgai.uk/000Y/" display-uri="000Y" type="local">Trees</fr:link> › Single-token trees</fr:link></html:li>
-    <html:li><fr:link href="/0010/" title="Trees › Tuples" uri="https://manual.geolog.sgai.uk/0010/" display-uri="0010" type="local"><fr:link href="/000Y/" title="Trees" uri="https://manual.geolog.sgai.uk/000Y/" display-uri="000Y" type="local">Trees</fr:link> › Tuples</fr:link></html:li>
-    <html:li><fr:link href="/0011/" title="Trees › Juxtaposition and infix application" uri="https://manual.geolog.sgai.uk/0011/" display-uri="0011" type="local"><fr:link href="/000Y/" title="Trees" uri="https://manual.geolog.sgai.uk/000Y/" display-uri="000Y" type="local">Trees</fr:link> › Juxtaposition and infix application</fr:link></html:li></html:ul>
-                    <html:p>The exception is <fr:link href="/0012/" title="Trees › Declarations and blocks" uri="https://manual.geolog.sgai.uk/0012/" display-uri="0012" type="local">declarations</fr:link> which may only appear in <fr:link href="/0012/" title="Trees › Declarations and blocks" uri="https://manual.geolog.sgai.uk/0012/" display-uri="0012" type="local">blocks</fr:link>; a block contains <html:em>statements</html:em> which are either declarations or expressions. However, a block is an expression.</html:p>
+                    <html:ul><html:li><fr:link href="/000Z/" title="Trees › Single-token trees" uri="https://coln-project.github.io/000Z/" display-uri="000Z" type="local"><fr:link href="/000Y/" title="Trees" uri="https://coln-project.github.io/000Y/" display-uri="000Y" type="local">Trees</fr:link> › Single-token trees</fr:link></html:li>
+    <html:li><fr:link href="/0010/" title="Trees › Tuples" uri="https://coln-project.github.io/0010/" display-uri="0010" type="local"><fr:link href="/000Y/" title="Trees" uri="https://coln-project.github.io/000Y/" display-uri="000Y" type="local">Trees</fr:link> › Tuples</fr:link></html:li>
+    <html:li><fr:link href="/0011/" title="Trees › Juxtaposition and infix application" uri="https://coln-project.github.io/0011/" display-uri="0011" type="local"><fr:link href="/000Y/" title="Trees" uri="https://coln-project.github.io/000Y/" display-uri="000Y" type="local">Trees</fr:link> › Juxtaposition and infix application</fr:link></html:li></html:ul>
+                    <html:p>The exception is <fr:link href="/0012/" title="Trees › Declarations and blocks" uri="https://coln-project.github.io/0012/" display-uri="0012" type="local">declarations</fr:link> which may only appear in <fr:link href="/0012/" title="Trees › Declarations and blocks" uri="https://coln-project.github.io/0012/" display-uri="0012" type="local">blocks</fr:link>; a block contains <html:em>statements</html:em> which are either declarations or expressions. However, a block is an expression.</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/000Z/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/000Z/</fr:uri>
                     <fr:display-uri>000Z</fr:display-uri>
                     <fr:route>/000Z/</fr:route>
                     <fr:title text="Single-token trees">Single-token trees</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p><fr:link href="/0014/" title="Names" uri="https://manual.geolog.sgai.uk/0014/" display-uri="0014" type="local">Identifiers</fr:link>, <fr:link href="/0014/" title="Names" uri="https://manual.geolog.sgai.uk/0014/" display-uri="0014" type="local">keywords</fr:link>, <fr:link href="/0016/" title="Literals" uri="https://manual.geolog.sgai.uk/0016/" display-uri="0016" type="local">literals</fr:link>, <fr:link href="/0015/" title="Fields and tags" uri="https://manual.geolog.sgai.uk/0015/" display-uri="0015" type="local">tags</fr:link>, and <fr:link href="/0015/" title="Fields and tags" uri="https://manual.geolog.sgai.uk/0015/" display-uri="0015" type="local">fields</fr:link> are all expressions.</html:p>
+                    <html:p><fr:link href="/0014/" title="Names" uri="https://coln-project.github.io/0014/" display-uri="0014" type="local">Identifiers</fr:link>, <fr:link href="/0014/" title="Names" uri="https://coln-project.github.io/0014/" display-uri="0014" type="local">keywords</fr:link>, <fr:link href="/0016/" title="Literals" uri="https://coln-project.github.io/0016/" display-uri="0016" type="local">literals</fr:link>, <fr:link href="/0015/" title="Fields and tags" uri="https://coln-project.github.io/0015/" display-uri="0015" type="local">tags</fr:link>, and <fr:link href="/0015/" title="Fields and tags" uri="https://coln-project.github.io/0015/" display-uri="0015" type="local">fields</fr:link> are all expressions.</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0010/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0010/</fr:uri>
                     <fr:display-uri>0010</fr:display-uri>
                     <fr:route>/0010/</fr:route>
                     <fr:title text="Tuples">Tuples</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>A <html:strong>tuple</html:strong> consists of an opening bracket followed by comma-separated <fr:link href="/0013/" title="Trees › Statements and expressions" uri="https://manual.geolog.sgai.uk/0013/" display-uri="0013" type="local">expressions</fr:link>, followed by a closing bracket. For example: <html:code>[a,b,c]</html:code>.</html:p>
+                    <html:p>A <html:strong>tuple</html:strong> consists of an opening bracket followed by comma-separated <fr:link href="/0013/" title="Trees › Statements and expressions" uri="https://coln-project.github.io/0013/" display-uri="0013" type="local">expressions</fr:link>, followed by a closing bracket. For example: <html:code>[a,b,c]</html:code>.</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0011/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0011/</fr:uri>
                     <fr:display-uri>0011</fr:display-uri>
                     <fr:route>/0011/</fr:route>
                     <fr:title text="Juxtaposition and infix application">Juxtaposition and infix application</fr:title>
@@ -232,7 +232,7 @@
                     <html:p><html:strong>Juxtaposition</html:strong> is two expressions next to each other, like <html:code>f x</html:code>. As <html:code>a.b</html:code> lexes as two tokens, <html:code>a</html:code> and <html:code>.b</html:code>, this is also a juxtaposition.</html:p>
                     <html:p><html:strong>Infix application</html:strong> is two expressions with a symbolic identifier or keyword between them, like <html:code>a : Int</html:code>.</html:p>
                     <html:p>Juxtaposition binds tighter than infix application and left associates. Thus, <html:code>f x y</html:code> is <html:code>(f x) y</html:code> and <html:code>f x + y</html:code> is <html:code>(f x) + y</html:code>. The binding strength and associativity of infix application is determined by a custom precedence table.</html:p>
-                    <html:p>The precedence table for geolog is as follows.</html:p>
+                    <html:p>The precedence table for Coln is as follows.</html:p>
                     <html:table>
                       <html:thead>
   <html:tr><html:th>Symbol</html:th> <html:th>Tightness</html:th> <html:th>Associativity</html:th></html:tr>
@@ -254,22 +254,22 @@
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors />
-                    <fr:uri>https://manual.geolog.sgai.uk/0012/</fr:uri>
+                    <fr:uri>https://coln-project.github.io/0012/</fr:uri>
                     <fr:display-uri>0012</fr:display-uri>
                     <fr:route>/0012/</fr:route>
                     <fr:title text="Declarations and blocks">Declarations and blocks</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>A <html:strong>declaration</html:strong> consists of a <fr:link href="/0014/" title="Names" uri="https://manual.geolog.sgai.uk/0014/" display-uri="0014" type="local">declaration token</fr:link> followed by an expression. For example</html:p>
+                    <html:p>A <html:strong>declaration</html:strong> consists of a <fr:link href="/0014/" title="Names" uri="https://coln-project.github.io/0014/" display-uri="0014" type="local">declaration token</fr:link> followed by an expression. For example</html:p>
                     <html:pre><html:strong>def</html:strong> x : Int := 5</html:pre>
                     <html:p>is a declaration, which could be parenthesized as</html:p>
                     <html:pre><html:strong>def</html:strong> ((x : Int) := 5)</html:pre>
                     <html:p>A declaration may be <html:em>modified</html:em> as well by modification tokens, as in</html:p>
                     <html:pre><html:strong>pub</html:strong> <html:strong>def</html:strong> x : Int := 5</html:pre>
                     <html:p>These modifiers form part of the overall declaration.</html:p>
-                    <html:p>A <html:strong>block</html:strong> consists of a <fr:link href="/0014/" title="Names" uri="https://manual.geolog.sgai.uk/0014/" display-uri="0014" type="local">block token</fr:link> followed by either</html:p>
-                    <html:ul><html:li>A newline, and then a sequence of newline-separated <fr:link href="/0013/" title="Trees › Statements and expressions" uri="https://manual.geolog.sgai.uk/0013/" display-uri="0013" type="local">statements</fr:link>, closed by an end token.</html:li>
-    <html:li>An opening curly brace, and then a sequence of semicolon-separated <fr:link href="/0013/" title="Trees › Statements and expressions" uri="https://manual.geolog.sgai.uk/0013/" display-uri="0013" type="local">statements</fr:link>, closed by a closing curly brace.<html:sup class="smallcaps">todo</html:sup></html:li></html:ul>
+                    <html:p>A <html:strong>block</html:strong> consists of a <fr:link href="/0014/" title="Names" uri="https://coln-project.github.io/0014/" display-uri="0014" type="local">block token</fr:link> followed by either</html:p>
+                    <html:ul><html:li>A newline, and then a sequence of newline-separated <fr:link href="/0013/" title="Trees › Statements and expressions" uri="https://coln-project.github.io/0013/" display-uri="0013" type="local">statements</fr:link>, closed by an end token.</html:li>
+    <html:li>An opening curly brace, and then a sequence of semicolon-separated <fr:link href="/0013/" title="Trees › Statements and expressions" uri="https://coln-project.github.io/0013/" display-uri="0013" type="local">statements</fr:link>, closed by a closing curly brace.<html:sup class="smallcaps">todo</html:sup></html:li></html:ul>
                     <html:p>An example of the first variant is</html:p>
                     <html:pre><html:strong>sig</html:strong>
   x : Int
@@ -305,13 +305,13 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/shriram-krishnamurthi/" title="Shriram Krishnamurthi" uri="https://manual.geolog.sgai.uk/shriram-krishnamurthi/" display-uri="shriram-krishnamurthi" type="local">Shriram Krishnamurthi</fr:link>
+                <fr:link href="/shriram-krishnamurthi/" title="Shriram Krishnamurthi" uri="https://coln-project.github.io/shriram-krishnamurthi/" display-uri="shriram-krishnamurthi" type="local">Shriram Krishnamurthi</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2024</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/krishnamurthi-2024-bicameral/</fr:uri>
+            <fr:uri>https://coln-project.github.io/krishnamurthi-2024-bicameral/</fr:uri>
             <fr:display-uri>krishnamurthi-2024-bicameral</fr:display-uri>
             <fr:route>/krishnamurthi-2024-bicameral/</fr:route>
             <fr:title text="Bicameral, Not Homoiconic">Bicameral, Not Homoiconic</fr:title>

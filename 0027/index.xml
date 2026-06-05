@@ -8,7 +8,7 @@
       <fr:month>5</fr:month>
       <fr:day>23</fr:day>
     </fr:date>
-    <fr:uri>https://manual.geolog.sgai.uk/0027/</fr:uri>
+    <fr:uri>https://coln-project.github.io/0027/</fr:uri>
     <fr:display-uri>0027</fr:display-uri>
     <fr:route>/0027/</fr:route>
   </fr:frontmatter>
@@ -30,30 +30,30 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/0021/</fr:uri>
+            <fr:uri>https://coln-project.github.io/0021/</fr:uri>
             <fr:display-uri>0021</fr:display-uri>
             <fr:route>/0021/</fr:route>
             <fr:title text="Tables">Tables</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>Models of geolog theories are stored as collections of <html:em>tables</html:em>. For the reader experienced with traditional relational databases, tables should be fairly familiar, but we will go through them explicitly in order to establish our own conventions.</html:p>
+            <html:p>Models of Coln theories are stored as collections of <html:em>tables</html:em>. For the reader experienced with traditional relational databases, tables should be fairly familiar, but we will go through them explicitly in order to establish our own conventions.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0022/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0022/</fr:uri>
                 <fr:display-uri>0022</fr:display-uri>
                 <fr:route>/0022/</fr:route>
                 <fr:title text="Table">Table</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>A <html:strong>table</html:strong> consists of a set of <fr:link href="/0023/" title="Row ID" uri="https://manual.geolog.sgai.uk/0023/" display-uri="0023" type="local">row IDs</fr:link> and a collection of <fr:link href="/0024/" title="Column" uri="https://manual.geolog.sgai.uk/0024/" display-uri="0024" type="local">columns</fr:link>. A table may come along with <fr:link href="/0025/" title="Constraint" uri="https://manual.geolog.sgai.uk/0025/" display-uri="0025" type="local">constraints</fr:link>, and in particular <fr:link href="/0026/" title="Primary key constraint" uri="https://manual.geolog.sgai.uk/0026/" display-uri="0026" type="local">primary key constraints</fr:link></html:p>
+                <html:p>A <html:strong>table</html:strong> consists of a set of <fr:link href="/0023/" title="Row ID" uri="https://coln-project.github.io/0023/" display-uri="0023" type="local">row IDs</fr:link> and a collection of <fr:link href="/0024/" title="Column" uri="https://coln-project.github.io/0024/" display-uri="0024" type="local">columns</fr:link>. A table may come along with <fr:link href="/0025/" title="Constraint" uri="https://coln-project.github.io/0025/" display-uri="0025" type="local">constraints</fr:link>, and in particular <fr:link href="/0026/" title="Primary key constraint" uri="https://coln-project.github.io/0026/" display-uri="0026" type="local">primary key constraints</fr:link></html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0023/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0023/</fr:uri>
                 <fr:display-uri>0023</fr:display-uri>
                 <fr:route>/0023/</fr:route>
                 <fr:title text="Row ID">Row ID</fr:title>
@@ -67,7 +67,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0024/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0024/</fr:uri>
                 <fr:display-uri>0024</fr:display-uri>
                 <fr:route>/0024/</fr:route>
                 <fr:title text="Column">Column</fr:title>
@@ -81,7 +81,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0026/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0026/</fr:uri>
                 <fr:display-uri>0026</fr:display-uri>
                 <fr:route>/0026/</fr:route>
                 <fr:title text="Primary key constraint">Primary key constraint</fr:title>
@@ -97,14 +97,14 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0025/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0025/</fr:uri>
                 <fr:display-uri>0025</fr:display-uri>
                 <fr:route>/0025/</fr:route>
                 <fr:title text="Constraint">Constraint</fr:title>
                 <fr:taxon>Definition</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>Tables also have associated <html:strong>constraints</html:strong>. We discuss these in greater detail once we talk about how geolog theories are lowered to a collection of tables; essentially the constraints are what enforces the type dependencies between the different arguments to a function.</html:p>
+                <html:p>Tables also have associated <html:strong>constraints</html:strong>. We discuss these in greater detail once we talk about how Coln theories are lowered to a collection of tables; essentially the constraints are what enforces the type dependencies between the different arguments to a function.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
@@ -115,7 +115,7 @@
                   <fr:month>5</fr:month>
                   <fr:day>23</fr:day>
                 </fr:date>
-                <fr:uri>https://manual.geolog.sgai.uk/0027/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0027/</fr:uri>
                 <fr:display-uri>0027</fr:display-uri>
                 <fr:route>/0027/</fr:route>
               </fr:frontmatter>

@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/owen-lynch/</fr:uri>
+    <fr:uri>https://coln-project.github.io/owen-lynch/</fr:uri>
     <fr:display-uri>owen-lynch</fr:display-uri>
     <fr:route>/owen-lynch/</fr:route>
     <fr:title text="Owen Lynch">Owen Lynch</fr:title>
@@ -49,19 +49,19 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/evan-patterson/" title="Evan Patterson" uri="https://manual.geolog.sgai.uk/evan-patterson/" display-uri="evan-patterson" type="local">Evan Patterson</fr:link>
+                <fr:link href="/evan-patterson/" title="Evan Patterson" uri="https://coln-project.github.io/evan-patterson/" display-uri="evan-patterson" type="local">Evan Patterson</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/owen-lynch/" title="Owen Lynch" uri="https://manual.geolog.sgai.uk/owen-lynch/" display-uri="owen-lynch" type="local">Owen Lynch</fr:link>
+                <fr:link href="/owen-lynch/" title="Owen Lynch" uri="https://coln-project.github.io/owen-lynch/" display-uri="owen-lynch" type="local">Owen Lynch</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/james-fairbanks/" title="James Fairbanks" uri="https://manual.geolog.sgai.uk/james-fairbanks/" display-uri="james-fairbanks" type="local">James Fairbanks</fr:link>
+                <fr:link href="/james-fairbanks/" title="James Fairbanks" uri="https://coln-project.github.io/james-fairbanks/" display-uri="james-fairbanks" type="local">James Fairbanks</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2022</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/patterson-2022-categorical/</fr:uri>
+            <fr:uri>https://coln-project.github.io/patterson-2022-categorical/</fr:uri>
             <fr:display-uri>patterson-2022-categorical</fr:display-uri>
             <fr:route>/patterson-2022-categorical/</fr:route>
             <fr:title text="Categorical Data Structures for Technical Computing">Categorical Data Structures for Technical Computing</fr:title>

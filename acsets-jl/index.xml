@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/acsets-jl/</fr:uri>
+    <fr:uri>https://coln-project.github.io/acsets-jl/</fr:uri>
     <fr:display-uri>acsets-jl</fr:display-uri>
     <fr:route>/acsets-jl/</fr:route>
     <fr:title text="ACSets.jl">ACSets.jl</fr:title>
@@ -35,7 +35,7 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/acset/</fr:uri>
+            <fr:uri>https://coln-project.github.io/acset/</fr:uri>
             <fr:display-uri>acset</fr:display-uri>
             <fr:route>/acset/</fr:route>
             <fr:title text="ACSet">ACSet</fr:title>
@@ -43,8 +43,8 @@
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>ACSet stands for “attributed C-set” and is pronounced with the Hungarian “cs” which is the English “ch.”</html:p>
-            <html:ul><html:li>Paper: <fr:link href="/patterson-2022-categorical/" title="Categorical Data Structures for Technical Computing" uri="https://manual.geolog.sgai.uk/patterson-2022-categorical/" display-uri="patterson-2022-categorical" type="local">Categorical Data Structures for Technical Computing</fr:link></html:li>
-  <html:li>Implementation: <fr:link href="/acsets-jl/" title="ACSets.jl" uri="https://manual.geolog.sgai.uk/acsets-jl/" display-uri="acsets-jl" type="local">ACSets.jl</fr:link></html:li></html:ul>
+            <html:ul><html:li>Paper: <fr:link href="/patterson-2022-categorical/" title="Categorical Data Structures for Technical Computing" uri="https://coln-project.github.io/patterson-2022-categorical/" display-uri="patterson-2022-categorical" type="local">Categorical Data Structures for Technical Computing</fr:link></html:li>
+  <html:li>Implementation: <fr:link href="/acsets-jl/" title="ACSets.jl" uri="https://coln-project.github.io/acsets-jl/" display-uri="acsets-jl" type="local">ACSets.jl</fr:link></html:li></html:ul>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

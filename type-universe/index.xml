@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/type-universe/</fr:uri>
+    <fr:uri>https://coln-project.github.io/type-universe/</fr:uri>
     <fr:display-uri>type-universe</fr:display-uri>
     <fr:route>/type-universe/</fr:route>
     <fr:title text="Type universe">Type universe</fr:title>
@@ -35,7 +35,7 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000N/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000N/</fr:uri>
             <fr:display-uri>000N</fr:display-uri>
             <fr:route>/000N/</fr:route>
             <fr:title text="Introduction">Introduction</fr:title>
@@ -48,7 +48,7 @@
                 <fr:taxon>Example</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p><fr:link href="/sql/" title="SQL" uri="https://manual.geolog.sgai.uk/sql/" display-uri="sql" type="local">SQL</fr:link> has an exceedingly large grammar. For instance, a single SELECT statement has many possible clauses, each with their own syntax (see the <fr:link href="https://www.postgresql.org/docs/current/queries.html" type="external">postgresql manual</fr:link>).</html:p>
+                <html:p><fr:link href="/sql/" title="SQL" uri="https://coln-project.github.io/sql/" display-uri="sql" type="local">SQL</fr:link> has an exceedingly large grammar. For instance, a single SELECT statement has many possible clauses, each with their own syntax (see the <fr:link href="https://www.postgresql.org/docs/current/queries.html" type="external">postgresql manual</fr:link>).</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
@@ -60,17 +60,17 @@
                 <html:p>Many languages have a different syntax for type parameters to a function than regular parameters. For instance, in Rust one uses <html:code>Vec&lt;i32&gt;</html:code> for applying the <html:code>Vec : Type -&gt; Type</html:code> function to <html:code>i32</html:code> while normal function application looks like <html:code>plus(1, 2)</html:code>, in OCaml one uses <html:code>int list</html:code> while normal function application looks like <html:code>plus 1 2</html:code>.</html:p>
               </fr:mainmatter>
             </fr:tree>
-            <html:p>Geolog differs from this, perhaps to an extreme degree, by only having essentially one syntactic class: the syntactic class of an element of a type. Even types themselves are in this syntactic class, because types are elements of <fr:link href="/type-universe/" title="Type universe" uri="https://manual.geolog.sgai.uk/type-universe/" display-uri="type-universe" type="local">type universes</fr:link>. What is achieved via syntactic differentiation in other languages is achieved instead by semantic restrictions in geolog.</html:p>
+            <html:p>Coln differs from this, perhaps to an extreme degree, by only having essentially one syntactic class: the syntactic class of an element of a type. Even types themselves are in this syntactic class, because types are elements of <fr:link href="/type-universe/" title="Type universe" uri="https://coln-project.github.io/type-universe/" display-uri="type-universe" type="local">type universes</fr:link>. What is achieved via syntactic differentiation in other languages is achieved instead by semantic restrictions in Coln.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
                 <fr:taxon>Example</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>In geolog there are set-level types, theory-level types, and top-level types. These all use the same syntax; operations which only work on set-level types will produce an error during <fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">elaboration</fr:link>. See <fr:link href="/000S/" title="Basic types" uri="https://manual.geolog.sgai.uk/000S/" display-uri="000S" type="local">Basic types</fr:link> for more information about this topic.</html:p>
+                <html:p>In Coln there are set-level types, theory-level types, and top-level types. These all use the same syntax; operations which only work on set-level types will produce an error during <fr:link href="/000O/" title="What is elaboration?" uri="https://coln-project.github.io/000O/" display-uri="000O" type="local">elaboration</fr:link>. See <fr:link href="/000S/" title="Basic types" uri="https://coln-project.github.io/000S/" display-uri="000S" type="local">Basic types</fr:link> for more information about this topic.</html:p>
               </fr:mainmatter>
             </fr:tree>
-            <html:p>One downside of this approach is that the grammar of geolog is not a very meaningful way of getting a feel for the language; the grammar is almost trivial. What is important is understanding the <fr:link href="/000S/" title="Basic types" uri="https://manual.geolog.sgai.uk/000S/" display-uri="000S" type="local">semantics</fr:link> of geolog and the process of <fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">elaboration</fr:link>.</html:p>
+            <html:p>One downside of this approach is that the grammar of Coln is not a very meaningful way of getting a feel for the language; the grammar is almost trivial. What is important is understanding the <fr:link href="/000S/" title="Basic types" uri="https://coln-project.github.io/000S/" display-uri="000S" type="local">semantics</fr:link> of Coln and the process of <fr:link href="/000O/" title="What is elaboration?" uri="https://coln-project.github.io/000O/" display-uri="000O" type="local">elaboration</fr:link>.</html:p>
           </fr:mainmatter>
         </fr:tree>
       </fr:mainmatter>

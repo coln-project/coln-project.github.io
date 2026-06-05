@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/thorsten-altenkirch/</fr:uri>
+    <fr:uri>https://coln-project.github.io/thorsten-altenkirch/</fr:uri>
     <fr:display-uri>thorsten-altenkirch</fr:display-uri>
     <fr:route>/thorsten-altenkirch/</fr:route>
     <fr:title text="Thorsten Altenkirch">Thorsten Altenkirch</fr:title>
@@ -49,25 +49,25 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/thorsten-altenkirch/" title="Thorsten Altenkirch" uri="https://manual.geolog.sgai.uk/thorsten-altenkirch/" display-uri="thorsten-altenkirch" type="local">Thorsten Altenkirch</fr:link>
+                <fr:link href="/thorsten-altenkirch/" title="Thorsten Altenkirch" uri="https://coln-project.github.io/thorsten-altenkirch/" display-uri="thorsten-altenkirch" type="local">Thorsten Altenkirch</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/paolo-capriotti/" title="Paolo Capriotti" uri="https://manual.geolog.sgai.uk/paolo-capriotti/" display-uri="paolo-capriotti" type="local">Paolo Capriotti</fr:link>
+                <fr:link href="/paolo-capriotti/" title="Paolo Capriotti" uri="https://coln-project.github.io/paolo-capriotti/" display-uri="paolo-capriotti" type="local">Paolo Capriotti</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/gabe-dijkstra/" title="Gabe Dijkstra" uri="https://manual.geolog.sgai.uk/gabe-dijkstra/" display-uri="gabe-dijkstra" type="local">Gabe Dijkstra</fr:link>
+                <fr:link href="/gabe-dijkstra/" title="Gabe Dijkstra" uri="https://coln-project.github.io/gabe-dijkstra/" display-uri="gabe-dijkstra" type="local">Gabe Dijkstra</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/nicolai-kraus/" title="Nicolai Kraus" uri="https://manual.geolog.sgai.uk/nicolai-kraus/" display-uri="nicolai-kraus" type="local">Nicolai Kraus</fr:link>
+                <fr:link href="/nicolai-kraus/" title="Nicolai Kraus" uri="https://coln-project.github.io/nicolai-kraus/" display-uri="nicolai-kraus" type="local">Nicolai Kraus</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/fredrik-nordval-forsberg/" title="Fredrik Nordval Forsberg" uri="https://manual.geolog.sgai.uk/fredrik-nordval-forsberg/" display-uri="fredrik-nordval-forsberg" type="local">Fredrik Nordval Forsberg</fr:link>
+                <fr:link href="/fredrik-nordval-forsberg/" title="Fredrik Nordval Forsberg" uri="https://coln-project.github.io/fredrik-nordval-forsberg/" display-uri="fredrik-nordval-forsberg" type="local">Fredrik Nordval Forsberg</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2018</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/altenkirch-2018-quotient/</fr:uri>
+            <fr:uri>https://coln-project.github.io/altenkirch-2018-quotient/</fr:uri>
             <fr:display-uri>altenkirch-2018-quotient</fr:display-uri>
             <fr:route>/altenkirch-2018-quotient/</fr:route>
             <fr:title text="Quotient inductive-inductive types">Quotient inductive-inductive types</fr:title>

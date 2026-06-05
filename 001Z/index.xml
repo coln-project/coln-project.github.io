@@ -3,13 +3,13 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/001Z/</fr:uri>
+    <fr:uri>https://coln-project.github.io/001Z/</fr:uri>
     <fr:display-uri>001Z</fr:display-uri>
     <fr:route>/001Z/</fr:route>
     <fr:title text="Lowering for jealousy-triangle">Lowering for jealousy-triangle</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
-    <html:p>Recall from <fr:link href="/001H/" title="Record types as sets" uri="https://manual.geolog.sgai.uk/001H/" display-uri="001H" type="local">Record types as sets</fr:link> the query <html:code>jealousy-triangle</html:code> defined by</html:p>
+    <html:p>Recall from <fr:link href="/001H/" title="Record types as sets" uri="https://coln-project.github.io/001H/" display-uri="001H" type="local">Record types as sets</fr:link> the query <html:code>jealousy-triangle</html:code> defined by</html:p>
     <html:pre><html:strong>def</html:strong> jealousy-triangle (m : Drama) : Set := <html:strong>tuple</html:strong>
   a b c : m.person
   m.jealous-of a b
@@ -35,23 +35,23 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/001Y/</fr:uri>
+            <fr:uri>https://coln-project.github.io/001Y/</fr:uri>
             <fr:display-uri>001Y</fr:display-uri>
             <fr:route>/001Y/</fr:route>
             <fr:title text="Lowering sets to types-with-predicates">Lowering sets to types-with-predicates</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The next step after <fr:link href="/001T/" title="Distributing records over functions" uri="https://manual.geolog.sgai.uk/001T/" display-uri="001T" type="local">Distributing records over functions</fr:link> is to transform a set into pairs of a <html:em>base type</html:em> and <html:em>validity predicate</html:em>.</html:p>
+            <html:p>The next step after <fr:link href="/001T/" title="Distributing records over functions" uri="https://coln-project.github.io/001T/" display-uri="001T" type="local">Distributing records over functions</fr:link> is to transform a set into pairs of a <html:em>base type</html:em> and <html:em>validity predicate</html:em>.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001Z/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001Z/</fr:uri>
                 <fr:display-uri>001Z</fr:display-uri>
                 <fr:route>/001Z/</fr:route>
                 <fr:title text="Lowering for jealousy-triangle">Lowering for jealousy-triangle</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>Recall from <fr:link href="/001H/" title="Record types as sets" uri="https://manual.geolog.sgai.uk/001H/" display-uri="001H" type="local">Record types as sets</fr:link> the query <html:code>jealousy-triangle</html:code> defined by</html:p>
+                <html:p>Recall from <fr:link href="/001H/" title="Record types as sets" uri="https://coln-project.github.io/001H/" display-uri="001H" type="local">Record types as sets</fr:link> the query <html:code>jealousy-triangle</html:code> defined by</html:p>
                 <html:pre><html:strong>def</html:strong> jealousy-triangle (m : Drama) : Set := <html:strong>tuple</html:strong>
   a b c : m.person
   m.jealous-of a b
@@ -81,13 +81,13 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/001H/</fr:uri>
+            <fr:uri>https://coln-project.github.io/001H/</fr:uri>
             <fr:display-uri>001H</fr:display-uri>
             <fr:route>/001H/</fr:route>
             <fr:title text="Record types as sets">Record types as sets</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>Just like we have record types as the theory-level, we also have record types at the set-level. We can use this to define a set in the context of a model of a given theory; this is how to “natively query” an instance of a geolog theory.<html:sup class="smallcaps">todo</html:sup></html:p>
+            <html:p>Just like we have record types as the theory-level, we also have record types at the set-level. We can use this to define a set in the context of a model of a given theory; this is how to “natively query” an instance of a Coln theory.<html:sup class="smallcaps">todo</html:sup></html:p>
             <html:pre><html:strong>def</html:strong> jealousy-triangle (m : Drama) : Set := <html:strong>tuple</html:strong>
   a : m.person
   b : m.person
@@ -97,7 +97,7 @@
   c-a : m.jealous-of c a
 <html:strong>end</html:strong></html:pre>
             <html:p>In TypeScript, <html:code>jealousy-triangle</html:code> is compiled to a function that takes in a model of <html:code>Drama</html:code> and returns a <html:code>ReadonlySet</html:code>.<html:sup class="smallcaps">todo</html:sup> The elements <html:code>v</html:code> of this <html:code>ReadonlySet</html:code> are <html:code>Value</html:code>s with the <html:code>"tuple"</html:code> tag, which have fields <html:code>a</html:code>,<html:code>b</html:code>,<html:code>c</html:code> that are elements of <html:code>m.person</html:code>, such that <html:code>m.jealous-of(v.value.a)(v.value.b).isTrue()</html:code>, and so on. The value <html:code>v</html:code> will also have <html:code>v.value.a_b</html:code>, but it will just be <html:code>null</html:code>, thought of as the unique element of the singleton set.</html:p>
-            <html:p>Iterating through the elements of <html:code>jealousy_triangle(m)</html:code> will be faster than the naive approach of a triply-nested for-loop over <html:code>m.person</html:code> and then filtering out using <html:code>m.jealous-of</html:code>, because geolog can <html:em>plan</html:em> the query and take advantage of fast join algorithms on the <html:code>m.jealous-of</html:code> table.<html:sup class="smallcaps">todo</html:sup></html:p>
+            <html:p>Iterating through the elements of <html:code>jealousy_triangle(m)</html:code> will be faster than the naive approach of a triply-nested for-loop over <html:code>m.person</html:code> and then filtering out using <html:code>m.jealous-of</html:code>, because Coln can <html:em>plan</html:em> the query and take advantage of fast join algorithms on the <html:code>m.jealous-of</html:code> table.<html:sup class="smallcaps">todo</html:sup></html:p>
             <html:p>This query can be written more compactly in the following way.<html:sup class="smallcaps">todo</html:sup></html:p>
             <html:pre><html:strong>def</html:strong> jealousy-triangle (m : Drama) : Set := <html:strong>tuple</html:strong>
   a b c : m.person

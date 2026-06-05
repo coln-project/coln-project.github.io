@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/0019/</fr:uri>
+    <fr:uri>https://coln-project.github.io/0019/</fr:uri>
     <fr:display-uri>0019</fr:display-uri>
     <fr:route>/0019/</fr:route>
     <fr:title text="Whitespace">Whitespace</fr:title>
@@ -29,7 +29,7 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000W/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000W/</fr:uri>
             <fr:display-uri>000W</fr:display-uri>
             <fr:route>/000W/</fr:route>
             <fr:title text="Tokens">Tokens</fr:title>
@@ -39,14 +39,14 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0014/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0014/</fr:uri>
                 <fr:display-uri>0014</fr:display-uri>
                 <fr:route>/0014/</fr:route>
                 <fr:title text="Names">Names</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>A name is built up out of a sequence of <html:em>name segments</html:em> separated by slashes with no intervening spaces. Each name segment is comprised either of alphanumerical letters or of symbols. Hyphens may appear in symbolic name segments or alphanumerical name segments. Only the last name segment in a name may be symbolic. Examples: <html:code>Monoid/is-commutative</html:code>, <html:code>List/::</html:code>.</html:p>
-                <html:p>The slashes are eventually intended to be used for namespacing in the style of <fr:link href="/yuujinchou/" title="yuujinchou" uri="https://manual.geolog.sgai.uk/yuujinchou/" display-uri="yuujinchou" type="local">yuujinchou</fr:link>; this is currently not supported however.</html:p>
+                <html:p>The slashes are eventually intended to be used for namespacing in the style of <fr:link href="/yuujinchou/" title="yuujinchou" uri="https://coln-project.github.io/yuujinchou/" display-uri="yuujinchou" type="local">yuujinchou</fr:link>; this is currently not supported however.</html:p>
                 <html:p>The f-notation configuration assigns special token kinds to specific name segments.</html:p>
                 <html:table>
                   <html:thead>
@@ -63,7 +63,7 @@
 <html:tr><html:td><html:code>End</html:code></html:td> <html:td>Used to end a block</html:td></html:tr>
 </html:tbody>
                 </html:table>
-                <html:p>In geolog, the special name segments and their corresponding kinds are as follows.</html:p>
+                <html:p>In Coln, the special name segments and their corresponding kinds are as follows.</html:p>
                 <html:table>
                   <html:thead>
 <html:tr><html:th>Name</html:th> <html:th>Kind</html:th></html:tr>
@@ -92,7 +92,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0015/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0015/</fr:uri>
                 <fr:display-uri>0015</fr:display-uri>
                 <fr:route>/0015/</fr:route>
                 <fr:title text="Fields and tags">Fields and tags</fr:title>
@@ -100,13 +100,13 @@
               <fr:mainmatter>
                 <html:p>Putting <html:code>.</html:code> in front of a name turns it into a <html:strong>field</html:strong>, and putting <html:code>'</html:code> in front of a name turns it into a <html:strong>tag</html:strong>.</html:p>
                 <html:p>Fields are intended for use in accessing a record. For instance <html:code>a .b</html:code> gets the <html:code>b</html:code> field from the record; <html:code>a.b</html:code> is also valid and parses the same.</html:p>
-                <html:p>Tags are intended for use in creating elements of a sum type. For instance <html:code>'just 1</html:code> could be an element of the sum type <html:code>Maybe Int</html:code>. Currently geolog does not have either sum types or tags, however.</html:p>
+                <html:p>Tags are intended for use in creating elements of a sum type. For instance <html:code>'just 1</html:code> could be an element of the sum type <html:code>Maybe Int</html:code>. Currently Coln does not have either sum types or tags, however.</html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0016/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0016/</fr:uri>
                 <fr:display-uri>0016</fr:display-uri>
                 <fr:route>/0016/</fr:route>
                 <fr:title text="Literals">Literals</fr:title>
@@ -118,7 +118,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0017/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0017/</fr:uri>
                 <fr:display-uri>0017</fr:display-uri>
                 <fr:route>/0017/</fr:route>
                 <fr:title text="Punctuation">Punctuation</fr:title>
@@ -130,7 +130,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0018/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0018/</fr:uri>
                 <fr:display-uri>0018</fr:display-uri>
                 <fr:route>/0018/</fr:route>
                 <fr:title text="Error">Error</fr:title>
@@ -142,7 +142,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/0019/</fr:uri>
+                <fr:uri>https://coln-project.github.io/0019/</fr:uri>
                 <fr:display-uri>0019</fr:display-uri>
                 <fr:route>/0019/</fr:route>
                 <fr:title text="Whitespace">Whitespace</fr:title>

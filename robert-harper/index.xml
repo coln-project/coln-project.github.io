@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/robert-harper/</fr:uri>
+    <fr:uri>https://coln-project.github.io/robert-harper/</fr:uri>
     <fr:display-uri>robert-harper</fr:display-uri>
     <fr:route>/robert-harper/</fr:route>
     <fr:title text="Robert Harper">Robert Harper</fr:title>
@@ -49,16 +49,16 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/jon-sterling/" title="Jon Sterling" uri="https://manual.geolog.sgai.uk/jon-sterling/" display-uri="jon-sterling" type="local">Jon Sterling</fr:link>
+                <fr:link href="/jon-sterling/" title="Jon Sterling" uri="https://coln-project.github.io/jon-sterling/" display-uri="jon-sterling" type="local">Jon Sterling</fr:link>
               </fr:author>
               <fr:author>
-                <fr:link href="/robert-harper/" title="Robert Harper" uri="https://manual.geolog.sgai.uk/robert-harper/" display-uri="robert-harper" type="local">Robert Harper</fr:link>
+                <fr:link href="/robert-harper/" title="Robert Harper" uri="https://coln-project.github.io/robert-harper/" display-uri="robert-harper" type="local">Robert Harper</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2021</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/sterling-2021-logical/</fr:uri>
+            <fr:uri>https://coln-project.github.io/sterling-2021-logical/</fr:uri>
             <fr:display-uri>sterling-2021-logical</fr:display-uri>
             <fr:route>/sterling-2021-logical/</fr:route>
             <fr:title text="Logical Relations as Types: Proof-Relevant Parametricity for Program Modules">Logical Relations as Types: Proof-Relevant Parametricity for Program Modules</fr:title>

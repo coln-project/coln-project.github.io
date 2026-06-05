@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/yuujinchou/</fr:uri>
+    <fr:uri>https://coln-project.github.io/yuujinchou/</fr:uri>
     <fr:display-uri>yuujinchou</fr:display-uri>
     <fr:route>/yuujinchou/</fr:route>
     <fr:title text="yuujinchou">yuujinchou</fr:title>
@@ -35,14 +35,14 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/0014/</fr:uri>
+            <fr:uri>https://coln-project.github.io/0014/</fr:uri>
             <fr:display-uri>0014</fr:display-uri>
             <fr:route>/0014/</fr:route>
             <fr:title text="Names">Names</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>A name is built up out of a sequence of <html:em>name segments</html:em> separated by slashes with no intervening spaces. Each name segment is comprised either of alphanumerical letters or of symbols. Hyphens may appear in symbolic name segments or alphanumerical name segments. Only the last name segment in a name may be symbolic. Examples: <html:code>Monoid/is-commutative</html:code>, <html:code>List/::</html:code>.</html:p>
-            <html:p>The slashes are eventually intended to be used for namespacing in the style of <fr:link href="/yuujinchou/" title="yuujinchou" uri="https://manual.geolog.sgai.uk/yuujinchou/" display-uri="yuujinchou" type="local">yuujinchou</fr:link>; this is currently not supported however.</html:p>
+            <html:p>The slashes are eventually intended to be used for namespacing in the style of <fr:link href="/yuujinchou/" title="yuujinchou" uri="https://coln-project.github.io/yuujinchou/" display-uri="yuujinchou" type="local">yuujinchou</fr:link>; this is currently not supported however.</html:p>
             <html:p>The f-notation configuration assigns special token kinds to specific name segments.</html:p>
             <html:table>
               <html:thead>
@@ -59,7 +59,7 @@
 <html:tr><html:td><html:code>End</html:code></html:td> <html:td>Used to end a block</html:td></html:tr>
 </html:tbody>
             </html:table>
-            <html:p>In geolog, the special name segments and their corresponding kinds are as follows.</html:p>
+            <html:p>In Coln, the special name segments and their corresponding kinds are as follows.</html:p>
             <html:table>
               <html:thead>
 <html:tr><html:th>Name</html:th> <html:th>Kind</html:th></html:tr>

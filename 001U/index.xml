@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/001U/</fr:uri>
+    <fr:uri>https://coln-project.github.io/001U/</fr:uri>
     <fr:display-uri>001U</fr:display-uri>
     <fr:route>/001U/</fr:route>
     <fr:title text="\Sigma \Pi  normal form"><fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -29,17 +29,17 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/001T/</fr:uri>
+            <fr:uri>https://coln-project.github.io/001T/</fr:uri>
             <fr:display-uri>001T</fr:display-uri>
             <fr:route>/001T/</fr:route>
             <fr:title text="Distributing records over functions">Distributing records over functions</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>The key idea in translating a geolog theory into a usable database schema is that we can <html:em>distribute records over functions</html:em>. To understand this idea, first consider geolog theories of a special form.</html:p>
+            <html:p>The key idea in translating a Coln theory into a usable database schema is that we can <html:em>distribute records over functions</html:em>. To understand this idea, first consider Coln theories of a special form.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001U/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001U/</fr:uri>
                 <fr:display-uri>001U</fr:display-uri>
                 <fr:route>/001U/</fr:route>
                 <fr:title text="\Sigma \Pi  normal form"><fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -52,7 +52,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001V/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001V/</fr:uri>
                 <fr:display-uri>001V</fr:display-uri>
                 <fr:route>/001V/</fr:route>
                 <fr:title text="Graph is in \Sigma \Pi  normal form.">Graph is in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</fr:title>
@@ -68,7 +68,7 @@
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001W/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001W/</fr:uri>
                 <fr:display-uri>001W</fr:display-uri>
                 <fr:route>/001W/</fr:route>
                 <fr:title text="Bag of graphs is not in \Sigma \Pi  normal form">Bag of graphs is not in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -86,11 +86,11 @@
             <html:ul><html:li>If <html:code>B</html:code> is a set, then we can represent this as a table with columns <html:code>A1,...,AN,B</html:code> and a primary key constraint on <html:code>A1,...,AN</html:code>.</html:li>
   <html:li>If <html:code>B</html:code> is <html:code>Set</html:code>, then this is a table with columns <html:code>A1,...,AN</html:code> and no primary key constraint.</html:li>
   <html:li>If <html:code>B</html:code> is <html:code>Prop</html:code>, then this is a table with columns <html:code>A1,...,AN</html:code> and a primary key constraint on <html:code>A1,...,AN</html:code>.</html:li></html:ul>
-            <html:p>Thus, the first job to do when translating a geolog theory into a database schema is to put the geolog theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</html:p>
+            <html:p>Thus, the first job to do when translating a Coln theory into a database schema is to put the Coln theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors />
-                <fr:uri>https://manual.geolog.sgai.uk/001X/</fr:uri>
+                <fr:uri>https://coln-project.github.io/001X/</fr:uri>
                 <fr:display-uri>001X</fr:display-uri>
                 <fr:route>/001X/</fr:route>
                 <fr:title text="Bag of graphs in \Sigma \Pi  normal form">Bag of graphs in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
@@ -121,7 +121,7 @@
               </fr:mainmatter>
             </fr:tree>
             <html:p>In this way, although when writing down <html:code>BagOfGraphs</html:code> it appears as if we would store a separate graph database for each graph id, in fact all of the graphs are stored in the same pair of tables. In particular, allocating a new graph id does not imply allocating a whole new graph structure.</html:p>
-            <html:p>There is a fairly straightforward algorithm to take a general theory to a theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form, producing the <html:code>from-normal</html:code> and <html:code>to-normal</html:code> migrations simultaneously, but describing it here would involve a conceptual framework around the <fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">elaborator</fr:link> which would take a while to get off the ground. Thus, we ask the reader to take as given that we have access to such an algorithm, and we continue on assuming that we are working with theories in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form.</html:p>
+            <html:p>There is a fairly straightforward algorithm to take a general theory to a theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form, producing the <html:code>from-normal</html:code> and <html:code>to-normal</html:code> migrations simultaneously, but describing it here would involve a conceptual framework around the <fr:link href="/000O/" title="What is elaboration?" uri="https://coln-project.github.io/000O/" display-uri="000O" type="local">elaborator</fr:link> which would take a while to get off the ground. Thus, we ask the reader to take as given that we have access to such an algorithm, and we continue on assuming that we are working with theories in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form.</html:p>
             <html:p>One way of thinking about this algorithm is that it is a generalized version of the array-of-structs to struct-of-arrays transformation in, for instance, <fr:link href="https://ziglang.org/documentation/master/std/#std.MultiArrayList" type="external">Zig's MultiArrayList</fr:link>.</html:p>
           </fr:mainmatter>
         </fr:tree>

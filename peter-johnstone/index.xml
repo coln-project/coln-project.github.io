@@ -3,7 +3,7 @@
 <fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
   <fr:frontmatter>
     <fr:authors />
-    <fr:uri>https://manual.geolog.sgai.uk/peter-johnstone/</fr:uri>
+    <fr:uri>https://coln-project.github.io/peter-johnstone/</fr:uri>
     <fr:display-uri>peter-johnstone</fr:display-uri>
     <fr:route>/peter-johnstone/</fr:route>
     <fr:title text="P. T. Johnstone">P. T. Johnstone</fr:title>
@@ -49,13 +49,13 @@
           <fr:frontmatter>
             <fr:authors>
               <fr:author>
-                <fr:link href="/peter-johnstone/" title="P. T. Johnstone" uri="https://manual.geolog.sgai.uk/peter-johnstone/" display-uri="peter-johnstone" type="local">P. T. Johnstone</fr:link>
+                <fr:link href="/peter-johnstone/" title="P. T. Johnstone" uri="https://coln-project.github.io/peter-johnstone/" display-uri="peter-johnstone" type="local">P. T. Johnstone</fr:link>
               </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2002</fr:year>
             </fr:date>
-            <fr:uri>https://manual.geolog.sgai.uk/johnstone-2002-sketches/</fr:uri>
+            <fr:uri>https://coln-project.github.io/johnstone-2002-sketches/</fr:uri>
             <fr:display-uri>johnstone-2002-sketches</fr:display-uri>
             <fr:route>/johnstone-2002-sketches/</fr:route>
             <fr:title text="Sketches of an elephant: a topos theory compendium">Sketches of an elephant: a topos theory compendium</fr:title>

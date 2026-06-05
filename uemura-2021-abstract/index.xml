@@ -4,13 +4,13 @@
   <fr:frontmatter>
     <fr:authors>
       <fr:author>
-        <fr:link href="/taichi-uemura/" title="Taichi Uemura" uri="https://manual.geolog.sgai.uk/taichi-uemura/" display-uri="taichi-uemura" type="local">Taichi Uemura</fr:link>
+        <fr:link href="/taichi-uemura/" title="Taichi Uemura" uri="https://coln-project.github.io/taichi-uemura/" display-uri="taichi-uemura" type="local">Taichi Uemura</fr:link>
       </fr:author>
     </fr:authors>
     <fr:date>
       <fr:year>2021</fr:year>
     </fr:date>
-    <fr:uri>https://manual.geolog.sgai.uk/uemura-2021-abstract/</fr:uri>
+    <fr:uri>https://coln-project.github.io/uemura-2021-abstract/</fr:uri>
     <fr:display-uri>uemura-2021-abstract</fr:display-uri>
     <fr:route>/uemura-2021-abstract/</fr:route>
     <fr:title text="Abstract and Concrete Type Theories">Abstract and Concrete Type Theories</fr:title>
@@ -42,7 +42,7 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors />
-            <fr:uri>https://manual.geolog.sgai.uk/000C/</fr:uri>
+            <fr:uri>https://coln-project.github.io/000C/</fr:uri>
             <fr:display-uri>000C</fr:display-uri>
             <fr:route>/000C/</fr:route>
             <fr:title text="The categorical logician">The categorical logician</fr:title>
@@ -50,11 +50,11 @@
           </fr:frontmatter>
           <fr:mainmatter>
             <html:p>The <html:strong>categorical logician</html:strong> is a reader who is comfortable with modern approaches to the categorical semantics of type theory, such as:</html:p>
-            <html:ul><html:li><fr:link href="/shulman-2016-categorical/" title="Categorical logic from a categorical point of view" uri="https://manual.geolog.sgai.uk/shulman-2016-categorical/" display-uri="shulman-2016-categorical" type="local">Categorical logic from a categorical point of view</fr:link></html:li>
+            <html:ul><html:li><fr:link href="/shulman-2016-categorical/" title="Categorical logic from a categorical point of view" uri="https://coln-project.github.io/shulman-2016-categorical/" display-uri="shulman-2016-categorical" type="local">Categorical logic from a categorical point of view</fr:link></html:li>
   <html:li><fr:link href="/kovacs-2022-typetheoretic/" title="Type-Theoretic Signatures for Algebraic
-Theories and Inductive Types" uri="https://manual.geolog.sgai.uk/kovacs-2022-typetheoretic/" display-uri="kovacs-2022-typetheoretic" type="local">Type-Theoretic Signatures for Algebraic
+Theories and Inductive Types" uri="https://coln-project.github.io/kovacs-2022-typetheoretic/" display-uri="kovacs-2022-typetheoretic" type="local">Type-Theoretic Signatures for Algebraic
 Theories and Inductive Types</fr:link></html:li>
-  <html:li><fr:link href="/uemura-2021-abstract/" title="Abstract and Concrete Type Theories" uri="https://manual.geolog.sgai.uk/uemura-2021-abstract/" display-uri="uemura-2021-abstract" type="local">Abstract and Concrete Type Theories</fr:link></html:li></html:ul>
+  <html:li><fr:link href="/uemura-2021-abstract/" title="Abstract and Concrete Type Theories" uri="https://coln-project.github.io/uemura-2021-abstract/" display-uri="uemura-2021-abstract" type="local">Abstract and Concrete Type Theories</fr:link></html:li></html:ul>
             <html:p>The categorical logician also has a reasonable grasp of topos theory and 2-category theory.</html:p>
           </fr:mainmatter>
         </fr:tree>
