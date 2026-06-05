@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/0029/</fr:uri>
+    <fr:display-uri>0029</fr:display-uri>
+    <fr:route>/0029/</fr:route>
+    <fr:title text="The universal property of product">The universal property of product</fr:title>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>In set theory, if <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are sets then to produce an element of <fr:tex display="inline"><![CDATA[A \times  B]]></fr:tex> it suffices to produce an element of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and an element of <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and vice-versa.</html:p>
+    <html:p>In propositional logic, if <fr:tex display="inline"><![CDATA[P]]></fr:tex> and <fr:tex display="inline"><![CDATA[Q]]></fr:tex> are propositions then to produce a proof of <fr:tex display="inline"><![CDATA[P \wedge  Q]]></fr:tex> it suffices to produce a proof of <fr:tex display="inline"><![CDATA[P]]></fr:tex> and a proof of <fr:tex display="inline"><![CDATA[Q]]></fr:tex>, and vice-versa.</html:p>
+    <html:p>In a programming language with tuple types, if <html:code>a</html:code> and <html:code>b</html:code> are types then to produce an element of <html:code>(a,b)</html:code> it suffices to produce an element of <html:code>a</html:code> and an element of <html:code>b</html:code>, and vice-versa.</html:p>
+    <html:p>In number theory, in order to show that <fr:tex display="inline"><![CDATA[k]]></fr:tex> is a divisor of the GCD (greatest common divisor) of <fr:tex display="inline"><![CDATA[m]]></fr:tex> and <fr:tex display="inline"><![CDATA[n]]></fr:tex>, it suffices show that <fr:tex display="inline"><![CDATA[k]]></fr:tex> is a divisor of <fr:tex display="inline"><![CDATA[m]]></fr:tex> and <fr:tex display="inline"><![CDATA[n]]></fr:tex>, and vice versa.</html:p>
+    <html:p>Again in set theory, if <fr:tex display="inline"><![CDATA[U]]></fr:tex> and <fr:tex display="inline"><![CDATA[V]]></fr:tex> are subsets of a larger set <fr:tex display="inline"><![CDATA[X]]></fr:tex>, then to show that <fr:tex display="inline"><![CDATA[x]]></fr:tex> is an element of <fr:tex display="inline"><![CDATA[U \cap  V]]></fr:tex> it suffices to show that <fr:tex display="inline"><![CDATA[x]]></fr:tex> is an element of <fr:tex display="inline"><![CDATA[U]]></fr:tex> and an element of <fr:tex display="inline"><![CDATA[V]]></fr:tex>, and vice-versa.</html:p>
+    <html:p>In group theory, in order to produce a homomorphism from <fr:tex display="inline"><![CDATA[G]]></fr:tex> to the product group <fr:tex display="inline"><![CDATA[H_0 \times  H_1]]></fr:tex>, it suffices to produce a homomorphism from <fr:tex display="inline"><![CDATA[G]]></fr:tex> to <fr:tex display="inline"><![CDATA[H_0]]></fr:tex> and from <fr:tex display="inline"><![CDATA[G]]></fr:tex> to <fr:tex display="inline"><![CDATA[H_1]]></fr:tex>, and vice-versa.</html:p>
+    <html:p>This list could consider ad nauseum, but the reader should get the point by now; there's a pattern going on.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/0028/</fr:uri>
+            <fr:display-uri>0028</fr:display-uri>
+            <fr:route>/0028/</fr:route>
+            <fr:title text="Type theory as a language for anything">Type theory as a language for anything</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>(This is meant for <fr:link href="/000D/" title="The type theorist" uri="https://manual.geolog.sgai.uk/000D/" display-uri="000D" type="local">The type theorist</fr:link>, <fr:link href="/000E/" title="The database engineer" uri="https://manual.geolog.sgai.uk/000E/" display-uri="000E" type="local">The database engineer</fr:link>, <fr:link href="/000H/" title="The developer" uri="https://manual.geolog.sgai.uk/000H/" display-uri="000H" type="local">The developer</fr:link>, <fr:link href="/000G/" title="The programmer-user" uri="https://manual.geolog.sgai.uk/000G/" display-uri="000G" type="local">The programmer-user</fr:link>)</html:p>
+            <html:p>A programmer with a passing familiarity with type theory may have formed some preconceptions about what a type is, and what it means to give an element of that type. For instance, in a language like Haskell or Rust, types are how we put structure on pieces of computer memory, so that we remember that the value at a certain address is a pointer or integer or floating point number. In a proof assistant, types are used as a foundation for mathematics; types play the role of the “sets” that informal mathematicians use.</html:p>
+            <html:p>The truth is that types do not have any intrinsic meaning. Rather, type theory is a convenient tool for working with any collection of things which relate to each other in certain precise, well-structured ways.</html:p>
+            <html:p>In particular, type theory is a tool for working with things defined by <html:em>universal properties</html:em>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0029/</fr:uri>
+                <fr:display-uri>0029</fr:display-uri>
+                <fr:route>/0029/</fr:route>
+                <fr:title text="The universal property of product">The universal property of product</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>In set theory, if <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are sets then to produce an element of <fr:tex display="inline"><![CDATA[A \times  B]]></fr:tex> it suffices to produce an element of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and an element of <fr:tex display="inline"><![CDATA[B]]></fr:tex>, and vice-versa.</html:p>
+                <html:p>In propositional logic, if <fr:tex display="inline"><![CDATA[P]]></fr:tex> and <fr:tex display="inline"><![CDATA[Q]]></fr:tex> are propositions then to produce a proof of <fr:tex display="inline"><![CDATA[P \wedge  Q]]></fr:tex> it suffices to produce a proof of <fr:tex display="inline"><![CDATA[P]]></fr:tex> and a proof of <fr:tex display="inline"><![CDATA[Q]]></fr:tex>, and vice-versa.</html:p>
+                <html:p>In a programming language with tuple types, if <html:code>a</html:code> and <html:code>b</html:code> are types then to produce an element of <html:code>(a,b)</html:code> it suffices to produce an element of <html:code>a</html:code> and an element of <html:code>b</html:code>, and vice-versa.</html:p>
+                <html:p>In number theory, in order to show that <fr:tex display="inline"><![CDATA[k]]></fr:tex> is a divisor of the GCD (greatest common divisor) of <fr:tex display="inline"><![CDATA[m]]></fr:tex> and <fr:tex display="inline"><![CDATA[n]]></fr:tex>, it suffices show that <fr:tex display="inline"><![CDATA[k]]></fr:tex> is a divisor of <fr:tex display="inline"><![CDATA[m]]></fr:tex> and <fr:tex display="inline"><![CDATA[n]]></fr:tex>, and vice versa.</html:p>
+                <html:p>Again in set theory, if <fr:tex display="inline"><![CDATA[U]]></fr:tex> and <fr:tex display="inline"><![CDATA[V]]></fr:tex> are subsets of a larger set <fr:tex display="inline"><![CDATA[X]]></fr:tex>, then to show that <fr:tex display="inline"><![CDATA[x]]></fr:tex> is an element of <fr:tex display="inline"><![CDATA[U \cap  V]]></fr:tex> it suffices to show that <fr:tex display="inline"><![CDATA[x]]></fr:tex> is an element of <fr:tex display="inline"><![CDATA[U]]></fr:tex> and an element of <fr:tex display="inline"><![CDATA[V]]></fr:tex>, and vice-versa.</html:p>
+                <html:p>In group theory, in order to produce a homomorphism from <fr:tex display="inline"><![CDATA[G]]></fr:tex> to the product group <fr:tex display="inline"><![CDATA[H_0 \times  H_1]]></fr:tex>, it suffices to produce a homomorphism from <fr:tex display="inline"><![CDATA[G]]></fr:tex> to <fr:tex display="inline"><![CDATA[H_0]]></fr:tex> and from <fr:tex display="inline"><![CDATA[G]]></fr:tex> to <fr:tex display="inline"><![CDATA[H_1]]></fr:tex>, and vice-versa.</html:p>
+                <html:p>This list could consider ad nauseum, but the reader should get the point by now; there's a pattern going on.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>The concept of a universal property is formalized in different ways, often using category theory, but we need not bother with formalization at this stage.</html:p>
+            <html:p>The reader may have heard of “<fr:link href="/curry-howard/" title="The Curry-Howard Correspondence" uri="https://manual.geolog.sgai.uk/curry-howard/" display-uri="curry-howard" type="local">the Curry-Howard correspondence</fr:link>”, often informally referred to “propositions as types”. The Curry-Howard correspondence shows how various type formers and logical connectives correspond. With all due respect to Curry-Howard the name “correspondence” is somewhat of a misnomer because it assumes a false equivalence between the two things that are claimed to be in correspondence. In particular, propositional logic is a <html:em>mathematical domain</html:em> in which type theory may be applied to form a convenient syntax; it is by no means the only domain.</html:p>
+            <html:p>The reason type theory may be usefully applied to propositional logic because all of the connectives of propositional logic (and, or, not, forall, exists, etc.) satisfy universal properties; this is the same as the reason why type theory may be applied to any other area.</html:p>
+            <html:p>The way that type theory may be applied to a particular area is via the development of <html:em>a particular</html:em> type theory. Confusion between type theory as a subject and the concept of <html:em>a type theory</html:em> as a mathematical object is an unfortunate side effect of the nomenclature, because “ breaks with the convention that in group theory, we study groups, in field theory we study fields, or in category theory we study categories.</html:p>
+            <html:p>A particular type theory is merely a syntactic formalization of some collection of universal properties, consisting of a collection of <html:em>rules</html:em> by which we judge that a certain piece of syntax is <html:em>well-typed</html:em>. The beauty of universal properties is that each universal property is quite self-contained, so a type theory may be designed by systematically observing which universal properties the objects of interest support, and then adding the standard type-theoretic rules for those universal properties to one's type theory.</html:p>
+            <html:p>And this is the method that we have followed in order to design the type theory for geolog: observe the universal properties that our domain of interest (relational databases) satisfy, and add rules corresponding to these universal properties. Fortunately, the result of this systematic development seems to produce a language which expresses many of the important database operations.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/001V/</fr:uri>
+    <fr:display-uri>001V</fr:display-uri>
+    <fr:route>/001V/</fr:route>
+    <fr:title text="Graph is in \Sigma \Pi  normal form.">Graph is in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</fr:title>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:pre><html:strong>theory</html:strong> Graph := <html:strong>sig</html:strong>
+  vertex : Set
+  edge : vertex -&gt; vertex -&gt; Set
+<html:strong>end</html:strong></html:pre>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/001T/</fr:uri>
+            <fr:display-uri>001T</fr:display-uri>
+            <fr:route>/001T/</fr:route>
+            <fr:title text="Distributing records over functions">Distributing records over functions</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>The key idea in translating a geolog theory into a usable database schema is that we can <html:em>distribute records over functions</html:em>. To understand this idea, first consider geolog theories of a special form.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001U/</fr:uri>
+                <fr:display-uri>001U</fr:display-uri>
+                <fr:route>/001U/</fr:route>
+                <fr:title text="\Sigma \Pi  normal form"><fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A theory is in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form if a record type never appears in the codomain of a function type.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001V/</fr:uri>
+                <fr:display-uri>001V</fr:display-uri>
+                <fr:route>/001V/</fr:route>
+                <fr:title text="Graph is in \Sigma \Pi  normal form.">Graph is in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:pre><html:strong>theory</html:strong> Graph := <html:strong>sig</html:strong>
+  vertex : Set
+  edge : vertex -&gt; vertex -&gt; Set
+<html:strong>end</html:strong></html:pre>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001W/</fr:uri>
+                <fr:display-uri>001W</fr:display-uri>
+                <fr:route>/001W/</fr:route>
+                <fr:title text="Bag of graphs is not in \Sigma \Pi  normal form">Bag of graphs is not in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:pre><html:strong>theory</html:strong> BagOfGraphs := <html:strong>sig</html:strong>
+  graph-id : Set
+  graph-for : graph-id -&gt; Graph
+<html:strong>end</html:strong></html:pre>
+                <html:p>Because <html:code>Graph</html:code> is a record type and it appears in the codomain of <html:code>graph-for</html:code>, <html:code>BagOfGraphs</html:code> is not in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>If a theory is in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form, it is fairly straightforward to represent it as a collection of tables. Specifically, ignoring the type dependency for now, each function type is of the form <html:code>A1 -&gt; A2 -&gt; ... -&gt; AN -&gt; B</html:code>, where <html:code>A1,...,AN</html:code> are all sets, and <html:code>B</html:code> is either a set, <html:code>Set</html:code>, or <html:code>Prop</html:code>. Then</html:p>
+            <html:ul><html:li>If <html:code>B</html:code> is a set, then we can represent this as a table with columns <html:code>A1,...,AN,B</html:code> and a primary key constraint on <html:code>A1,...,AN</html:code>.</html:li>
+  <html:li>If <html:code>B</html:code> is <html:code>Set</html:code>, then this is a table with columns <html:code>A1,...,AN</html:code> and no primary key constraint.</html:li>
+  <html:li>If <html:code>B</html:code> is <html:code>Prop</html:code>, then this is a table with columns <html:code>A1,...,AN</html:code> and a primary key constraint on <html:code>A1,...,AN</html:code>.</html:li></html:ul>
+            <html:p>Thus, the first job to do when translating a geolog theory into a database schema is to put the geolog theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001X/</fr:uri>
+                <fr:display-uri>001X</fr:display-uri>
+                <fr:route>/001X/</fr:route>
+                <fr:title text="Bag of graphs in \Sigma \Pi  normal form">Bag of graphs in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>We can put <html:code>BagOfGraphs</html:code> in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex> normal form and then convert back and forth between the normal and original representations in the following way.</html:p>
+                <html:pre><html:strong>theory</html:strong> BagOfGraphs/normal := <html:strong>sig</html:strong>
+  graph-id : Set
+  graph-for/vertex : graph-id -&gt; Set
+  graph-for/edge :
+    (i : graph-id) -&gt; graph-for/vertex i -&gt; graph-for/vertex i -&gt; Set
+<html:strong>end</html:strong>
+
+<html:strong>def</html:strong> from-normal (m : BagOfGraphs/normal) : BagOfGraphs := <html:strong>struct</html:strong>
+  graph-id := m.graph-id
+  graph-for := i =&gt; <html:strong>struct</html:strong>
+    vertex := m.graph-for/vertex i
+    edge := v0 =&gt; v1 =&gt; m.graph-for/edge i v0 v1
+  <html:strong>end</html:strong>
+<html:strong>end</html:strong>
+
+<html:strong>def</html:strong> to-normal (m : BagOfGraphs) : BagOfGraphs/normal := <html:strong>struct</html:strong>
+  graph-id := m.graph-id
+  graph-for/vertex := i =&gt; m.graph-for i .vertex
+  graph-for/edge := i =&gt; v0 =&gt; v1 =&gt; m.graph-for i .edge v0 v1
+<html:strong>end</html:strong></html:pre>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>In this way, although when writing down <html:code>BagOfGraphs</html:code> it appears as if we would store a separate graph database for each graph id, in fact all of the graphs are stored in the same pair of tables. In particular, allocating a new graph id does not imply allocating a whole new graph structure.</html:p>
+            <html:p>There is a fairly straightforward algorithm to take a general theory to a theory in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form, producing the <html:code>from-normal</html:code> and <html:code>to-normal</html:code> migrations simultaneously, but describing it here would involve a conceptual framework around the <fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">elaborator</fr:link> which would take a while to get off the ground. Thus, we ask the reader to take as given that we have access to such an algorithm, and we continue on assuming that we are working with theories in <fr:tex display="inline"><![CDATA[\Sigma \Pi ]]></fr:tex>-normal form.</html:p>
+            <html:p>One way of thinking about this algorithm is that it is a generalized version of the array-of-structs to struct-of-arrays transformation in, for instance, <fr:link href="https://ziglang.org/documentation/master/std/#std.MultiArrayList" type="external">Zig's MultiArrayList</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/stacks-project/</fr:uri>
+    <fr:display-uri>stacks-project</fr:display-uri>
+    <fr:route>/stacks-project/</fr:route>
+    <fr:title text="The Stacks Project">The Stacks Project</fr:title>
+    <fr:taxon>Project</fr:taxon>
+    <fr:meta name="external">https://stacks.math.columbia.edu/</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/0009/</fr:uri>
+            <fr:display-uri>0009</fr:display-uri>
+            <fr:route>/0009/</fr:route>
+            <fr:title text="About the manual › Meta › Address usage"><fr:link href="/0008/" title="About the manual › Meta" uri="https://manual.geolog.sgai.uk/0008/" display-uri="0008" type="local"><fr:link href="/0002/" title="About the manual" uri="https://manual.geolog.sgai.uk/0002/" display-uri="0002" type="local">About the manual</fr:link> › Meta</fr:link> › Address usage</fr:title>
+            <fr:taxon>Constraint</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>We use a single address namespace without prefixes, similar to <fr:link href="/stacks-project/" title="The Stacks Project" uri="https://manual.geolog.sgai.uk/stacks-project/" display-uri="stacks-project" type="local">The Stacks Project</fr:link>. This means that creating new pages requires obtaining a “global lock” on the “next address” counter. Currently, Owen is holding this global lock; when more people are working on the manual we will coordinate around address allocation.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/sql/</fr:uri>
+    <fr:display-uri>sql</fr:display-uri>
+    <fr:route>/sql/</fr:route>
+    <fr:title text="SQL">SQL</fr:title>
+    <fr:taxon>Term</fr:taxon>
+    <fr:meta name="external">https://en.wikipedia.org/wiki/SQL</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>SQL, or “Structured Query Language”, is a family of languages used to declaratively access relational databases.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/000N/</fr:uri>
+            <fr:display-uri>000N</fr:display-uri>
+            <fr:route>/000N/</fr:route>
+            <fr:title text="Introduction">Introduction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>A traditional database language (or indeed general-purpose language) has many syntactic classes used for different purposes.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><fr:link href="/sql/" title="SQL" uri="https://manual.geolog.sgai.uk/sql/" display-uri="sql" type="local">SQL</fr:link> has an exceedingly large grammar. For instance, a single SELECT statement has many possible clauses, each with their own syntax (see the <fr:link href="https://www.postgresql.org/docs/current/queries.html" type="external">postgresql manual</fr:link>).</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Many languages have a different syntax for type parameters to a function than regular parameters. For instance, in Rust one uses <html:code>Vec&lt;i32&gt;</html:code> for applying the <html:code>Vec : Type -&gt; Type</html:code> function to <html:code>i32</html:code> while normal function application looks like <html:code>plus(1, 2)</html:code>, in OCaml one uses <html:code>int list</html:code> while normal function application looks like <html:code>plus 1 2</html:code>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Geolog differs from this, perhaps to an extreme degree, by only having essentially one syntactic class: the syntactic class of an element of a type. Even types themselves are in this syntactic class, because types are elements of <fr:link href="/type-universe/" title="Type universe" uri="https://manual.geolog.sgai.uk/type-universe/" display-uri="type-universe" type="local">type universes</fr:link>. What is achieved via syntactic differentiation in other languages is achieved instead by semantic restrictions in geolog.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>In geolog there are set-level types, theory-level types, and top-level types. These all use the same syntax; operations which only work on set-level types will produce an error during <fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">elaboration</fr:link>. See <fr:link href="/000S/" title="Basic types" uri="https://manual.geolog.sgai.uk/000S/" display-uri="000S" type="local">Basic types</fr:link> for more information about this topic.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>One downside of this approach is that the grammar of geolog is not a very meaningful way of getting a feel for the language; the grammar is almost trivial. What is important is understanding the <fr:link href="/000S/" title="Basic types" uri="https://manual.geolog.sgai.uk/000S/" display-uri="000S" type="local">semantics</fr:link> of geolog and the process of <fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">elaboration</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/000E/</fr:uri>
+            <fr:display-uri>000E</fr:display-uri>
+            <fr:route>/000E/</fr:route>
+            <fr:title text="The database engineer">The database engineer</fr:title>
+            <fr:taxon>Audience</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>The <html:strong>database engineer</html:strong> is a reader who does not necessarily know any type theory, but is familiar with <fr:link href="/sql/" title="SQL" uri="https://manual.geolog.sgai.uk/sql/" display-uri="sql" type="local">SQL</fr:link>, <fr:link href="/datalog/" title="Datalog" uri="https://manual.geolog.sgai.uk/datalog/" display-uri="datalog" type="local">Datalog</fr:link>, <fr:link href="/conjunctive-queries/" title="Conjunctive queries" uri="https://manual.geolog.sgai.uk/conjunctive-queries/" display-uri="conjunctive-queries" type="local">Conjunctive queries</fr:link>, <fr:link href="/egglog/" title="Egglog" uri="https://manual.geolog.sgai.uk/egglog/" display-uri="egglog" type="local">Egglog</fr:link>, <fr:link href="/automerge/" title="Automerge" uri="https://manual.geolog.sgai.uk/automerge/" display-uri="automerge" type="local">Automerge</fr:link>, and perhaps some of the methods for incrementalizing queries like <fr:link href="/dbsp/" title="DBSP" uri="https://manual.geolog.sgai.uk/dbsp/" display-uri="dbsp" type="local">DBSP</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

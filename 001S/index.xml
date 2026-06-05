@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/001S/</fr:uri>
+    <fr:display-uri>001S</fr:display-uri>
+    <fr:route>/001S/</fr:route>
+    <fr:title text="A theory with no initial model">A theory with no initial model</fr:title>
+    <fr:taxon>Example</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>We can define <html:code>Or</html:code> in the following way.</html:p>
+    <html:pre><html:strong>theory</html:strong> Or/motive (@ind p0 : Prop) (@ind p1 : Prop) := <html:strong>sig</html:strong>
+  implicand : Prop
+  impl0 : p0 -&gt; implicand
+  impl1 : p1 -&gt; implicand
+<html:strong>end</html:strong>
+
+<html:strong>ind</html:strong> <html:strong>def</html:strong> Or (p0 : Prop) (p1 : Prop) : Prop :=
+  <html:strong>init</html:strong> (Or/motive p0 p1) .implicand
+</html:pre>
+    <html:p>We call it <html:code>Or/motive</html:code> for reasons we will get into later; broadly speaking the motive is the theory one needs to provide a model of in order to <html:em>use</html:em> an element of <html:code>Or p0 p1</html:code>.</html:p>
+    <html:p>Intuitively, <html:code>Or p0 p1</html:code> is the minimal proposition that is implied by both <html:code>p0</html:code> and <html:code>p1</html:code>. Then the following has no initial model.</html:p>
+    <html:pre><html:strong>theory</html:strong> HardChoice := <html:strong>sig</html:strong>
+  likes-bananas : Prop
+  likes-apples : Prop
+  at-least-one : Or likes-bananas likes-apples
+<html:strong>end</html:strong></html:pre>
+    <html:p>Intuitively, <html:code><html:strong>struct</html:strong> { true; false; _ }</html:code> and <html:code><html:strong>struct</html:strong> { false; true; _ }</html:code> are both models of <html:code>HardChoice</html:code>, but neither one is “more minimal” than the other, and the only way to get something “more minimal” than both would be <html:code><html:strong>struct</html:strong> { false; false; _ }</html:code> but this is not a model of <html:code>HardChoice</html:code>.</html:p>
+    <html:p>In fact, this theory would be <html:em>rejected</html:em> by the geolog type theory. In order to make geolog accept this theory, one must put <html:code><html:strong>ind</html:strong></html:code> in front of <html:code><html:strong>theory</html:strong></html:code>, as in</html:p>
+    <html:pre><html:strong>ind</html:strong> <html:strong>theory</html:strong> HardChoice := <html:strong>sig</html:strong>
+  likes-bananas : Prop
+  likes-apples : Prop
+  at-least-one : Or likes-bananas likes-apples
+<html:strong>end</html:strong></html:pre>
+    <html:p>Then this is a perfectly fine schema for a database, but we cannot take an initial model of an “inductive theory”. Sometimes we say “conjunctive theory” to refer to the normal theories, of which it is possible to take initial models.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/001N/</fr:uri>
+            <fr:display-uri>001N</fr:display-uri>
+            <fr:route>/001N/</fr:route>
+            <fr:title text="Inductive types">Inductive types</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>An interesting fact about <fr:link href="/000L/" title="Geolog as a language" uri="https://manual.geolog.sgai.uk/000L/" display-uri="000L" type="local">Geolog as a language</fr:link> the reader may have noticed is that the only model of <html:code>Set</html:code> that one can write down in the empty context is the singleton type <html:code><html:strong>tuple</html:strong> {}</html:code>.</html:p>
+            <html:p>This is remedied by inductive types. In geolog, inductive types are produced by <html:em>initial models</html:em>. An initial model for a theory <html:code>T</html:code> is a model of <html:code>T</html:code> that makes zero decisions: the only elements in the sets in the model are the ones forced to exist by the laws of the theory.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001O/</fr:uri>
+                <fr:display-uri>001O</fr:display-uri>
+                <fr:route>/001O/</fr:route>
+                <fr:title text="Populated Santa List">Populated Santa List</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Recall from <fr:link href="/001D/" title="Sets as theories" uri="https://manual.geolog.sgai.uk/001D/" display-uri="001D" type="local">Sets as theories</fr:link> the theory <html:code>PopulatedSantaList</html:code> given by</html:p>
+                <html:pre><html:strong>theory</html:strong> PopulatedSantaList := <html:strong>sig</html:strong>
+  list : SantaList
+  john : list.nice
+  mary : list.naughty
+<html:strong>end</html:strong></html:pre>
+                <html:p>We can define <html:code>JohnAndMary</html:code> to be an initial model of <html:code>PopulatedSantaList</html:code> in the following way.<html:sup class="smallcaps">todo</html:sup> (Note that here the type of <html:code>JohnAndMary</html:code> is inferred to be <html:code>PopulatedSantaList</html:code>).</html:p>
+                <html:pre><html:strong>ind</html:strong> <html:strong>def</html:strong> JohnAndMary := <html:strong>init</html:strong> PopulatedSantaList
+</html:pre>
+                <html:p>Now <html:code>JohnAndMary</html:code> is a model of <html:code>PopulatedSantaList</html:code> where <html:code>JohnAndMary.list.nice</html:code> is a set that only contains <html:code>JohnAndMary.john</html:code> and <html:code>JohnAndMary.list.naughty</html:code> is a set that only contains <html:code>JohnAndMary.mary</html:code>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001Q/</fr:uri>
+                <fr:display-uri>001Q</fr:display-uri>
+                <fr:route>/001Q/</fr:route>
+                <fr:title text="The Empty Set">The Empty Set</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The empty set is the initial model of <html:code>Set</html:code>.</html:p>
+                <html:pre><html:strong>ind</html:strong> <html:strong>def</html:strong> empty := <html:strong>init</html:strong> Set
+</html:pre>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001R/</fr:uri>
+                <fr:display-uri>001R</fr:display-uri>
+                <fr:route>/001R/</fr:route>
+                <fr:title text="Transitive Closure">Transitive Closure</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>We can use initial models in order to take the transitive closure of a graph in the following way.</html:p>
+                <html:pre><html:strong>theory</html:strong> Drama := <html:strong>sig</html:strong>
+  person : Set
+  jealous-of : person -&gt; person -&gt; Prop
+<html:strong>end</html:strong>
+
+<html:strong>theory</html:strong> TransitiveExtension (@ind m : Drama) := <html:strong>sig</html:strong>
+  transitively-jealous-of : m.person -&gt; m.person -&gt; Prop
+  include : (x y : m.person) -&gt;
+    m.jealous-of x y -&gt;
+    transitively-jealous-of x y
+  transitive : (x y z : m.person) -&gt;
+    transitively-jealous-of x y -&gt;
+    transitively-jealous-of y z -&gt;
+    transitively-jealous-of x z
+<html:strong>end</html:strong>
+
+<html:strong>ind</html:strong> <html:strong>def</html:strong> TransitiveClosure (m : Drama) := <html:strong>init</html:strong> (TransitiveExtension m)
+</html:pre>
+                <html:p>Given a model <html:code>m</html:code> of <html:code>Drama</html:code>, we can then access the transitive closure of <html:code>m.jealous-of</html:code> via <html:code>TransitiveClosure m .transitively-jealous-of</html:code>. The intuition here is that <html:code><html:strong>init</html:strong> (TransitiveExtension m)</html:code> give us the minimal binary relation that both extends <html:code>m.jealous-of</html:code> and also is transitive; this is precisely the transitive closure.</html:p>
+                <html:p>We discuss why <html:code>@ind m</html:code> is necessary shortly.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>While initial models are very powerful, they must be used carefully. First of all, not all theories have initial models.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001P/</fr:uri>
+                <fr:display-uri>001P</fr:display-uri>
+                <fr:route>/001P/</fr:route>
+                <fr:title text="The theory of a point does not have an initial model.">The theory of a point does not have an initial model.</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>As <fr:link href="/001D/" title="Sets as theories" uri="https://manual.geolog.sgai.uk/001D/" display-uri="001D" type="local">sets are theories</fr:link>, we might try to produce a point of any set via the following definition.</html:p>
+                <html:pre><html:strong>ind</html:strong> <html:strong>def</html:strong> something-from-nothing (A : Set) : A := <html:strong>init</html:strong> A
+</html:pre>
+                <html:p>However, this would make geolog inconsistent by allowing us to produce a point in the <fr:link href="/001Q/" title="The Empty Set" uri="https://manual.geolog.sgai.uk/001Q/" display-uri="001Q" type="local">empty set</fr:link>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Intuitively, we can not take an initial model if that would involve producing “out of nothing” elements of sets that are already defined. We can only introduce elements into sets that are in the process of being defined.</html:p>
+            <html:p>This also means that if a theory has a function whose codomain is an inductively-defined set (a set defined as part of an initial model), there is no initial model for that theory.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/001S/</fr:uri>
+                <fr:display-uri>001S</fr:display-uri>
+                <fr:route>/001S/</fr:route>
+                <fr:title text="A theory with no initial model">A theory with no initial model</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>We can define <html:code>Or</html:code> in the following way.</html:p>
+                <html:pre><html:strong>theory</html:strong> Or/motive (@ind p0 : Prop) (@ind p1 : Prop) := <html:strong>sig</html:strong>
+  implicand : Prop
+  impl0 : p0 -&gt; implicand
+  impl1 : p1 -&gt; implicand
+<html:strong>end</html:strong>
+
+<html:strong>ind</html:strong> <html:strong>def</html:strong> Or (p0 : Prop) (p1 : Prop) : Prop :=
+  <html:strong>init</html:strong> (Or/motive p0 p1) .implicand
+</html:pre>
+                <html:p>We call it <html:code>Or/motive</html:code> for reasons we will get into later; broadly speaking the motive is the theory one needs to provide a model of in order to <html:em>use</html:em> an element of <html:code>Or p0 p1</html:code>.</html:p>
+                <html:p>Intuitively, <html:code>Or p0 p1</html:code> is the minimal proposition that is implied by both <html:code>p0</html:code> and <html:code>p1</html:code>. Then the following has no initial model.</html:p>
+                <html:pre><html:strong>theory</html:strong> HardChoice := <html:strong>sig</html:strong>
+  likes-bananas : Prop
+  likes-apples : Prop
+  at-least-one : Or likes-bananas likes-apples
+<html:strong>end</html:strong></html:pre>
+                <html:p>Intuitively, <html:code><html:strong>struct</html:strong> { true; false; _ }</html:code> and <html:code><html:strong>struct</html:strong> { false; true; _ }</html:code> are both models of <html:code>HardChoice</html:code>, but neither one is “more minimal” than the other, and the only way to get something “more minimal” than both would be <html:code><html:strong>struct</html:strong> { false; false; _ }</html:code> but this is not a model of <html:code>HardChoice</html:code>.</html:p>
+                <html:p>In fact, this theory would be <html:em>rejected</html:em> by the geolog type theory. In order to make geolog accept this theory, one must put <html:code><html:strong>ind</html:strong></html:code> in front of <html:code><html:strong>theory</html:strong></html:code>, as in</html:p>
+                <html:pre><html:strong>ind</html:strong> <html:strong>theory</html:strong> HardChoice := <html:strong>sig</html:strong>
+  likes-bananas : Prop
+  likes-apples : Prop
+  at-least-one : Or likes-bananas likes-apples
+<html:strong>end</html:strong></html:pre>
+                <html:p>Then this is a perfectly fine schema for a database, but we cannot take an initial model of an “inductive theory”. Sometimes we say “conjunctive theory” to refer to the normal theories, of which it is possible to take initial models.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:taxon>TODO</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Give more examples of initial models, explain <html:code>@ind</html:code>, talk about how to use element of types in initial models.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

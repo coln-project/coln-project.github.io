@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:date>
+      <fr:year>2026</fr:year>
+      <fr:month>5</fr:month>
+      <fr:day>23</fr:day>
+    </fr:date>
+    <fr:uri>https://manual.geolog.sgai.uk/0027/</fr:uri>
+    <fr:display-uri>0027</fr:display-uri>
+    <fr:route>/0027/</fr:route>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/0021/</fr:uri>
+            <fr:display-uri>0021</fr:display-uri>
+            <fr:route>/0021/</fr:route>
+            <fr:title text="Tables">Tables</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Models of geolog theories are stored as collections of <html:em>tables</html:em>. For the reader experienced with traditional relational databases, tables should be fairly familiar, but we will go through them explicitly in order to establish our own conventions.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0022/</fr:uri>
+                <fr:display-uri>0022</fr:display-uri>
+                <fr:route>/0022/</fr:route>
+                <fr:title text="Table">Table</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>table</html:strong> consists of a set of <fr:link href="/0023/" title="Row ID" uri="https://manual.geolog.sgai.uk/0023/" display-uri="0023" type="local">row IDs</fr:link> and a collection of <fr:link href="/0024/" title="Column" uri="https://manual.geolog.sgai.uk/0024/" display-uri="0024" type="local">columns</fr:link>. A table may come along with <fr:link href="/0025/" title="Constraint" uri="https://manual.geolog.sgai.uk/0025/" display-uri="0025" type="local">constraints</fr:link>, and in particular <fr:link href="/0026/" title="Primary key constraint" uri="https://manual.geolog.sgai.uk/0026/" display-uri="0026" type="local">primary key constraints</fr:link></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0023/</fr:uri>
+                <fr:display-uri>0023</fr:display-uri>
+                <fr:route>/0023/</fr:route>
+                <fr:title text="Row ID">Row ID</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Row IDs</html:strong> are an opaque type to the user, kind of like pointers without pointer arithmetic. In particular, a row ID may be dereferenced to look up the corresponding row in the database, and row IDs may be stored in columns to link tables together, but the content of a row ID is not meant to be meaningful or even stable.</html:p>
+                <html:p>This is becasue row IDs may exist in different formats in-memory, on disk, and over the network, and moreover may be subject to garbage-collection-like algorithms periodically in order to improve storage properties of the database.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0024/</fr:uri>
+                <fr:display-uri>0024</fr:display-uri>
+                <fr:route>/0024/</fr:route>
+                <fr:title text="Column">Column</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>column</html:strong> is a sequence of values of some fixed data type, like <html:code>String</html:code>, <html:code>Bool</html:code>, <html:code>Int</html:code>, or <html:code>RowId</html:code>. Columns store one value for each row ID of the table they belong to, and they store these values in such a way so that it is efficient to access the corresponding value for each row ID. This could be achieved by storing the row IDs in sorted order, and storing the values in each column in the same order, so that a binary search over row IDs would produce the right index to access the column value at, but it is also possible that row IDs take the values <fr:tex display="inline"><![CDATA[0,\ldots ,n-1]]></fr:tex>, and columns may be directly indexed by row ID; the choice of how precisely this achieved is not something that is relevant at this level of abstraction.</html:p>
+                <html:p>As users do not interact with columns directly, we can identify the columns in a table by a simple sequential numbering <fr:tex display="inline"><![CDATA[0,\ldots ,k-1]]></fr:tex>; we call the number assigned to a column in this fashion its <html:strong>column index</html:strong>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0026/</fr:uri>
+                <fr:display-uri>0026</fr:display-uri>
+                <fr:route>/0026/</fr:route>
+                <fr:title text="Primary key constraint">Primary key constraint</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A <html:strong>primary key constraint</html:strong> is specified by a subset <fr:tex display="inline"><![CDATA[K \subseteq  \{0,\ldots ,k-1\}]]></fr:tex> of column indices. For each <fr:tex display="inline"><![CDATA[K]]></fr:tex>-indexed tuple of values, a table satisfying the primary key constraint may have at most one row with columns assigned as in that <fr:tex display="inline"><![CDATA[K]]></fr:tex>-tuple.</html:p>
+                <html:p>This can be used in a variety of ways. If <fr:tex display="inline"><![CDATA[K = \{0,\ldots ,k-1\}]]></fr:tex>, then the table is a proper <html:em>relation</html:em>. If <fr:tex display="inline"><![CDATA[K = \{0,\ldots ,\ell -1\}]]></fr:tex>, then <fr:tex display="inline"><![CDATA[K]]></fr:tex> is a partial function from the first <fr:tex display="inline"><![CDATA[\ell ]]></fr:tex> column values to the last <fr:tex display="inline"><![CDATA[k - \ell ]]></fr:tex> column values.</html:p>
+                <html:p>A table with no primary key constraint can be thought of as a bag.</html:p>
+                <html:p>As a degenerate case, a table with no columns and a primary key constraint of <fr:tex display="inline"><![CDATA[\{\}]]></fr:tex> has either zero or one row IDs.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0025/</fr:uri>
+                <fr:display-uri>0025</fr:display-uri>
+                <fr:route>/0025/</fr:route>
+                <fr:title text="Constraint">Constraint</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Tables also have associated <html:strong>constraints</html:strong>. We discuss these in greater detail once we talk about how geolog theories are lowered to a collection of tables; essentially the constraints are what enforces the type dependencies between the different arguments to a function.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>23</fr:day>
+                </fr:date>
+                <fr:uri>https://manual.geolog.sgai.uk/0027/</fr:uri>
+                <fr:display-uri>0027</fr:display-uri>
+                <fr:route>/0027/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter />
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

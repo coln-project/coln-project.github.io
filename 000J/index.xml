@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/000J/</fr:uri>
+    <fr:display-uri>000J</fr:display-uri>
+    <fr:route>/000J/</fr:route>
+    <fr:title text="About the manual › Meta › Lack of tree metadata"><fr:link href="/0008/" title="About the manual › Meta" uri="https://manual.geolog.sgai.uk/0008/" display-uri="0008" type="local"><fr:link href="/0002/" title="About the manual" uri="https://manual.geolog.sgai.uk/0002/" display-uri="0002" type="local">About the manual</fr:link> › Meta</fr:link> › Lack of tree metadata</fr:title>
+    <fr:taxon>Constraint</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>This manual is meant to be a single document with a single voice. Therefore, we do not put author metadata on individual trees, and all trees are considered to have been written by the geolog project. Moreover, we omit dates on non-reference trees; the manual as a whole should be considered as current, and out-of-date trees should be edited or deleted.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/0008/</fr:uri>
+            <fr:display-uri>0008</fr:display-uri>
+            <fr:route>/0008/</fr:route>
+            <fr:title text="About the manual › Meta"><fr:link href="/0002/" title="About the manual" uri="https://manual.geolog.sgai.uk/0002/" display-uri="0002" type="local">About the manual</fr:link> › Meta</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>The geolog manual is written in <fr:link href="/forester/" title="Forester" uri="https://manual.geolog.sgai.uk/forester/" display-uri="forester" type="local">Forester</fr:link>. Forester is a very flexible tool that can be used in many ways. In order for the manual to achieve its goals, it is necessary to put constraints on the use of forester.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0009/</fr:uri>
+                <fr:display-uri>0009</fr:display-uri>
+                <fr:route>/0009/</fr:route>
+                <fr:title text="Address usage">Address usage</fr:title>
+                <fr:taxon>Constraint</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>We use a single address namespace without prefixes, similar to <fr:link href="/stacks-project/" title="The Stacks Project" uri="https://manual.geolog.sgai.uk/stacks-project/" display-uri="stacks-project" type="local">The Stacks Project</fr:link>. This means that creating new pages requires obtaining a “global lock” on the “next address” counter. Currently, Owen is holding this global lock; when more people are working on the manual we will coordinate around address allocation.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000A/</fr:uri>
+                <fr:display-uri>000A</fr:display-uri>
+                <fr:route>/000A/</fr:route>
+                <fr:title text="Global linear ordering">Global linear ordering</fr:title>
+                <fr:taxon>Constraint</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The entire manual is meant to be kept in a single global hierarchy rooted at the <fr:link href="/0001/" title="Geolog manual" uri="https://manual.geolog.sgai.uk/0001/" display-uri="0001" type="local">home page</fr:link>.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000F/</fr:uri>
+                <fr:display-uri>000F</fr:display-uri>
+                <fr:route>/000F/</fr:route>
+                <fr:title text="Glossary and index">Glossary and index</fr:title>
+                <fr:taxon>Constraint</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The manual contains a combination <fr:link href="/0003/" title="Glossary and index" uri="https://manual.geolog.sgai.uk/0003/" display-uri="0003" type="local">glossary and index</fr:link>, which collects technical terms used throughout the manual.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000J/</fr:uri>
+                <fr:display-uri>000J</fr:display-uri>
+                <fr:route>/000J/</fr:route>
+                <fr:title text="Lack of tree metadata">Lack of tree metadata</fr:title>
+                <fr:taxon>Constraint</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>This manual is meant to be a single document with a single voice. Therefore, we do not put author metadata on individual trees, and all trees are considered to have been written by the geolog project. Moreover, we omit dates on non-reference trees; the manual as a whole should be considered as current, and out-of-date trees should be edited or deleted.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>More generally, the geolog manual should be thought of as more of a <fr:link href="/hyperbook/" title="Hyperbook" uri="https://manual.geolog.sgai.uk/hyperbook/" display-uri="hyperbook" type="local">Hyperbook</fr:link> than a <fr:link href="/zettelkasten/" title="Zettelkasten" uri="https://manual.geolog.sgai.uk/zettelkasten/" display-uri="zettelkasten" type="local">Zettelkasten</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

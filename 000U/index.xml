@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/000U/</fr:uri>
+    <fr:display-uri>000U</fr:display-uri>
+    <fr:route>/000U/</fr:route>
+    <fr:title text="What is elaboration? › Diagnostics"><fr:link href="/000O/" title="What is elaboration?" uri="https://manual.geolog.sgai.uk/000O/" display-uri="000O" type="local">What is elaboration?</fr:link> › Diagnostics</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>A diagnostic is a message from the compiler to the user intended to explain a failure on the compiler’s part to fully understand the user’s intent.</html:p>
+    <html:p>Sometimes, there is a reasonable guess that the compiler can make as to how to continue, in which case the diagnostic is a “warning”—a warning that perhaps the choice the compiler is making is not what the user intended. In other cases, the compiler cannot make a reasonable guess, and the diagnostic is an “error”.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/000O/</fr:uri>
+            <fr:display-uri>000O</fr:display-uri>
+            <fr:route>/000O/</fr:route>
+            <fr:title text="What is elaboration?">What is elaboration?</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Elaboration is the process of producing <fr:link href="/000P/" title="Syntax" uri="https://manual.geolog.sgai.uk/000P/" display-uri="000P" type="local">syntax</fr:link> from <fr:link href="/000Q/" title="Notation" uri="https://manual.geolog.sgai.uk/000Q/" display-uri="000Q" type="local">notation</fr:link>, reporting <fr:link href="/000U/" title="Diagnostics" uri="https://manual.geolog.sgai.uk/000U/" display-uri="000U" type="local">diagnostics</fr:link> to the user when the user’s intent as expressed through notation is not compatible with the rules of the type theory.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000P/</fr:uri>
+                <fr:display-uri>000P</fr:display-uri>
+                <fr:route>/000P/</fr:route>
+                <fr:title text="Syntax">Syntax</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Syntax is a data type in the geolog compiler, the elements of which are a compressed form for correct <fr:link href="/derivation/" title="Derivation" uri="https://manual.geolog.sgai.uk/derivation/" display-uri="derivation" type="local">derivations</fr:link> in the geolog type theory.</html:p>
+                <html:p>The process of elaboration ensures that any syntax produced does in fact refer uniquely to some derivation.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000Q/</fr:uri>
+                <fr:display-uri>000Q</fr:display-uri>
+                <fr:route>/000Q/</fr:route>
+                <fr:title text="Notation">Notation</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Notation is another data type in the geolog compiler. Notation is the first “tree-shaped” data type that is produced in the compilation pipeline, and is fairly permissive in terms of what is allowed.</html:p>
+                <html:p>See <fr:link href="/000R/" title="F-notation" uri="https://manual.geolog.sgai.uk/000R/" display-uri="000R" type="local">fnotation</fr:link> for a description of the notation used in geolog.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000U/</fr:uri>
+                <fr:display-uri>000U</fr:display-uri>
+                <fr:route>/000U/</fr:route>
+                <fr:title text="Diagnostics">Diagnostics</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A diagnostic is a message from the compiler to the user intended to explain a failure on the compiler’s part to fully understand the user’s intent.</html:p>
+                <html:p>Sometimes, there is a reasonable guess that the compiler can make as to how to continue, in which case the diagnostic is a “warning”—a warning that perhaps the choice the compiler is making is not what the user intended. In other cases, the compiler cannot make a reasonable guess, and the diagnostic is an “error”.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/000O/</fr:uri>
+            <fr:display-uri>000O</fr:display-uri>
+            <fr:route>/000O/</fr:route>
+            <fr:title text="What is elaboration?">What is elaboration?</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Elaboration is the process of producing <fr:link href="/000P/" title="Syntax" uri="https://manual.geolog.sgai.uk/000P/" display-uri="000P" type="local">syntax</fr:link> from <fr:link href="/000Q/" title="Notation" uri="https://manual.geolog.sgai.uk/000Q/" display-uri="000Q" type="local">notation</fr:link>, reporting <fr:link href="/000U/" title="Diagnostics" uri="https://manual.geolog.sgai.uk/000U/" display-uri="000U" type="local">diagnostics</fr:link> to the user when the user’s intent as expressed through notation is not compatible with the rules of the type theory.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000P/</fr:uri>
+                <fr:display-uri>000P</fr:display-uri>
+                <fr:route>/000P/</fr:route>
+                <fr:title text="Syntax">Syntax</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Syntax is a data type in the geolog compiler, the elements of which are a compressed form for correct <fr:link href="/derivation/" title="Derivation" uri="https://manual.geolog.sgai.uk/derivation/" display-uri="derivation" type="local">derivations</fr:link> in the geolog type theory.</html:p>
+                <html:p>The process of elaboration ensures that any syntax produced does in fact refer uniquely to some derivation.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000Q/</fr:uri>
+                <fr:display-uri>000Q</fr:display-uri>
+                <fr:route>/000Q/</fr:route>
+                <fr:title text="Notation">Notation</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Notation is another data type in the geolog compiler. Notation is the first “tree-shaped” data type that is produced in the compilation pipeline, and is fairly permissive in terms of what is allowed.</html:p>
+                <html:p>See <fr:link href="/000R/" title="F-notation" uri="https://manual.geolog.sgai.uk/000R/" display-uri="000R" type="local">fnotation</fr:link> for a description of the notation used in geolog.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/000U/</fr:uri>
+                <fr:display-uri>000U</fr:display-uri>
+                <fr:route>/000U/</fr:route>
+                <fr:title text="Diagnostics">Diagnostics</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A diagnostic is a message from the compiler to the user intended to explain a failure on the compiler’s part to fully understand the user’s intent.</html:p>
+                <html:p>Sometimes, there is a reasonable guess that the compiler can make as to how to continue, in which case the diagnostic is a “warning”—a warning that perhaps the choice the compiler is making is not what the user intended. In other cases, the compiler cannot make a reasonable guess, and the diagnostic is an “error”.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

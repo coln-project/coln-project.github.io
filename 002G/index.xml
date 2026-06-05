@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/002G/</fr:uri>
+    <fr:display-uri>002G</fr:display-uri>
+    <fr:route>/002G/</fr:route>
+    <fr:title text="Geometric theories have classifying topoi">Geometric theories have classifying topoi</fr:title>
+    <fr:taxon>Theorem</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Any <fr:link href="/002D/" title="Geometric theory" uri="https://manual.geolog.sgai.uk/002D/" display-uri="002D" type="local">geometric theory</fr:link> has a <fr:link href="/002C/" title="Elephant Theory" uri="https://manual.geolog.sgai.uk/002C/" display-uri="002C" type="local">classifying topos</fr:link>.</html:p>
+    <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Theorem 4.2.9)</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/peter-johnstone/" title="P. T. Johnstone" uri="https://manual.geolog.sgai.uk/peter-johnstone/" display-uri="peter-johnstone" type="local">P. T. Johnstone</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2002</fr:year>
+            </fr:date>
+            <fr:uri>https://manual.geolog.sgai.uk/johnstone-2002-sketches/</fr:uri>
+            <fr:display-uri>johnstone-2002-sketches</fr:display-uri>
+            <fr:route>/johnstone-2002-sketches/</fr:route>
+            <fr:title text="Sketches of an elephant: a topos theory compendium">Sketches of an elephant: a topos theory compendium</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:meta name="doi">10.1093/oso/9780198515982.001.0001</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/002B/</fr:uri>
+            <fr:display-uri>002B</fr:display-uri>
+            <fr:route>/002B/</fr:route>
+            <fr:title text="A CwF for geometric theories">A CwF for geometric theories</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>In this section, we give an overview of the basic setup for the type theory: a category with families (CwF).</html:p>
+            <html:p>In <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">The Elephant</fr:link>, Johnstone makes the following definitions for “theory”; we will call this an elephant theory in order to distinguish it from other notions of theory we might consider.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002C/</fr:uri>
+                <fr:display-uri>002C</fr:display-uri>
+                <fr:route>/002C/</fr:route>
+                <fr:title text="Elephant Theory">Elephant Theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>For <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> a topos, an <html:strong>elephant theory</html:strong> over <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> is a (pseudo-)functor <fr:tex display="inline"><![CDATA[T \colon  (\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat},]]></fr:tex> where <fr:tex display="inline"><![CDATA[(\mathsf {BTop}/\mathcal {S})^\mathrm {op}]]></fr:tex> is the 2-category of bounded geometric morphisms into <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {Cat}]]></fr:tex> is the 2-category of large categories.</html:p>
+                <html:p>A morphism of elephant theories is simply an indexed functor.</html:p>
+                <html:p>We say that <fr:tex display="inline"><![CDATA[T]]></fr:tex> is <html:strong>classified</html:strong> by <fr:tex display="inline"><![CDATA[\mathsf {S}[T] \colon  \mathsf {BTop}/\mathcal {S}]]></fr:tex> if <fr:tex display="inline"><![CDATA[T]]></fr:tex> is contravariantly represented by <fr:tex display="inline"><![CDATA[\mathcal {S}[T]]]></fr:tex>, that is <fr:tex display="inline"><![CDATA[T(\mathcal {E}) \cong  \mathsf {BTop}/\mathcal {S}(\mathcal {E}, \mathcal {S}[T])]]></fr:tex>. We also call <fr:tex display="inline"><![CDATA[\mathsf {S}[T]]]></fr:tex> the <html:strong>classifying topos</html:strong> for <fr:tex display="inline"><![CDATA[T]]></fr:tex>.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.1)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002E/</fr:uri>
+                <fr:display-uri>002E</fr:display-uri>
+                <fr:route>/002E/</fr:route>
+                <fr:title text="Object classifier">Object classifier</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The <html:strong>object classifier</html:strong> <fr:tex display="inline"><![CDATA[\mathbb {O}]]></fr:tex> is the elephant theory defined by the forgetful functor <fr:tex display="inline"><![CDATA[(\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex> which sends a bounded topos over <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> to its underlying category of objects.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Example B4.2.4(a))</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002F/</fr:uri>
+                <fr:display-uri>002F</fr:display-uri>
+                <fr:route>/002F/</fr:route>
+                <fr:title text="Geometric construct">Geometric construct</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a geometric theory, then a <html:strong>geometric construct</html:strong> is a <fr:tex display="inline"><![CDATA[\mathsf {BTop}/\mathcal {S}]]></fr:tex>-indexed functor <fr:tex display="inline"><![CDATA[F \colon  T \to  \mathbb {O}]]></fr:tex>.</html:p>
+                <html:p>The idea is that <fr:tex display="inline"><![CDATA[F]]></fr:tex>, given a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> in an <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-topos <fr:tex display="inline"><![CDATA[\mathcal {E}]]></fr:tex>, produces an object of <fr:tex display="inline"><![CDATA[\mathcal {E}]]></fr:tex>.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.5)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002D/</fr:uri>
+                <fr:display-uri>002D</fr:display-uri>
+                <fr:route>/002D/</fr:route>
+                <fr:title text="Geometric theory">Geometric theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Geometric theories</html:strong> may be consicely defined as the elephant theories built up via a sequence of <fr:link href="/pie-limit/" title="PIE Limit" uri="https://manual.geolog.sgai.uk/pie-limit/" display-uri="pie-limit" type="local">product-inserter-equifier limits</fr:link> starting from the object classifier.</html:p>
+                <html:p>We expand this to give more intuition.</html:p>
+                <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a theory, a <html:strong>simple functional extension</html:strong> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> is another theory <fr:tex display="inline"><![CDATA[T']]></fr:tex> given as the <html:em>inserter</html:em> of two geometric constructs <fr:tex display="inline"><![CDATA[F,G \colon  T \to  \mathbb {O}]]></fr:tex>. Intuitively, <fr:tex display="inline"><![CDATA[T']]></fr:tex> is the theory given by freely adding a new morphism between the “objects” <fr:tex display="inline"><![CDATA[F]]></fr:tex> and <fr:tex display="inline"><![CDATA[G]]></fr:tex>.</html:p>
+                <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a theory, a <html:strong>simple equational extension</html:strong> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> is another theory <fr:tex display="inline"><![CDATA[T']]></fr:tex> given as the <html:em>equifier</html:em> of two indexed natural transformations <fr:tex display="inline"><![CDATA[\alpha , \beta  \colon  F \Rightarrow  G]]></fr:tex>, where <fr:tex display="inline"><![CDATA[F]]></fr:tex> and <fr:tex display="inline"><![CDATA[G]]></fr:tex> are geometric constructs. Intuitively, <fr:tex display="inline"><![CDATA[T']]></fr:tex> is the theory given by adding a new equality between morphisms of “objects”.</html:p>
+                <html:p>A <html:strong>geometric theory</html:strong> is a theory built up by a finite sequence <fr:tex display="inline"><![CDATA[T_0,\ldots ,T_n]]></fr:tex> of simple functional extensions and simple equational extensions starting from <fr:tex display="inline"><![CDATA[T_0 = \mathbb {O}^m]]></fr:tex> for some finite <fr:tex display="inline"><![CDATA[m]]></fr:tex>.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition 4.2.7, note that Johnstone gives a slightly different definition, using <html:em>simple geometric quotients</html:em> in place of simple equational extensions, which use inverters instead of equifiers. The name “simple equational extension” is not known to us to be previously used, but it follows the schema of “simple functional extension.”)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002G/</fr:uri>
+                <fr:display-uri>002G</fr:display-uri>
+                <fr:route>/002G/</fr:route>
+                <fr:title text="Geometric theories have classifying topoi">Geometric theories have classifying topoi</fr:title>
+                <fr:taxon>Theorem</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Any <fr:link href="/002D/" title="Geometric theory" uri="https://manual.geolog.sgai.uk/002D/" display-uri="002D" type="local">geometric theory</fr:link> has a <fr:link href="/002C/" title="Elephant Theory" uri="https://manual.geolog.sgai.uk/002C/" display-uri="002C" type="local">classifying topos</fr:link>.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Theorem 4.2.9)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002I/</fr:uri>
+                <fr:display-uri>002I</fr:display-uri>
+                <fr:route>/002I/</fr:route>
+                <fr:title text="A category with families structure on elephant theories">A category with families structure on elephant theories</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Let <fr:tex display="inline"><![CDATA[\mathsf {ElTh}]]></fr:tex> be the category of elephant theories. Then let <fr:tex display="inline"><![CDATA[\mathsf {Ty} \colon  \mathsf {ElTh}^\mathrm {op} \to  \mathsf {SET}]]></fr:tex> be the large presheaf which sends an elephant theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> to the set of strict 2-functors <fr:tex display="inline"><![CDATA[A \colon  (\int  \Gamma )^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex>.</html:p>
+                <html:p>Intuitively, <fr:tex display="inline"><![CDATA[\mathsf {Ty}(\Gamma )]]></fr:tex> is “elephant theories relative to <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.” This is because <fr:tex display="inline"><![CDATA[\int  \Gamma ]]></fr:tex> is the category of topoi equipped with a model of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>; if <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> were a geometric theory then <fr:tex display="inline"><![CDATA[\int  \Gamma ]]></fr:tex> would be equivalent to <fr:tex display="inline"><![CDATA[\mathsf {BTop}/\mathcal {S}[\Gamma ]]]></fr:tex>.</html:p>
+                <html:p>Then define <fr:tex display="inline"><![CDATA[\mathsf {Tm} \colon  (\int  \mathsf {Ty})^\mathrm {op} \to  \mathsf {Set}]]></fr:tex> by letting <fr:tex display="inline"><![CDATA[\mathsf {Tm}(\Gamma , A)]]></fr:tex> be the set of <html:em>sections</html:em> of <fr:tex display="inline"><![CDATA[A]]></fr:tex>. A section <fr:tex display="inline"><![CDATA[a]]></fr:tex> is a natural assignment of <fr:tex display="inline"><![CDATA[a(\mathcal {E}, M) \colon  A(\mathcal {E}, M)]]></fr:tex> for <fr:tex display="inline"><![CDATA[(\mathcal {E},M) \in  \int  \Gamma ]]></fr:tex>.</html:p>
+                <html:p>Context extension is given in the following way. Suppose that <fr:tex display="inline"><![CDATA[\Gamma  \colon  (\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex> is a context and <fr:tex display="inline"><![CDATA[A \colon  \mathsf {Ty}(\Gamma )]]></fr:tex>. Then <fr:tex display="inline"><![CDATA[\Gamma  \triangleright  A \colon  (\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex> is defined by <fr:tex display="inline"><![CDATA[(\Gamma  \triangleright  A)(\mathcal {E}) = (M \colon  \Gamma (\mathcal {E})) \times  A(\mathcal {E},M)]]></fr:tex>.</html:p>
+                <html:p>Then finally we have weakening and the variable rule given by the first and second projections out of <fr:tex display="inline"><![CDATA[\Gamma  \triangleright  A]]></fr:tex>.</html:p>
+                <html:p>Note that even though topoi and elephant theories are non-trivially 2-categorical, <fr:tex display="inline"><![CDATA[(\mathsf {ElTh},\mathsf {Ty},\mathsf {Tm})]]></fr:tex> forms nevertheless a strict (albeit quite large) category with families.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/002A/</fr:uri>
+            <fr:display-uri>002A</fr:display-uri>
+            <fr:route>/002A/</fr:route>
+            <fr:title text="A type theory for geometric theories">A type theory for geometric theories</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>(This is meant for <fr:link href="/000C/" title="The categorical logician" uri="https://manual.geolog.sgai.uk/000C/" display-uri="000C" type="local">The categorical logician</fr:link>)</html:p>
+            <html:p>The ultimate intended semantics for geolog is in arithmetic theories, which are the analogue of geometric theories for <fr:link href="/arithmetic-universes/" title="Arithmetic universes" uri="https://manual.geolog.sgai.uk/arithmetic-universes/" display-uri="arithmetic-universes" type="local">arithmetic universes</fr:link>. However, geometric theories and topoi are both better-studied than arithmetic universes and are additionally closely related, so we give an exposition of the basic type theory in terms of geometric theories. Note that by topos we mean Grothendieck topos, not elementary topos, so in particular all topoi have natural numbers objects.</html:p>
+            <html:p>Following the principles of this manual, this is <html:em>not</html:em> a mathematical paper; there will be a more formal account of this type theory, but that is in progress. Rather, this is a conceptual account that makes reference to mathematics.</html:p>
+            <html:p>In <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">The Elephant</fr:link>, Johnstone makes the following definitions for “theory”; we call this an <html:em>elephant theory</html:em> in order to distinguish it from other notions of theory we might consider.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002C/</fr:uri>
+                <fr:display-uri>002C</fr:display-uri>
+                <fr:route>/002C/</fr:route>
+                <fr:title text="Elephant Theory">Elephant Theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>For <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> a topos, an <html:strong>elephant theory</html:strong> over <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> is a (pseudo-)functor <fr:tex display="inline"><![CDATA[T \colon  (\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat},]]></fr:tex> where <fr:tex display="inline"><![CDATA[(\mathsf {BTop}/\mathcal {S})^\mathrm {op}]]></fr:tex> is the 2-category of bounded geometric morphisms into <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {Cat}]]></fr:tex> is the 2-category of large categories.</html:p>
+                <html:p>A morphism of elephant theories is simply an indexed functor.</html:p>
+                <html:p>We say that <fr:tex display="inline"><![CDATA[T]]></fr:tex> is <html:strong>classified</html:strong> by <fr:tex display="inline"><![CDATA[\mathsf {S}[T] \colon  \mathsf {BTop}/\mathcal {S}]]></fr:tex> if <fr:tex display="inline"><![CDATA[T]]></fr:tex> is contravariantly represented by <fr:tex display="inline"><![CDATA[\mathcal {S}[T]]]></fr:tex>, that is <fr:tex display="inline"><![CDATA[T(\mathcal {E}) \cong  \mathsf {BTop}/\mathcal {S}(\mathcal {E}, \mathcal {S}[T])]]></fr:tex>. We also call <fr:tex display="inline"><![CDATA[\mathsf {S}[T]]]></fr:tex> the <html:strong>classifying topos</html:strong> for <fr:tex display="inline"><![CDATA[T]]></fr:tex>.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.1)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002E/</fr:uri>
+                <fr:display-uri>002E</fr:display-uri>
+                <fr:route>/002E/</fr:route>
+                <fr:title text="Object classifier">Object classifier</fr:title>
+                <fr:taxon>Example</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>The <html:strong>object classifier</html:strong> <fr:tex display="inline"><![CDATA[\mathbb {O}]]></fr:tex> is the elephant theory defined by the forgetful functor <fr:tex display="inline"><![CDATA[(\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex> which sends a bounded topos over <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> to its underlying category of objects.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Example B4.2.4(a))</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002F/</fr:uri>
+                <fr:display-uri>002F</fr:display-uri>
+                <fr:route>/002F/</fr:route>
+                <fr:title text="Geometric construct">Geometric construct</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a geometric theory, then a <html:strong>geometric construct</html:strong> is a <fr:tex display="inline"><![CDATA[\mathsf {BTop}/\mathcal {S}]]></fr:tex>-indexed functor <fr:tex display="inline"><![CDATA[F \colon  T \to  \mathbb {O}]]></fr:tex>.</html:p>
+                <html:p>The idea is that <fr:tex display="inline"><![CDATA[F]]></fr:tex>, given a model <fr:tex display="inline"><![CDATA[M]]></fr:tex> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> in an <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-topos <fr:tex display="inline"><![CDATA[\mathcal {E}]]></fr:tex>, produces an object of <fr:tex display="inline"><![CDATA[\mathcal {E}]]></fr:tex>.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.5)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002D/</fr:uri>
+                <fr:display-uri>002D</fr:display-uri>
+                <fr:route>/002D/</fr:route>
+                <fr:title text="Geometric theory">Geometric theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Geometric theories</html:strong> may be consicely defined as the elephant theories built up via a sequence of <fr:link href="/pie-limit/" title="PIE Limit" uri="https://manual.geolog.sgai.uk/pie-limit/" display-uri="pie-limit" type="local">product-inserter-equifier limits</fr:link> starting from the object classifier.</html:p>
+                <html:p>We expand this to give more intuition.</html:p>
+                <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a theory, a <html:strong>simple functional extension</html:strong> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> is another theory <fr:tex display="inline"><![CDATA[T']]></fr:tex> given as the <html:em>inserter</html:em> of two geometric constructs <fr:tex display="inline"><![CDATA[F,G \colon  T \to  \mathbb {O}]]></fr:tex>. Intuitively, <fr:tex display="inline"><![CDATA[T']]></fr:tex> is the theory given by freely adding a new morphism between the “objects” <fr:tex display="inline"><![CDATA[F]]></fr:tex> and <fr:tex display="inline"><![CDATA[G]]></fr:tex>.</html:p>
+                <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a theory, a <html:strong>simple equational extension</html:strong> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> is another theory <fr:tex display="inline"><![CDATA[T']]></fr:tex> given as the <html:em>equifier</html:em> of two indexed natural transformations <fr:tex display="inline"><![CDATA[\alpha , \beta  \colon  F \Rightarrow  G]]></fr:tex>, where <fr:tex display="inline"><![CDATA[F]]></fr:tex> and <fr:tex display="inline"><![CDATA[G]]></fr:tex> are geometric constructs. Intuitively, <fr:tex display="inline"><![CDATA[T']]></fr:tex> is the theory given by adding a new equality between morphisms of “objects”.</html:p>
+                <html:p>A <html:strong>geometric theory</html:strong> is a theory built up by a finite sequence <fr:tex display="inline"><![CDATA[T_0,\ldots ,T_n]]></fr:tex> of simple functional extensions and simple equational extensions starting from <fr:tex display="inline"><![CDATA[T_0 = \mathbb {O}^m]]></fr:tex> for some finite <fr:tex display="inline"><![CDATA[m]]></fr:tex>.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition 4.2.7, note that Johnstone gives a slightly different definition, using <html:em>simple geometric quotients</html:em> in place of simple equational extensions, which use inverters instead of equifiers. The name “simple equational extension” is not known to us to be previously used, but it follows the schema of “simple functional extension.”)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002G/</fr:uri>
+                <fr:display-uri>002G</fr:display-uri>
+                <fr:route>/002G/</fr:route>
+                <fr:title text="Geometric theories have classifying topoi">Geometric theories have classifying topoi</fr:title>
+                <fr:taxon>Theorem</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Any <fr:link href="/002D/" title="Geometric theory" uri="https://manual.geolog.sgai.uk/002D/" display-uri="002D" type="local">geometric theory</fr:link> has a <fr:link href="/002C/" title="Elephant Theory" uri="https://manual.geolog.sgai.uk/002C/" display-uri="002C" type="local">classifying topos</fr:link>.</html:p>
+                <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Theorem 4.2.9)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/002I/</fr:uri>
+                <fr:display-uri>002I</fr:display-uri>
+                <fr:route>/002I/</fr:route>
+                <fr:title text="A category with families structure on elephant theories">A category with families structure on elephant theories</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Let <fr:tex display="inline"><![CDATA[\mathsf {ElTh}]]></fr:tex> be the category of elephant theories. Then let <fr:tex display="inline"><![CDATA[\mathsf {Ty} \colon  \mathsf {ElTh}^\mathrm {op} \to  \mathsf {SET}]]></fr:tex> be the large presheaf which sends an elephant theory <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> to the set of strict 2-functors <fr:tex display="inline"><![CDATA[A \colon  (\int  \Gamma )^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex>.</html:p>
+                <html:p>Intuitively, <fr:tex display="inline"><![CDATA[\mathsf {Ty}(\Gamma )]]></fr:tex> is “elephant theories relative to <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.” This is because <fr:tex display="inline"><![CDATA[\int  \Gamma ]]></fr:tex> is the category of topoi equipped with a model of <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>; if <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> were a geometric theory then <fr:tex display="inline"><![CDATA[\int  \Gamma ]]></fr:tex> would be equivalent to <fr:tex display="inline"><![CDATA[\mathsf {BTop}/\mathcal {S}[\Gamma ]]]></fr:tex>.</html:p>
+                <html:p>Then define <fr:tex display="inline"><![CDATA[\mathsf {Tm} \colon  (\int  \mathsf {Ty})^\mathrm {op} \to  \mathsf {Set}]]></fr:tex> by letting <fr:tex display="inline"><![CDATA[\mathsf {Tm}(\Gamma , A)]]></fr:tex> be the set of <html:em>sections</html:em> of <fr:tex display="inline"><![CDATA[A]]></fr:tex>. A section <fr:tex display="inline"><![CDATA[a]]></fr:tex> is a natural assignment of <fr:tex display="inline"><![CDATA[a(\mathcal {E}, M) \colon  A(\mathcal {E}, M)]]></fr:tex> for <fr:tex display="inline"><![CDATA[(\mathcal {E},M) \in  \int  \Gamma ]]></fr:tex>.</html:p>
+                <html:p>Context extension is given in the following way. Suppose that <fr:tex display="inline"><![CDATA[\Gamma  \colon  (\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex> is a context and <fr:tex display="inline"><![CDATA[A \colon  \mathsf {Ty}(\Gamma )]]></fr:tex>. Then <fr:tex display="inline"><![CDATA[\Gamma  \triangleright  A \colon  (\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat}]]></fr:tex> is defined by <fr:tex display="inline"><![CDATA[(\Gamma  \triangleright  A)(\mathcal {E}) = (M \colon  \Gamma (\mathcal {E})) \times  A(\mathcal {E},M)]]></fr:tex>.</html:p>
+                <html:p>Then finally we have weakening and the variable rule given by the first and second projections out of <fr:tex display="inline"><![CDATA[\Gamma  \triangleright  A]]></fr:tex>.</html:p>
+                <html:p>Note that even though topoi and elephant theories are non-trivially 2-categorical, <fr:tex display="inline"><![CDATA[(\mathsf {ElTh},\mathsf {Ty},\mathsf {Tm})]]></fr:tex> forms nevertheless a strict (albeit quite large) category with families.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>The remainder of this section is simply an investigation of what type formers are supported in <fr:tex display="inline"><![CDATA[\mathsf {ElTh}]]></fr:tex>.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:date>
+                  <fr:year>2026</fr:year>
+                  <fr:month>5</fr:month>
+                  <fr:day>27</fr:day>
+                </fr:date>
+                <fr:uri>https://manual.geolog.sgai.uk/002J/</fr:uri>
+                <fr:display-uri>002J</fr:display-uri>
+                <fr:route>/002J/</fr:route>
+              </fr:frontmatter>
+              <fr:mainmatter />
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/002C/</fr:uri>
+            <fr:display-uri>002C</fr:display-uri>
+            <fr:route>/002C/</fr:route>
+            <fr:title text="Elephant Theory">Elephant Theory</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>For <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> a topos, an <html:strong>elephant theory</html:strong> over <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> is a (pseudo-)functor <fr:tex display="inline"><![CDATA[T \colon  (\mathsf {BTop}/\mathcal {S})^\mathrm {op} \to  \mathsf {Cat},]]></fr:tex> where <fr:tex display="inline"><![CDATA[(\mathsf {BTop}/\mathcal {S})^\mathrm {op}]]></fr:tex> is the 2-category of bounded geometric morphisms into <fr:tex display="inline"><![CDATA[\mathcal {S}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathsf {Cat}]]></fr:tex> is the 2-category of large categories.</html:p>
+            <html:p>A morphism of elephant theories is simply an indexed functor.</html:p>
+            <html:p>We say that <fr:tex display="inline"><![CDATA[T]]></fr:tex> is <html:strong>classified</html:strong> by <fr:tex display="inline"><![CDATA[\mathsf {S}[T] \colon  \mathsf {BTop}/\mathcal {S}]]></fr:tex> if <fr:tex display="inline"><![CDATA[T]]></fr:tex> is contravariantly represented by <fr:tex display="inline"><![CDATA[\mathcal {S}[T]]]></fr:tex>, that is <fr:tex display="inline"><![CDATA[T(\mathcal {E}) \cong  \mathsf {BTop}/\mathcal {S}(\mathcal {E}, \mathcal {S}[T])]]></fr:tex>. We also call <fr:tex display="inline"><![CDATA[\mathsf {S}[T]]]></fr:tex> the <html:strong>classifying topos</html:strong> for <fr:tex display="inline"><![CDATA[T]]></fr:tex>.</html:p>
+            <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition B4.2.1)</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/002D/</fr:uri>
+            <fr:display-uri>002D</fr:display-uri>
+            <fr:route>/002D/</fr:route>
+            <fr:title text="Geometric theory">Geometric theory</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p><html:strong>Geometric theories</html:strong> may be consicely defined as the elephant theories built up via a sequence of <fr:link href="/pie-limit/" title="PIE Limit" uri="https://manual.geolog.sgai.uk/pie-limit/" display-uri="pie-limit" type="local">product-inserter-equifier limits</fr:link> starting from the object classifier.</html:p>
+            <html:p>We expand this to give more intuition.</html:p>
+            <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a theory, a <html:strong>simple functional extension</html:strong> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> is another theory <fr:tex display="inline"><![CDATA[T']]></fr:tex> given as the <html:em>inserter</html:em> of two geometric constructs <fr:tex display="inline"><![CDATA[F,G \colon  T \to  \mathbb {O}]]></fr:tex>. Intuitively, <fr:tex display="inline"><![CDATA[T']]></fr:tex> is the theory given by freely adding a new morphism between the “objects” <fr:tex display="inline"><![CDATA[F]]></fr:tex> and <fr:tex display="inline"><![CDATA[G]]></fr:tex>.</html:p>
+            <html:p>If <fr:tex display="inline"><![CDATA[T]]></fr:tex> is a theory, a <html:strong>simple equational extension</html:strong> of <fr:tex display="inline"><![CDATA[T]]></fr:tex> is another theory <fr:tex display="inline"><![CDATA[T']]></fr:tex> given as the <html:em>equifier</html:em> of two indexed natural transformations <fr:tex display="inline"><![CDATA[\alpha , \beta  \colon  F \Rightarrow  G]]></fr:tex>, where <fr:tex display="inline"><![CDATA[F]]></fr:tex> and <fr:tex display="inline"><![CDATA[G]]></fr:tex> are geometric constructs. Intuitively, <fr:tex display="inline"><![CDATA[T']]></fr:tex> is the theory given by adding a new equality between morphisms of “objects”.</html:p>
+            <html:p>A <html:strong>geometric theory</html:strong> is a theory built up by a finite sequence <fr:tex display="inline"><![CDATA[T_0,\ldots ,T_n]]></fr:tex> of simple functional extensions and simple equational extensions starting from <fr:tex display="inline"><![CDATA[T_0 = \mathbb {O}^m]]></fr:tex> for some finite <fr:tex display="inline"><![CDATA[m]]></fr:tex>.</html:p>
+            <html:p>(See <fr:link href="/johnstone-2002-sketches/" title="Sketches of an elephant: a topos theory compendium" uri="https://manual.geolog.sgai.uk/johnstone-2002-sketches/" display-uri="johnstone-2002-sketches" type="local">Elephant</fr:link> Definition 4.2.7, note that Johnstone gives a slightly different definition, using <html:em>simple geometric quotients</html:em> in place of simple equational extensions, which use inverters instead of equifiers. The name “simple equational extension” is not known to us to be previously used, but it follows the schema of “simple functional extension.”)</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

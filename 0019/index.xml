@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/0019/</fr:uri>
+    <fr:display-uri>0019</fr:display-uri>
+    <fr:route>/0019/</fr:route>
+    <fr:title text="Whitespace">Whitespace</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Whitespace is generally ignored, though newlines create <html:code><![CDATA[\n]]></html:code> tokens.</html:p>
+    <html:p>Line comments starting with <html:code>#</html:code> are considered whitespace.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/000W/</fr:uri>
+            <fr:display-uri>000W</fr:display-uri>
+            <fr:route>/000W/</fr:route>
+            <fr:title text="Tokens">Tokens</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Lexing chops up a string into tagged chunks. F-notation has the following <html:em>token kinds</html:em>, which we break up into categories.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0014/</fr:uri>
+                <fr:display-uri>0014</fr:display-uri>
+                <fr:route>/0014/</fr:route>
+                <fr:title text="Names">Names</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>A name is built up out of a sequence of <html:em>name segments</html:em> separated by slashes with no intervening spaces. Each name segment is comprised either of alphanumerical letters or of symbols. Hyphens may appear in symbolic name segments or alphanumerical name segments. Only the last name segment in a name may be symbolic. Examples: <html:code>Monoid/is-commutative</html:code>, <html:code>List/::</html:code>.</html:p>
+                <html:p>The slashes are eventually intended to be used for namespacing in the style of <fr:link href="/yuujinchou/" title="yuujinchou" uri="https://manual.geolog.sgai.uk/yuujinchou/" display-uri="yuujinchou" type="local">yuujinchou</fr:link>; this is currently not supported however.</html:p>
+                <html:p>The f-notation configuration assigns special token kinds to specific name segments.</html:p>
+                <html:table>
+                  <html:thead>
+<html:tr><html:th>Kind</html:th> <html:th>Usage</html:th></html:tr>
+</html:thead>
+                  <html:tbody>
+<html:tr><html:td><html:code>AIdent</html:code></html:td> <html:td>Alphanumerical identifier, used for variables</html:td></html:tr>
+<html:tr><html:td><html:code>AKeyword</html:code></html:td> <html:td>Alphanumerical keyword, used for reserved words that nonetheless parse normally</html:td></html:tr>
+<html:tr><html:td><html:code>SIdent</html:code></html:td> <html:td>Symbolic identifier, used for variables, defaults to infix application</html:td></html:tr>
+<html:tr><html:td><html:code>SKeyword</html:code></html:td> <html:td>Symbolic keyword, used for reserved infix keywords that nonetheless parse normally</html:td></html:tr>
+<html:tr><html:td><html:code>Decl</html:code></html:td> <html:td>Used to designate a top-level declaration</html:td></html:tr>
+<html:tr><html:td><html:code>Modifier</html:code></html:td> <html:td>Used to modify a top-level declaration</html:td></html:tr>
+<html:tr><html:td><html:code>Block</html:code></html:td> <html:td>Used to designate a block</html:td></html:tr>
+<html:tr><html:td><html:code>End</html:code></html:td> <html:td>Used to end a block</html:td></html:tr>
+</html:tbody>
+                </html:table>
+                <html:p>In geolog, the special name segments and their corresponding kinds are as follows.</html:p>
+                <html:table>
+                  <html:thead>
+<html:tr><html:th>Name</html:th> <html:th>Kind</html:th></html:tr>
+</html:thead>
+                  <html:tbody>
+<html:tr><html:td><html:code>sig</html:code></html:td> <html:td><html:code>Block</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>struct</html:code></html:td> <html:td><html:code>Block</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>end</html:code></html:td> <html:td><html:code>End</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>theory</html:code></html:td> <html:td><html:code>Decl</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>def</html:code></html:td> <html:td><html:code>Decl</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>Set</html:code></html:td> <html:td><html:code>AKeyword</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>Prop</html:code></html:td> <html:td><html:code>AKeyword</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>Int</html:code></html:td> <html:td><html:code>AKeyword</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>String</html:code></html:td> <html:td><html:code>AKeyword</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>:=</html:code></html:td> <html:td><html:code>SKeyword</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>=</html:code></html:td> <html:td><html:code>SKeyword</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>:</html:code></html:td> <html:td><html:code>SKeyword</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>-&gt;</html:code></html:td> <html:td><html:code>SKeyword</html:code></html:td></html:tr>
+<html:tr><html:td><html:code>=&gt;</html:code></html:td> <html:td><html:code>SKeyword</html:code></html:td></html:tr>
+</html:tbody>
+                </html:table>
+                <html:p>Names with no segment found in the above list are classified as identifiers; it is invalid to have a multi-segment name that uses a reserved name segment.</html:p>
+                <html:p>We use boldface for block tokens and decl tokens in code snippets as a very rudimentary form of syntax highlighting.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0015/</fr:uri>
+                <fr:display-uri>0015</fr:display-uri>
+                <fr:route>/0015/</fr:route>
+                <fr:title text="Fields and tags">Fields and tags</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Putting <html:code>.</html:code> in front of a name turns it into a <html:strong>field</html:strong>, and putting <html:code>'</html:code> in front of a name turns it into a <html:strong>tag</html:strong>.</html:p>
+                <html:p>Fields are intended for use in accessing a record. For instance <html:code>a .b</html:code> gets the <html:code>b</html:code> field from the record; <html:code>a.b</html:code> is also valid and parses the same.</html:p>
+                <html:p>Tags are intended for use in creating elements of a sum type. For instance <html:code>'just 1</html:code> could be an element of the sum type <html:code>Maybe Int</html:code>. Currently geolog does not have either sum types or tags, however.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0016/</fr:uri>
+                <fr:display-uri>0016</fr:display-uri>
+                <fr:route>/0016/</fr:route>
+                <fr:title text="Literals">Literals</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>F-notation has string literals with double quotes and integer literals with arabic numerals.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0017/</fr:uri>
+                <fr:display-uri>0017</fr:display-uri>
+                <fr:route>/0017/</fr:route>
+                <fr:title text="Punctuation">Punctuation</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>There is a token kind for each of <html:code><![CDATA[(]]></html:code>, <html:code><![CDATA[)]]></html:code>, <html:code><![CDATA[[]]></html:code>, <html:code><![CDATA[]]]></html:code>, <html:code><![CDATA[{]]></html:code>, <html:code><![CDATA[}]]></html:code>, <html:code><![CDATA[,]]></html:code>, <html:code><![CDATA[;]]></html:code>, <html:code><![CDATA[\n]]></html:code>, and end-of-file.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0018/</fr:uri>
+                <fr:display-uri>0018</fr:display-uri>
+                <fr:route>/0018/</fr:route>
+                <fr:title text="Error">Error</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>When a certain token fails to lex for whatever reason, an error token kind is inserted and lexing continues.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors />
+                <fr:uri>https://manual.geolog.sgai.uk/0019/</fr:uri>
+                <fr:display-uri>0019</fr:display-uri>
+                <fr:route>/0019/</fr:route>
+                <fr:title text="Whitespace">Whitespace</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Whitespace is generally ignored, though newlines create <html:code><![CDATA[\n]]></html:code> tokens.</html:p>
+                <html:p>Line comments starting with <html:code>#</html:code> are considered whitespace.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

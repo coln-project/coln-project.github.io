@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/michael-shulman/" title="Michael Shulman" uri="https://manual.geolog.sgai.uk/michael-shulman/" display-uri="michael-shulman" type="local">Michael Shulman</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2016</fr:year>
+    </fr:date>
+    <fr:uri>https://manual.geolog.sgai.uk/shulman-2016-categorical/</fr:uri>
+    <fr:display-uri>shulman-2016-categorical</fr:display-uri>
+    <fr:route>/shulman-2016-categorical/</fr:route>
+    <fr:title text="Categorical logic from a categorical point of view">Categorical logic from a categorical point of view</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:meta name="external">https://mikeshulman.github.io/catlog/catlog.pdf</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/derivation/</fr:uri>
+            <fr:display-uri>derivation</fr:display-uri>
+            <fr:route>/derivation/</fr:route>
+            <fr:title text="Derivation">Derivation</fr:title>
+            <fr:taxon>Term</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>A derivation is a sequence of applications of rules in some type theory, starting from the empty premise and concluding in a judgment.</html:p>
+            <html:p>See <fr:link href="https://en.wikipedia.org/wiki/Rule_of_inference" type="external">Rule of inference</fr:link> on wikipedia for an introduction to this sort of thing. The only difference is that a derivation in type theory typically expresses that there is a term of a certain type rather than just expressing that a proposition is true.</html:p>
+            <html:p>A principled approach to derivations may be found in <fr:link href="/shulman-2016-categorical/" title="Categorical logic from a categorical point of view" uri="https://manual.geolog.sgai.uk/shulman-2016-categorical/" display-uri="shulman-2016-categorical" type="local">Categorical logic from a categorical point of view</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/000C/</fr:uri>
+            <fr:display-uri>000C</fr:display-uri>
+            <fr:route>/000C/</fr:route>
+            <fr:title text="The categorical logician">The categorical logician</fr:title>
+            <fr:taxon>Audience</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>The <html:strong>categorical logician</html:strong> is a reader who is comfortable with modern approaches to the categorical semantics of type theory, such as:</html:p>
+            <html:ul><html:li><fr:link href="/shulman-2016-categorical/" title="Categorical logic from a categorical point of view" uri="https://manual.geolog.sgai.uk/shulman-2016-categorical/" display-uri="shulman-2016-categorical" type="local">Categorical logic from a categorical point of view</fr:link></html:li>
+  <html:li><fr:link href="/kovacs-2022-typetheoretic/" title="Type-Theoretic Signatures for Algebraic
+Theories and Inductive Types" uri="https://manual.geolog.sgai.uk/kovacs-2022-typetheoretic/" display-uri="kovacs-2022-typetheoretic" type="local">Type-Theoretic Signatures for Algebraic
+Theories and Inductive Types</fr:link></html:li>
+  <html:li><fr:link href="/uemura-2021-abstract/" title="Abstract and Concrete Type Theories" uri="https://manual.geolog.sgai.uk/uemura-2021-abstract/" display-uri="uemura-2021-abstract" type="local">Abstract and Concrete Type Theories</fr:link></html:li></html:ul>
+            <html:p>The categorical logician also has a reasonable grasp of topos theory and 2-category theory.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

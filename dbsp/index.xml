@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/">
+  <fr:frontmatter>
+    <fr:authors />
+    <fr:uri>https://manual.geolog.sgai.uk/dbsp/</fr:uri>
+    <fr:display-uri>dbsp</fr:display-uri>
+    <fr:route>/dbsp/</fr:route>
+    <fr:title text="DBSP">DBSP</fr:title>
+    <fr:taxon>Term</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>DBSP is a language for “describing computations over data streams.” It is defined in <fr:link href="/budiu-2022-dbsp/" title="DBSP: Automatic Incremental View Maintenance for Rich Query Languages" uri="https://manual.geolog.sgai.uk/budiu-2022-dbsp/" display-uri="budiu-2022-dbsp" type="local">DBSP: Automatic Incremental View Maintenance for Rich Query Languages</fr:link>, and currently implemented in <fr:link href="/feldera/" title="Feldera" uri="https://manual.geolog.sgai.uk/feldera/" display-uri="feldera" type="local">Feldera</fr:link>.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/mihai-budiu/" title="Mihai Budiu" uri="https://manual.geolog.sgai.uk/mihai-budiu/" display-uri="mihai-budiu" type="local">Mihai Budiu</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link href="/leonid-ryzhyk/" title="Leonid Ryzhyk" uri="https://manual.geolog.sgai.uk/leonid-ryzhyk/" display-uri="leonid-ryzhyk" type="local">Leonid Ryzhyk</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link href="/frank-mcsherry/" title="Frank McSherry" uri="https://manual.geolog.sgai.uk/frank-mcsherry/" display-uri="frank-mcsherry" type="local">Frank McSherry</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link href="/val-tannen/" title="Val Tannen" uri="https://manual.geolog.sgai.uk/val-tannen/" display-uri="val-tannen" type="local">Val Tannen</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2022</fr:year>
+            </fr:date>
+            <fr:uri>https://manual.geolog.sgai.uk/budiu-2022-dbsp/</fr:uri>
+            <fr:display-uri>budiu-2022-dbsp</fr:display-uri>
+            <fr:route>/budiu-2022-dbsp/</fr:route>
+            <fr:title text="DBSP: Automatic Incremental View Maintenance for Rich Query Languages">DBSP: Automatic Incremental View Maintenance for Rich Query Languages</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:meta name="external">https://arxiv.org/pdf/2203.16684</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/000E/</fr:uri>
+            <fr:display-uri>000E</fr:display-uri>
+            <fr:route>/000E/</fr:route>
+            <fr:title text="The database engineer">The database engineer</fr:title>
+            <fr:taxon>Audience</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>The <html:strong>database engineer</html:strong> is a reader who does not necessarily know any type theory, but is familiar with <fr:link href="/sql/" title="SQL" uri="https://manual.geolog.sgai.uk/sql/" display-uri="sql" type="local">SQL</fr:link>, <fr:link href="/datalog/" title="Datalog" uri="https://manual.geolog.sgai.uk/datalog/" display-uri="datalog" type="local">Datalog</fr:link>, <fr:link href="/conjunctive-queries/" title="Conjunctive queries" uri="https://manual.geolog.sgai.uk/conjunctive-queries/" display-uri="conjunctive-queries" type="local">Conjunctive queries</fr:link>, <fr:link href="/egglog/" title="Egglog" uri="https://manual.geolog.sgai.uk/egglog/" display-uri="egglog" type="local">Egglog</fr:link>, <fr:link href="/automerge/" title="Automerge" uri="https://manual.geolog.sgai.uk/automerge/" display-uri="automerge" type="local">Automerge</fr:link>, and perhaps some of the methods for incrementalizing queries like <fr:link href="/dbsp/" title="DBSP" uri="https://manual.geolog.sgai.uk/dbsp/" display-uri="dbsp" type="local">DBSP</fr:link>.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors />
+            <fr:uri>https://manual.geolog.sgai.uk/feldera/</fr:uri>
+            <fr:display-uri>feldera</fr:display-uri>
+            <fr:route>/feldera/</fr:route>
+            <fr:title text="Feldera">Feldera</fr:title>
+            <fr:taxon>Project</fr:taxon>
+            <fr:meta name="external">https://github.com/feldera/feldera</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
