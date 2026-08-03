@@ -6,7 +6,7 @@
     <fr:uri>https://coln-project.github.io/000I/</fr:uri>
     <fr:display-uri>000I</fr:display-uri>
     <fr:route>/000I/</fr:route>
-    <fr:title text="About the manual › Organization"><fr:link href="/0002/" title="About the manual" uri="https://coln-project.github.io/0002/" display-uri="0002" type="local">About the manual</fr:link> › Organization</fr:title>
+    <fr:title text="Organization">Organization</fr:title>
   </fr:frontmatter>
   <fr:mainmatter>
     <html:p />
